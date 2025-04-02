@@ -1,8 +1,9 @@
 import folium
 import os
+import json
 
 def create_map(data, output_path):
-    """Generate an interactive map with power plants in California with direct zoom links."""
+    """Generate an interactive map with power plants in California."""
     # Initialize the map
     energy_map = folium.Map(location=[37.5, -119.5], zoom_start=6, control_scale=True, tiles="cartodbpositron")
     
@@ -11,11 +12,8 @@ def create_map(data, output_path):
     solar_group = folium.FeatureGroup(name="Solar Power", show=True).add_to(energy_map)
     water_group = folium.FeatureGroup(name="Water Power", show=True).add_to(energy_map)
     
-    # Dictionary to track all plants for the sidebar
-    all_plants = []
-    
     # Add markers to the map with custom formatting
-    for _, plant in data.iterrows():
+    for i, (_, plant) in enumerate(data.iterrows()):
         lat, lon = plant['y'], plant['x']
         energy_output = plant['estimated_output']
         plant_name = str(plant['PlantName'])
@@ -54,322 +52,205 @@ def create_map(data, output_path):
             marker.add_to(solar_group)
         elif source == "WAT":
             marker.add_to(water_group)
-        
-        # Store plant info for the sidebar
-        all_plants.append({
-            'name': plant_name,
-            'lat': lat,
-            'lon': lon,
-            'source': source,
-            'output': energy_output
-        })
     
     # Add layer control
     folium.LayerControl(collapsed=False).add_to(energy_map)
     
-    # Create a sidebar with direct links
-    sidebar_html = """
+    # Create search control HTML
+    search_html = """
     <style>
-    .sidebar {
-        position: absolute;
-        left: 0;
-        top: 0;
-        bottom: 0;
-        width: 300px;
-        background: white;
-        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-        overflow-y: auto;
-        z-index: 1000;
-        transition: transform 0.3s;
-        transform: translateX(-300px);
-    }
-    
-    .sidebar.visible {
-        transform: translateX(0);
-    }
-    
-    .sidebar-header {
-        background: #f8f9fa;
-        padding: 10px;
-        border-bottom: 1px solid #dee2e6;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    
-    .sidebar-header h3 {
-        margin: 0;
-        font-size: 16px;
-    }
-    
-    .close-btn {
-        cursor: pointer;
-        font-size: 20px;
-    }
-    
-    .sidebar-content {
-        padding: 10px;
-    }
-    
     .search-container {
-        margin-bottom: 10px;
+        position: absolute;
+        top: 100px;
+        left: 12px;
+        z-index: 1000;
+        background: white;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        max-width: 300px;
+        max-height: 400px;
+        overflow-y: auto;
+        transition: transform 0.3s ease-in-out;
     }
-    
-    #plant-search {
-        width: 100%;
-        padding: 8px;
-        border: 1px solid #ced4da;
-        border-radius: 4px;
+    .search-container.collapsed {
+        transform: translateX(-120%);
     }
-    
-    .filter-buttons {
-        display: flex;
-        gap: 5px;
-        margin-bottom: 10px;
-    }
-    
-    .filter-btn {
-        padding: 5px 10px;
-        background: #f8f9fa;
-        border: 1px solid #dee2e6;
-        border-radius: 4px;
-        cursor: pointer;
-    }
-    
-    .filter-btn.active {
+    .search-toggle {
+        position: absolute;
+        top: 17px;
+        left: 60px;
+        width: 50px;
+        height: 50px;
         background: #007bff;
         color: white;
-        border-color: #007bff;
-    }
-    
-    .plant-link {
-        display: block;
-        padding: 8px;
-        margin-bottom: 5px;
-        border-radius: 4px;
-        text-decoration: none;
-        color: #212529;
+        font-size: 24px;
+        font-weight: bold;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         cursor: pointer;
+        box-shadow: 0 0 5px rgba(0,0,0,0.2);
+        z-index: 1001; /* Ensure the button is above other elements */
     }
-    
-    .plant-link:hover {
-        background: #f8f9fa;
+    .search-box {
+        width: 100%;
+        padding: 5px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
     }
-    
-    .plant-link.sun {
-        border-left: 4px solid #FFD700;
+    .plant-list {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
     }
-    
-    .plant-link.wind {
-        border-left: 4px solid #FF4136;
-    }
-    
-    .plant-link.water {
-        border-left: 4px solid #0074D9;
-    }
-    
-    .toggle-btn {
-        position: absolute;
-        left: 10px;
-        top: 10px;
-        z-index: 999;
-        background: white;
-        border: none;
-        border-radius: 4px;
-        padding: 8px 12px;
-        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    .plant-item {
+        padding: 5px;
         cursor: pointer;
+        border-bottom: 1px solid #eee;
     }
-    
-    @media (max-width: 768px) {
-        .sidebar {
-            width: 250px;
-        }
+    .plant-item:hover {
+        background-color: #f0f0f0;
+    }
+    .source-SUN {
+        border-left: 4px solid yellow;
+    }
+    .source-WND {
+        border-left: 4px solid red;
+    }
+    .source-WAT {
+        border-left: 4px solid blue;
     }
     </style>
     
-    <button id="toggle-sidebar" class="toggle-btn">🔍 Search Plants</button>
-    
-    <div id="sidebar" class="sidebar">
-        <div class="sidebar-header">
-            <h3>Plant Search</h3>
-            <span id="close-sidebar" class="close-btn">&times;</span>
-        </div>
-        <div class="sidebar-content">
-            <div class="search-container">
-                <input type="text" id="plant-search" placeholder="Search plants...">
-            </div>
-            <div class="filter-buttons">
-                <div id="filter-all" class="filter-btn active">All</div>
-                <div id="filter-sun" class="filter-btn">Solar</div>
-                <div id="filter-wind" class="filter-btn">Wind</div>
-                <div id="filter-water" class="filter-btn">Water</div>
-            </div>
-            <div id="plant-list">
-                <!-- Plants will be listed here -->
-            </div>
-        </div>
-    </div>
-    
-    <script>
-    // Add event listeners when the document is loaded
-    document.addEventListener('DOMContentLoaded', function() {
-        // Elements
-        const sidebar = document.getElementById('sidebar');
-        const toggleBtn = document.getElementById('toggle-sidebar');
-        const closeBtn = document.getElementById('close-sidebar');
-        const searchInput = document.getElementById('plant-search');
-        const plantList = document.getElementById('plant-list');
-        const filterBtns = document.querySelectorAll('.filter-btn');
-        
-        // Get map object
-        const map = document.querySelector('.folium-map')._leaflet_map;
-        
-        // Toggle sidebar
-        toggleBtn.addEventListener('click', function() {
-            sidebar.classList.add('visible');
-        });
-        
-        // Close sidebar
-        closeBtn.addEventListener('click', function() {
-            sidebar.classList.remove('visible');
-        });
-        
-        // Plant data
-        const plants = [
+    <div class="search-toggle" id="searchToggle">☰</div>
+    <div class="search-container collapsed" id="searchContainer">
+        <input type="text" id="plantSearch" class="search-box" placeholder="Search plants...">
+        <ul class="plant-list" id="plantList">
     """
     
-    # Add all plants to the JavaScript array
-    for plant in all_plants:
-        name = plant['name'].replace("'", "\\'")  # Escape quotes
-        sidebar_html += f"""
-            {{
-                name: '{name}',
-                lat: {plant['lat']},
-                lon: {plant['lon']},
-                source: '{plant['source']}',
-                output: {plant['output']}
-            }},
+    # Add plant items to the search
+    for _, plant in data.iterrows():
+        plant_name = str(plant['PlantName'])
+        source = plant['PriEnergySource']
+        output = plant['estimated_output']
+        lat = plant['y']
+        lon = plant['x']
+        
+        search_html += f"""
+        <li class="plant-item source-{source}" 
+            onclick="zoomToPlant({lat}, {lon})" 
+            data-name="{plant_name.lower()}" 
+            data-source="{source}">
+            {plant_name} ({source}) - {output:.1f} MW
+        </li>
         """
     
-    sidebar_html += """
-        ];
+    # Close the list and container
+    search_html += """
+        </ul>
+    </div>
+    """
+    
+    # Add JavaScript for the search functionality
+    search_js = """
+    <script>
+    // Function to zoom to a plant location
+    function zoomToPlant(lat, lon) {
+        console.log("Zoom function called with coordinates:", lat, lon);
         
-        // Initialize plant list
-        function renderPlantList() {
-            const searchText = searchInput.value.toLowerCase();
-            const activeFilter = document.querySelector('.filter-btn.active').id;
-            
-            // Filter plants
-            const filteredPlants = plants.filter(plant => {
-                const matchesSearch = plant.name.toLowerCase().includes(searchText);
-                let matchesFilter = true;
-                
-                if (activeFilter === 'filter-sun') {
-                    matchesFilter = plant.source === 'SUN';
-                } else if (activeFilter === 'filter-wind') {
-                    matchesFilter = plant.source === 'WND';
-                } else if (activeFilter === 'filter-water') {
-                    matchesFilter = plant.source === 'WAT';
-                }
-                
-                return matchesSearch && matchesFilter;
-            });
-            
-            // Sort plants by name
-            filteredPlants.sort((a, b) => a.name.localeCompare(b.name));
-            
-            // Clear plant list
-            plantList.innerHTML = '';
-            
-            // Add plants to list
-            filteredPlants.forEach(plant => {
-                const plantItem = document.createElement('div');
-                plantItem.textContent = plant.name;
-                plantItem.className = 'plant-link';
-                
-                // Add source-specific class
-                if (plant.source === 'SUN') {
-                    plantItem.classList.add('sun');
-                } else if (plant.source === 'WND') {
-                    plantItem.classList.add('wind');
-                } else if (plant.source === 'WAT') {
-                    plantItem.classList.add('water');
-                }
-                
-                // Add direct zoom handler that doesn't rely on markers
-                plantItem.addEventListener('click', function() {
-                    // Zoom to plant location
-                    map.flyTo([plant.lat, plant.lon], 13);
-                    
-                    // Close sidebar
-                    sidebar.classList.remove('visible');
-                    
-                    // After a delay, find the marker
-                    setTimeout(() => {
-                        let found = false;
-                        
-                        // This part uses brute force to try to find the marker
-                        document.querySelectorAll('path.leaflet-interactive').forEach(element => {
-                            // Try to get position
-                            try {
-                                const rect = element.getBoundingClientRect();
-                                const point = L.point(rect.left + rect.width/2, rect.top + rect.height/2);
-                                const latlng = map.containerPointToLatLng(point);
-                                
-                                // If close enough
-                                if (Math.abs(latlng.lat - plant.lat) < 0.01 && 
-                                    Math.abs(latlng.lng - plant.lon) < 0.01 && !found) {
-                                    // Click the marker
-                                    element.click();
-                                    found = true;
-                                }
-                            } catch (e) {
-                                console.error('Error finding marker:', e);
-                            }
-                        });
-                    }, 1000);
-                });
-                
-                plantList.appendChild(plantItem);
-            });
-            
-            // Show message if no plants found
-            if (filteredPlants.length === 0) {
-                const noResults = document.createElement('div');
-                noResults.textContent = 'No plants found.';
-                noResults.style.padding = '10px';
-                noResults.style.fontStyle = 'italic';
-                noResults.style.color = '#6c757d';
-                plantList.appendChild(noResults);
-            }
-        }
-        
-        // Search input handler
-        searchInput.addEventListener('input', renderPlantList);
-        
-        // Filter button handlers
-        filterBtns.forEach(btn => {
-            btn.addEventListener('click', function() {
-                // Remove active class from all buttons
-                filterBtns.forEach(b => b.classList.remove('active'));
-                
-                // Add active class to clicked button
-                this.classList.add('active');
-                
-                // Update plant list
-                renderPlantList();
-            });
+        // Find the map object
+        var mymap = Object.values(window).find(function(item) {
+            return item && item._container && item._container.classList && 
+                   item._container.classList.contains('leaflet-container');
         });
         
-        // Initial render
-        renderPlantList();
+        if (mymap) {
+            console.log("Map found, zooming to location");
+            mymap.setView([lat, lon], 12);
+            
+            // Try to find and open popup for marker at this location
+            setTimeout(function() {
+                console.log("Searching for marker at location");
+                mymap.eachLayer(function(layer) {
+                    if (layer._latlng) {
+                        var d = Math.sqrt(
+                            Math.pow(layer._latlng.lat - lat, 2) + 
+                            Math.pow(layer._latlng.lng - lon, 2)
+                        );
+                        
+                        // If distance is very small (close to exact match)
+                        if (d < 0.0001) {
+                            console.log("Found marker, opening popup");
+                            if (layer.openPopup) {
+                                layer.openPopup();
+                            }
+                        }
+                    }
+                });
+            }, 500);
+        } else {
+            console.error("Map not found");
+        }
+    }
+    
+    // Toggle search container visibility
+    document.addEventListener('DOMContentLoaded', function() {
+        // Get elements
+        var searchToggle = document.getElementById('searchToggle');
+        var searchContainer = document.getElementById('searchContainer');
+        var plantSearch = document.getElementById('plantSearch');
+        
+        if (searchToggle && searchContainer) {
+            searchToggle.addEventListener('click', function() {
+                console.log("Search toggle clicked");
+                searchContainer.classList.toggle('collapsed');
+                if (!searchContainer.classList.contains('collapsed')) {
+                    plantSearch.focus();
+                }
+            });
+        } else {
+            console.error("Search toggle or container not found");
+        }
+        
+        // Filter plants as user types in search box
+        if (plantSearch) {
+            plantSearch.addEventListener('input', function() {
+                var searchTerm = this.value.toLowerCase();
+                var items = document.querySelectorAll('#plantList .plant-item');
+                
+                items.forEach(function(item) {
+                    var name = item.getAttribute('data-name');
+                    if (name.includes(searchTerm)) {
+                        item.style.display = '';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        }
+        
+        // Ensure map is accessible
+        setTimeout(function() {
+            window.energyMap = Object.values(window).find(function(item) {
+                return item && item._container && item._container.classList && 
+                       item._container.classList.contains('leaflet-container');
+            });
+            
+            if (window.energyMap) {
+                console.log("Map reference stored globally");
+            } else {
+                console.error("Could not store map reference");
+            }
+        }, 1000);
     });
     </script>
     """
     
-    # Add the sidebar HTML to the map
-    energy_map.get_root().html.add_child(folium.Element(sidebar_html))
+    # Add the search control to the map
+    energy_map.get_root().html.add_child(folium.Element(search_html + search_js))
     
     # Ensure directory exists
     os.makedirs(os.path.dirname(output_path), exist_ok=True)

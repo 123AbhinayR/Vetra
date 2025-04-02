@@ -27,12 +27,32 @@
         max-width: 100% !important;
     }
     
-    /* Legend improvements */
+    /* Side legend styles */
     .map-legend {
+        position: absolute;
+        top: 130px;
+        right: 10px;
         background-color: rgba(255, 255, 255, 0.9);
         padding: 1rem;
         border-radius: 0.5rem;
-        margin-top: 1rem;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        z-index: 999;
+        max-width: 200px;
+    }
+    
+    /* Legend item styles */
+    .legend-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    
+    .legend-color {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: 1px solid black;
+        margin-right: 10px;
     }
 </style>
 {% endblock %}
@@ -54,26 +74,45 @@
         </div>
     </div>
     
-    <div class="map-container">
-        <iframe src="{{ url_for('static', filename='generated/california_energy_map.html') }}"></iframe>
-    </div>
-    
-    <div class="map-legend mx-5 mb-5">
-        <h3 class="text-xl font-medium text-gray-900">Map Legend</h3>
-        <div class="mt-4 grid grid-cols-1 sm:grid-cols-3 gap-6">
-            <div class="flex items-center">
-                <span class="h-6 w-6 rounded-full bg-yellow-400 border border-black mr-3"></span>
-                <span class="text-lg text-gray-700">Solar Energy</span>
+    <div class="relative">
+        <!-- Map container -->
+        <div class="map-container">
+            <iframe id="mapFrame" src="{{ url_for('static', filename='generated/california_energy_map.html') }}"></iframe>
+        </div>
+        
+        <!-- Side legend -->
+        <div class="map-legend">
+            <h3 class="text-lg font-medium text-gray-900 mb-3">Map Legend</h3>
+            <div class="legend-item">
+                <div class="legend-color" style="background-color: #FFD700;"></div>
+                <span class="text-base text-gray-700">Solar Energy</span>
             </div>
-            <div class="flex items-center">
-                <span class="h-6 w-6 rounded-full bg-red-500 border border-black mr-3"></span>
-                <span class="text-lg text-gray-700">Wind Energy</span>
+            <div class="legend-item">
+                <div class="legend-color" style="background-color: #FF5733;"></div>
+                <span class="text-base text-gray-700">Wind Energy</span>
             </div>
-            <div class="flex items-center">
-                <span class="h-6 w-6 rounded-full bg-blue-500 border border-black mr-3"></span>
-                <span class="text-lg text-gray-700">Hydro Energy</span>
+            <div class="legend-item">
+                <div class="legend-color" style="background-color: #3498DB;"></div>
+                <span class="text-base text-gray-700">Hydro Energy</span>
             </div>
         </div>
     </div>
 </div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Function to zoom to plant if needed in the future
+    window.zoomToPlant = function(lat, lon) {
+        const mapFrame = document.getElementById('mapFrame');
+        // Use postMessage to communicate with the iframe
+        mapFrame.contentWindow.postMessage({
+            action: 'zoomTo',
+            lat: lat,
+            lon: lon
+        }, '*');
+    };
+});
+</script>
 {% endblock %}
