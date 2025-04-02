@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}California Energy Map{% endblock %}</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom styles -->
+    <style>
+        .active-nav {
+            @apply border-blue-500 text-blue-600;
+        }
+        
+        body, html {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        
+        .content-container {
+            width: 100%;
+            max-width: 100%;
+            padding: 0;
+            margin: 0 auto;
+        }
+        
+        @media (min-width: 1280px) {
+            .content-container {
+                width: 90%;
+            }
+        }
+    </style>
+    
+    {% block extra_head %}{% endblock %}
+</head>
+<body class="bg-gray-100 min-h-screen flex flex-col">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md">
+        <div class="w-full max-w-full mx-auto px-4">
+            <div class="relative flex items-center justify-between h-20">
+                <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
+                    <div class="flex-shrink-0 flex items-center">
+                        <span class="text-2xl font-bold text-gray-800">California Energy Map</span>
+                    </div>
+                    <div class="hidden sm:block sm:ml-8">
+                        <div class="flex space-x-6">
+                            <a href="{{ url_for('main.index') }}" class="px-4 py-3 rounded-md text-lg font-medium border-b-2 {% if request.endpoint == 'main.index' %}active-nav{% else %}border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300{% endif %}">
+                                Home
+                            </a>
+                            <a href="{{ url_for('map.map_view') }}" class="px-4 py-3 rounded-md text-lg font-medium border-b-2 {% if request.endpoint.startswith('map.') %}active-nav{% else %}border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300{% endif %}">
+                                Map
+                            </a>
+                            <a href="{{ url_for('data.data_view') }}" class="px-4 py-3 rounded-md text-lg font-medium border-b-2 {% if request.endpoint.startswith('data.') %}active-nav{% else %}border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300{% endif %}">
+                                Data
+                            </a>
+                            <a href="{{ url_for('research.analysis_view') }}" class="px-4 py-3 rounded-md text-lg font-medium border-b-2 {% if request.endpoint == 'research.analysis_view' %}active-nav{% else %}border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300{% endif %}">
+                                Analysis
+                            </a>
+                            <a href="{{ url_for('research.research_view') }}" class="px-4 py-3 rounded-md text-lg font-medium border-b-2 {% if request.endpoint == 'research.research_view' %}active-nav{% else %}border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300{% endif %}">
+                                Research
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div class="sm:hidden" id="mobile-menu">
+            <div class="px-3 pt-3 pb-4 space-y-2">
+                <a href="{{ url_for('main.index') }}" class="block px-4 py-3 rounded-md text-lg font-medium {% if request.endpoint == 'main.index' %}bg-blue-50 text-blue-700{% else %}text-gray-600 hover:bg-gray-50 hover:text-gray-900{% endif %}">
+                    Home
+                </a>
+                <a href="{{ url_for('map.map_view') }}" class="block px-4 py-3 rounded-md text-lg font-medium {% if request.endpoint.startswith('map.') %}bg-blue-50 text-blue-700{% else %}text-gray-600 hover:bg-gray-50 hover:text-gray-900{% endif %}">
+                    Map
+                </a>
+                <a href="{{ url_for('data.data_view') }}" class="block px-4 py-3 rounded-md text-lg font-medium {% if request.endpoint.startswith('data.') %}bg-blue-50 text-blue-700{% else %}text-gray-600 hover:bg-gray-50 hover:text-gray-900{% endif %}">
+                    Data
+                </a>
+                <a href="{{ url_for('research.analysis_view') }}" class="block px-4 py-3 rounded-md text-lg font-medium {% if request.endpoint == 'research.analysis_view' %}bg-blue-50 text-blue-700{% else %}text-gray-600 hover:bg-gray-50 hover:text-gray-900{% endif %}">
+                    Analysis
+                </a>
+                <a href="{{ url_for('research.research_view') }}" class="block px-4 py-3 rounded-md text-lg font-medium {% if request.endpoint == 'research.research_view' %}bg-blue-50 text-blue-700{% else %}text-gray-600 hover:bg-gray-50 hover:text-gray-900{% endif %}">
+                    Research
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Content -->
+    <main class="flex-grow">
+        <div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
+            {% if error %}
+            <div class="bg-red-100 border-l-4 border-red-500 text-red-700 p-4 mb-4" role="alert">
+                <p>{{ error }}</p>
+            </div>
+            {% endif %}
+            
+            {% block content %}{% endblock %}
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white py-4 shadow-inner">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <p class="text-center text-gray-500 text-sm">
+                &copy; { current_year } California Energy Map | Data from Open Energy Information
+            </p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    {% block scripts %}{% endblock %}
+</body>
+</html>

@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+
+{% block title %}{{ title }} - California Energy Map{% endblock %}
+
+{% block extra_head %}
+<!-- Ensure that the iframe content is responsive -->
+<style>
+    .map-container {
+        position: relative;
+        width: 100%;
+        height: 0;
+        padding-bottom: 90vh; /* Made much taller - 90% of viewport height */
+        overflow: hidden;
+    }
+    .map-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+    }
+    
+    /* Remove extra padding to maximize space */
+    .content-container {
+        padding: 0 !important;
+        max-width: 100% !important;
+    }
+    
+    /* Legend improvements */
+    .map-legend {
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 1rem;
+        border-radius: 0.5rem;
+        margin-top: 1rem;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="bg-white shadow overflow-hidden w-full max-w-full">
+    <div class="px-5 py-6 sm:px-6 flex justify-between items-center">
+        <div>
+            <h1 class="text-3xl font-bold text-gray-900">Interactive Energy Map</h1>
+            <p class="mt-2 max-w-2xl text-lg text-gray-500">Visualization of California's renewable energy plants</p>
+        </div>
+        <div>
+            <a href="{{ url_for('map.refresh_map') }}" class="inline-flex items-center px-5 py-3 border border-transparent text-lg font-medium rounded-md shadow-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M4 2a1 1 0 011 1v2.101a7.002 7.002 0 0111.601 2.566 1 1 0 11-1.885.666A5.002 5.002 0 005.999 7H9a1 1 0 010 2H4a1 1 0 01-1-1V3a1 1 0 011-1zm.008 9.057a1 1 0 011.276.61A5.002 5.002 0 0014.001 13H11a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0v-2.101a7.002 7.002 0 01-11.601-2.566 1 1 0 01.61-1.276z" clip-rule="evenodd" />
+                </svg>
+                Refresh Data
+            </a>
+        </div>
+    </div>
+    
+    <div class="map-container">
+        <iframe src="{{ url_for('static', filename='generated/california_energy_map.html') }}"></iframe>
+    </div>
+    
+    <div class="map-legend mx-5 mb-5">
+        <h3 class="text-xl font-medium text-gray-900">Map Legend</h3>
+        <div class="mt-4 grid grid-cols-1 sm:grid-cols-3 gap-6">
+            <div class="flex items-center">
+                <span class="h-6 w-6 rounded-full bg-yellow-400 border border-black mr-3"></span>
+                <span class="text-lg text-gray-700">Solar Energy</span>
+            </div>
+            <div class="flex items-center">
+                <span class="h-6 w-6 rounded-full bg-red-500 border border-black mr-3"></span>
+                <span class="text-lg text-gray-700">Wind Energy</span>
+            </div>
+            <div class="flex items-center">
+                <span class="h-6 w-6 rounded-full bg-blue-500 border border-black mr-3"></span>
+                <span class="text-lg text-gray-700">Hydro Energy</span>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

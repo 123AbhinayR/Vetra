@@ -1,0 +1,1302 @@
+OBJECTID,CECPlantID,PlantName,Retired Plant,Operator Company,County,Capacity_Latest,Units,PriEnergySource,StartDate,CEC_Jurisdictional,x,y
+1865,S0335,Corcoran 2 Solar LLC CED,0,RWE Clean Energy,Kings,19.8,1,SUN,6/10/2015 0:00,0,-119.567893,36.13716961
+1866,S0520,Corcoran 3 Solar,0,RWE Clean Energy,Kings,20,Unit 1,SUN,2/11/2016 0:00,0,-119.5797122,36.14431894
+1869,S0608,Exeter Solar,0,Altus Power,Tulare,3.5,ES,SUN,2/12/2014 0:00,0,-119.128325,36.26629779
+1870,S0609,Lindsay Solar,0,Altus Power,Tulare,4,LS,SUN,1/15/2014 0:00,0,-119.1339997,36.21177821
+1871,S9325,ImModo California 1 LLC_(East Orosi 1),0,Not Available,Tulare,1.5,Unit 1,SUN,12/31/2013 0:00,0,-119.0399436,36.10371743
+1872,S9326,ImModo California 1 LLC_(East Orosi 2),0,Not Available,Tulare,1.5,Unit 1,SUN,12/31/2013 0:00,0,-119.0387897,36.1016196
+1873,S9327,ImModo California 1 LLC_(East Orosi 3),0,Not Available,Tulare,1.5,Unit 1,SUN,12/31/2013 0:00,0,-119.0373472,36.09973362
+1874,S0151,Porterville Solar,0,Tulare PV I LLC,Tulare,3.5,PS,SUN,1/13/2014 0:00,0,-119.039671,36.10278037
+1875,S0518,Sequoia PV3,0,Coronal Group LLC,Tulare,3,Porterville6&7,SUN,8/1/2014 0:00,0,-119.0367638,36.09882123
+1876,H0525,Tule River,0,Southern California Edison (SCE),Tulare,2.52,"1, 2",WAT,9/1/1909 0:00,0,-118.7888215,36.13568994
+1877,H0523,Tule,0,Pacific Gas & Electric (PG&E),Tulare,8.5,"1, 2",WAT,1/1/1914 0:00,0,-118.7070939,36.16307556
+1878,H0216,Haiwee,0,Los Angeles Department of Water & Power (LADWP),Inyo,6.4,"Unit 1, Unit 2",WAT,7/1/1927 0:00,0,-117.9568257,36.1099539
+1879,S9163,CA Dept of Correctionns Salinas (SVSP),0,Not Available,Monterey,2,1,SUN,1/1/2013 0:00,0,-121.3694531,36.47228282
+1881,W0455,City of Soledad,0,See WPRS for details,Monterey,1,WPRS 1,WND,12/31/1989 0:00,0,-121.3401411,36.4209101
+1882,S0176,Cantua Solar Station,0,Pacific Gas & Electric (PG&E),Fresno,20,1,SUN,6/19/2012 0:00,0,-120.3423065,36.42342829
+1883,S0458,Buford Five Points Solar Park (Excelsior),0,Clenera - Renewable Energy,Fresno,60,W5015,SUN,8/23/2016 0:00,0,-120.2427653,36.39668324
+1884,S0138,Westside Solar Station,0,Pacific Gas & Electric (PG&E),Fresno,20,Unit 1,SUN,8/31/2010 0:00,0,-120.1255006,36.37768624
+1885,S0140,Five Points Solar Station,0,Pacific Gas & Electric (PG&E),Fresno,15,Unit 1,SUN,10/24/2011 0:00,0,-120.1075072,36.39500659
+1886,S0563,Westside Solar LLC,0,Whitney Point Solar,Fresno,20,Unit 1,SUN,3/8/2017 0:00,0,-120.136151,36.38174843
+1887,S0564,Whitney Point Solar LLC,0,Whitney Point Solar,Fresno,20,Unit 1,SUN,4/14/2017 0:00,0,-120.1363266,36.37508121
+1888,S9018,Warmer Packing LLC,0,Not Available,Kings,1,1,SUN,1/1/2012 0:00,0,-119.7418439,36.40332643
+1889,S0517,Sequoia PV2,0,Coronal Group LLC,Tulare,3,Hanford 1&2,SUN,8/29/2014 0:00,0,-119.6308046,36.30647202
+1890,S9033,Jackson Michael,0,Not Available,Fresno,1,1,SUN,1/1/2012 0:00,0,-119.6086841,36.47175891
+1891,S9076,George Jackson,0,Not Available,Fresno,1,1,SUN,1/1/2012 0:00,0,-119.6129412,36.4670419
+1892,S0222,RE North Face,0,PureGen Power,Tulare,1,1,SUN,4/1/2009 0:00,0,-119.4007766,36.35446195
+1893,S0633,Visalia USD El Diamante HS,0,Tesla Inc.,Tulare,1.01,93210617-CA,SUN,5/25/2017 0:00,0,-119.3486567,36.30599595
+1894,S9038,Beret & Kees Jan De Jong,0,Not Available,Tulare,1,1,SUN,1/1/2012 0:00,0,-119.345839,36.47224943
+1897,S0348,Ivanhoe Solar,0,Altus Power,Tulare,3.5,IS,SUN,1/17/2014 0:00,0,-119.2551813,36.38735307
+1898,S0516,Farmersville (Formerly Sequoia PV1),0,CD Arevon USA Inc.,Tulare,4.5,"Farmersville 1, Farmersville 2, Farmersville 3, Farmersville123, Tulare1&2",SUN,1/1/2019 0:00,0,-119.2139008,36.31837936
+1899,S0693,Tulare (Formerly Sequoia PV1),0,CD Arevon USA Inc.,Tulare,3,"Tulare 1, Tulare 2",SUN,1/1/2019 0:00,0,-119.2132397,36.31854817
+1900,H0262,Terminus Hydroelectric Project,0,Kaweah River Power Authority,Tulare,20,1,WAT,3/16/1990 0:00,0,-119.0069603,36.41543769
+1901,H0259,Kaweah 1,0,Southern California Edison (SCE),Tulare,1,1,WAT,5/1/1990 0:00,0,-118.8619232,36.46525579
+1902,H0260,Kaweah 2,0,Southern California Edison (SCE),Tulare,1.8,2,WAT,9/1/1929 0:00,0,-118.8798063,36.46156754
+1903,H0116,Cottonwood,0,Los Angeles Department of Water & Power (LADWP),Inyo,2.8,"Unit 1, Unit 2",WAT,11/1/1908 0:00,0,-118.0435542,36.44346899
+1904,S9028,CSU Monterey Bay - PV,0,Not Available,Monterey,1,1,SUN,1/1/2012 0:00,0,-121.7890482,36.64775046
+1905,S9063,Community Hospital of Monterey Peninsula,0,Not Available,Monterey,1,1,SUN,1/1/2012 0:00,0,-121.9132743,36.57971873
+1906,S9071,Salinas Valley Memorial Hospital,0,Not Available,Monterey,1,1,SUN,1/1/2012 0:00,0,-121.6471272,36.65941738
+1907,S9040,Wines US Inc. Constellation,0,Not Available,Monterey,1,1,SUN,1/1/2012 0:00,0,-121.4340179,36.50335404
+1909,W0457,Taylor Farms,0,See WPRS for details,Monterey,1,WPRS 1,WND,12/31/1989 0:00,0,-121.4515761,36.50521623
+1910,S0635,Panoche Valley Solar,0,RWE Clean Energy,San Benito,140,Unit 1,SUN,12/29/2017 0:00,0,-120.8881855,36.63127382
+1915,S0588,Buford Giffen Solar,0,Not Available,Fresno,20,Unit 1,SUN,6/16/2017 0:00,0,-120.3391471,36.55347626
+1916,S0178,Giffen Solar Station,0,Pacific Gas & Electric (PG&E),Fresno,10,1,SUN,6/30/2012 0:00,0,-120.3136104,36.52960867
+1917,S0312,Adams East  LLC,0,Onward Energy,Fresno,19,1,SUN,12/1/2014 0:00,0,-120.3850459,36.61553056
+1918,S0526,Tranquillity LLC,0,Southern Power Company,Fresno,200,TRQS1,SUN,7/28/2016 0:00,0,-120.4006145,36.57798593
+1919,S0605,Giffen Solar Park LLC,0,Stellar Power Renewable LLC,Fresno,20,W5512,SUN,5/22/2017 0:00,0,-120.3452996,36.5483347
+1920,S0616,Aspiration Solar,0,S-Power (Sustainable Power Group),Fresno,9,Unit 1,SUN,9/13/2017 0:00,0,-120.3454512,36.54836655
+1921,S0653,Great Valley Solar Portfolio (Tranquillity 8),0,Great Valley Solar Portfolio Holdings LLC,Fresno,200,"Amarillo, Azul, Rojo, Verde",SUN,12/26/2017 0:00,0,-120.3832696,36.57834813
+1923,S0139,Stroud Solar Station,0,Pacific Gas & Electric (PG&E),Fresno,20,Unit 1,SUN,10/26/2011 0:00,0,-120.1230221,36.52391365
+1924,S0425,Fresno Solar South,0,Fresno Cogeneration,Fresno,1.5,Unit 1,SUN,10/1/2015 0:00,0,-120.1017409,36.61606171
+1925,S0426,Fresno Solar West,0,Fresno Cogeneration,Fresno,1.5,Unit 1,SUN,10/1/2015 0:00,0,-120.1044729,36.61700367
+1926,S0654,Summer Wheat,0,"GASNA 36P, LLC",San Joaquin,18.5,Unit 1,SUN,12/10/2018 0:00,0,-120.1494635,36.5255443
+1928,S9012,Golden State Vintners,0,Not Available,Fresno,1,1,SUN,1/1/2012 0:00,0,-119.9221195,36.67210281
+1929,S9085,Fowler Packing Company Inc.,0,Not Available,Fresno,1,1,SUN,1/1/2012 0:00,0,-119.7524413,36.61349306
+1930,S9086,Fowler Packing Company Inc.,0,Not Available,Fresno,1,1,SUN,1/1/2012 0:00,0,-119.7539499,36.61345773
+1931,S9034,Maxco Supply Inc.,0,Not Available,Fresno,1,1,SUN,1/1/2012 0:00,0,-119.5233537,36.61173489
+1932,S9181,Kingsburg Solar (1 & 2),0,Altus Power,Fresno,3.7,"Unit 1, Unit 2",SUN,12/1/2013 0:00,0,-119.5719105,36.54617084
+1933,S9190,Pristine Sun Fund 10 Fresno PGE LLC_(2102_Christensen),0,Not Available,Fresno,1,Unit 1,SUN,12/31/2013 0:00,0,-119.5734462,36.65444027
+1935,S9320,ImModo California 1 LLC_(Alta 1),0,Not Available,Tulare,1.5,Unit 1,SUN,12/31/2013 0:00,0,-119.3137674,36.54122095
+1936,S9321,ImModo California 1 LLC_(Alta 3),0,Not Available,Tulare,1.5,Unit 1,SUN,12/31/2013 0:00,0,-119.3137674,36.54122095
+1937,S9322,ImModo California 1 LLC_(Alta 4),0,Not Available,Tulare,1.5,Unit 1,SUN,12/31/2013 0:00,0,-119.3137674,36.54122095
+1938,S9323,ImModo California 1 LLC_(Alta 5),0,Not Available,Tulare,1.5,Unit 1,SUN,12/31/2013 0:00,0,-119.3137674,36.54122095
+1939,S9324,ImModo California 1 LLC_(Alta 6),0,Not Available,Tulare,1.5,Unit 1,SUN,12/31/2013 0:00,0,-119.3137674,36.54122095
+1940,S0302,Terzian,0,Pristine Sun LLC,Fresno,1.25,1,SUN,5/1/2014 0:00,0,-119.415533,36.66811523
+1941,S9000,Ruiz Foods,0,Not Available,Tulare,1,1,SUN,1/1/2012 0:00,0,-119.3982813,36.53985992
+1942,S9060,City of Dinuba,0,S-Power (Sustainable Power Group),Tulare,1,1,SUN,1/1/2012 0:00,0,-119.4261038,36.53839245
+1944,H0261,Kaweah 3,0,Southern California Edison (SCE),Tulare,4.8,1,WAT,5/1/1913 0:00,0,-118.8354276,36.48605103
+1945,S0621,Monterey Regional Water Pollution Control Agency,0,Tesla Inc.,Monterey,1.12,939009-CA,SUN,12/21/2010 0:00,0,-121.7688723,36.70818389
+1946,S9042,Pollution Control Monterey Reg'l Water,0,Not Available,Monterey,1,1,SUN,1/1/2012 0:00,0,-121.801017,36.693303
+1952,S0304,San Benito Smart Park,0,Bay4 Energy Services LLC,San Benito,2,1,SUN,5/31/2014 0:00,0,-121.4041767,36.83290358
+1953,S0387,Enerparc CA1 LLC,0,"RC Energy Hollister, LLC",San Benito,1.5,Unit 1,SUN,6/16/2014 0:00,0,-121.4038485,36.83130072
+1954,S0428,Hollister Solar,0,Hollister Solar LLC,San Benito,1.5,Unit 1,SUN,4/1/2015 0:00,0,-121.4290222,36.86331353
+1955,S9061,City of Hollister,0,Not Available,San Benito,1,1,SUN,1/1/2012 0:00,0,-121.4459151,36.85717627
+1956,S0341,North Star Solar,0,North Star Solar LLC,Fresno,61.6,NSS1,SUN,6/19/2015 0:00,0,-120.4176278,36.73024322
+1957,S0423,Citizen Solar B,0,S-Power (Sustainable Power Group),Fresno,5,Unit 1,SUN,11/24/2015 0:00,0,-120.4297798,36.72189259
+1958,S0121,CalRENEW-1,0,Meridian Energy USA Inc,Fresno,5,CR1,SUN,4/9/2010 0:00,0,-120.3658769,36.76047364
+1961,S0703,Little Bear Solar 1,0,Longroad Energy,Fresno,40,Unit 1,SUN,12/16/2020 0:00,0,-120.3994423,36.71717755
+1962,S0704,Little Bear Solar 3,0,Longroad Energy,Fresno,20,Unit 1,SUN,12/14/2020 0:00,0,-120.3929664,36.71654785
+1963,S0705,Little Bear Solar 4,0,Longroad Energy,Fresno,50,Unit 1,SUN,12/14/2020 0:00,0,-120.4100694,36.71724497
+1964,S0706,Little Bear Solar 5,0,Longroad Energy,Fresno,50,Unit 1,SUN,12/16/2020 0:00,0,-120.4000314,36.71152211
+1965,S0179,La Joya Del Sol,0,X-Elio North America Inc.,Fresno,1.5,1,SUN,10/31/2012 0:00,0,-119.7975231,36.67853392
+1966,S0658,Clovis USD High School,0,Tesla Inc.,Fresno,1.01,Unit 1,SUN,6/14/2018 0:00,0,-119.6803967,36.81625535
+1967,S9014,Grundfos Pumps,0,Not Available,Fresno,1,1,SUN,1/1/2012 0:00,0,-119.6883561,36.77643502
+1968,S9020,The Gap Inc,0,Not Available,Fresno,1,1,SUN,1/1/2012 0:00,0,-119.7132087,36.7837357
+1969,S9026,CA State University Fresno,0,Not Available,Fresno,1,1,SUN,1/1/2012 0:00,0,-119.741645,36.81015758
+1970,S9056,E&J Gallo Winery,0,Not Available,Fresno,1,1,SUN,1/1/2012 0:00,0,-119.6978551,36.7638769
+1971,S9126,Olam West Coast,0,Not Available,Fresno,1.4,1,SUN,1/1/2012 0:00,0,-119.8462202,36.83863512
+1972,S9143,Wawona Frozen Foods / Alluvial Project,0,Not Available,Fresno,2.2,1,SUN,1/1/2012 0:00,0,-119.7116396,36.83912036
+1973,S9144,Wawona Frozen Foods / Cedar Project,0,Not Available,Fresno,2.2,1,SUN,1/1/2012 0:00,0,-119.7534191,36.71559839
+1974,S9145,City of Fresno - Fresno Yosemite Airport,0,Not Available,Fresno,2.3,1,SUN,1/1/2012 0:00,0,-119.7100647,36.7676541
+1978,S0632,Sanger USD Sanger High School,0,Tesla Inc.,Fresno,1.07,9366485-CA,SUN,1/27/2017 0:00,0,-119.5768756,36.70012759
+1979,S0659,Clovis USD East High School,0,Tesla Inc.,Fresno,1.01,Unit 1,SUN,4/15/2018 0:00,0,-119.6377839,36.79862682
+1981,H0387,Pine Flat,0,Kings River Conservation District,Fresno,165,"Unit 1, Unit 2, Unit 3",WAT,1/1/1984 0:00,0,-119.3273736,36.83250995
+1982,S9124,City of Santa Cruz Wastewater Treatment Plant,0,Not Available,Santa Cruz,1.3,1,SUN,1/1/2012 0:00,0,-122.0308061,36.96173369
+1990,W0354,International Turbine Research Inc.,0,International Turbine Research,Merced,18.43,WPRS 1,WND,6/14/1988 0:00,0,-121.1807197,37.05178739
+1991,S0691,Wright Solar,0,Clenera - Renewable Energy,Merced,200,W8785,SUN,1/3/2020 0:00,0,-121.0902446,36.97454039
+1992,S0337,Vega Solar,0,Longroad Energy,Merced,20,1,SUN,3/24/2015 0:00,0,-120.8057779,36.92846232
+1993,S9046,Almond Process Parreira,0,Not Available,Merced,1,1,SUN,1/1/2012 0:00,0,-120.8709897,36.979871
+1994,S0586,CED Oro Loma 1 & 2,0,RWE Clean Energy,Fresno,20,Unit 1,SUN,1/26/2017 0:00,0,-120.6695103,36.87851814
+1995,S9048,City of Madera,0,Not Available,Madera,1,1,SUN,1/1/2012 0:00,0,-120.1567313,36.94075936
+1996,S9059,Madera Community Hospital,0,Not Available,Madera,1,1,SUN,1/1/2012 0:00,0,-120.0461937,36.94137351
+1997,H0198,Friant-Kern Hydro Facility (River Outlet  Madera Canal  F-K),0,Friant Power Authority,Madera,30.57,"FR1, M1, RO1",WAT,1/1/1986 0:00,0,-119.7034413,36.99768642
+1998,H0626,Quinten Luallen,0,Friant Power Authority,Madera,7.38,RO2,WAT,5/23/2017 0:00,0,-119.7070897,37.00246852
+1999,H0272,Kings River,0,Pacific Gas & Electric (PG&E),Fresno,52,Unit 597,WAT,3/7/1962 0:00,0,-119.1587471,36.8881288
+2000,H0019,Balch #1,0,Pacific Gas & Electric (PG&E),Fresno,34,Unit 587,WAT,2/20/1927 0:00,0,-119.0877984,36.90908623
+2001,H0020,Balch #2,0,Pacific Gas & Electric (PG&E),Fresno,108,"Unit 588, Unit 589",WAT,11/26/1958 0:00,0,-119.0875575,36.90888501
+2002,H0215,Haas,0,Pacific Gas & Electric (PG&E),Fresno,144,"Unit 591, Unit 592",WAT,12/23/1958 0:00,0,-119.020159,36.92743548
+2003,H0229,Helms (Pumped Storage),0,Pacific Gas & Electric (PG&E),Fresno,1212,"Unit 936, Unit 937, Unit 938",WAT,6/30/1984 0:00,0,-118.968288,37.02934334
+2004,H0142,Division Creek,0,Los Angeles Department of Water & Power (LADWP),Inyo,0.65,1,WAT,3/1/1909 0:00,0,-118.2826035,36.9395073
+2008,S9041,Unified School District Morgan Hill,0,Not Available,Santa Clara,1,1,SUN,1/1/2012 0:00,0,-121.6353827,37.14906629
+2009,H0363,O'Neill (Pumping-Generating),0,United States Bureau of Reclamation,Merced,25.2,"UNIT 1, UNIT 2, UNIT 3, UNIT 4, UNIT 5, UNIT 6",WAT,1/1/1968 0:00,0,-121.0171989,37.08730796
+2010,H0452,W R Gianelli (Pumping-Generating),0,California Department of Water Resources,Merced,424,"1, 2, 3, 4, 5, 6, 7, 8",WAT,6/1/1968 0:00,0,-121.0772668,37.06909476
+2011,S0443,Quinto Solar PV Project,0,CD Arevon USA Inc.,Merced,108,Unit 1,SUN,11/25/2015 0:00,0,-121.0476578,37.11933112
+2012,S9050,Ingomar Packing Co.,0,Not Available,Merced,1,1,SUN,1/1/2012 0:00,0,-120.9587015,37.1498004
+2013,S0437,Sun Harvest Solar NDP1,0,SunHarvest Solar,Merced,1.5,Unit 1,SUN,5/1/2015 0:00,0,-120.6485377,37.05827445
+2016,S0421,Adera Solar,0,Adera Solar LLC,Madera,20,Unit 1,SUN,12/1/2015 0:00,0,-120.323967,37.12104241
+2018,S9164,CA Dept of Corrections Chowchilla,0,Not Available,Madera,3,1,SUN,1/1/2013 0:00,0,-120.1513192,37.08819051
+2019,H0310,Madera Canal (Station 980  1174  1302  1923),0,Madera-Chowchilla Water Power Authority,Madera,3.74,980,WAT,2/1/1985 0:00,0,-119.8996402,37.05680053
+2020,H0034,Big Creek 4,0,Southern California Edison (SCE),Madera,100,1,WAT,9/1/1923 0:00,0,-119.4900117,37.13904825
+2021,H0265,Kerckhoff PH 1,0,Pacific Gas & Electric (PG&E),Fresno,25.2,"Unit 593, Unit 594, Unit 595",WAT,8/15/1920 0:00,0,-119.5527755,37.09246406
+2022,H0266,Kerckhoff PH 2,0,Pacific Gas & Electric (PG&E),Fresno,155,Unit 932,WAT,5/6/1983 0:00,0,-119.5582416,37.07185297
+2023,H0448,San Joaquin #1A,0,Pacific Gas & Electric (PG&E),Madera,0.43,1,WAT,3/1/1919 0:00,0,-119.4940159,37.15888325
+2024,H0449,San Joaquin #2,0,Pacific Gas & Electric (PG&E),Madera,2.88,1,WAT,9/1/1917 0:00,0,-119.4974628,37.20326503
+2025,H0570,Wishon Powerhouse,0,Pacific Gas & Electric (PG&E),Madera,12.8,"1, 2, 3, 4",WAT,9/1/1910 0:00,0,-119.5047187,37.15101782
+2026,H0028,Big Creek 2,0,Southern California Edison (SCE),Fresno,67.1,UNIT 1,WAT,11/26/1913 0:00,0,-119.3054651,37.19912318
+2027,H0030,Big Creek 2A,0,Southern California Edison (SCE),Fresno,98.5,UNIT 1,WAT,8/1/1928 0:00,0,-119.3061212,37.19884872
+2028,H0032,Big Creek 3,0,Southern California Edison (SCE),Fresno,177,UNIT 1,WAT,9/1/1923 0:00,0,-119.3864397,37.14856523
+2029,H0036,Big Creek 8,0,Southern California Edison (SCE),Fresno,64.5,UNIT 1,WAT,1/1/1921 0:00,0,-119.3288572,37.2096453
+2030,H0313,Mammoth Pool,0,Southern California Edison (SCE),Madera,187,UNIT 1,WAT,3/1/1960 0:00,0,-119.3379096,37.22025922
+2031,H0027,Big Creek 1,0,Southern California Edison (SCE),Fresno,82.9,UNIT 1,WAT,11/1/1913 0:00,0,-119.2396923,37.20405923
+2032,H0161,Eastwood (Pumped Storage),0,Southern California Edison (SCE),Fresno,199,UNIT 1,WAT,1/1/1988 0:00,0,-119.2566818,37.14783118
+2033,H0040,Big Pine,0,Los Angeles Department of Water & Power (LADWP),Inyo,3.2,Unit 1,WAT,7/1/1925 0:00,0,-118.3242248,37.14216158
+2034,S9135,Foothill - De Anza Community College District,0,Not Available,Santa Clara,1.6,1,SUN,1/1/2012 0:00,0,-122.1247383,37.36314218
+2035,S9136,Foothill College - Pv Capstone,0,Not Available,Santa Clara,1.7,1,SUN,1/1/2012 0:00,0,-122.1302887,37.36369178
+2038,S9005,Google Inc.,0,Not Available,Santa Clara,1,1,SUN,1/1/2012 0:00,0,-122.0840426,37.4224406
+2039,S9031,Google Inc.,0,Not Available,Santa Clara,1,1,SUN,1/1/2012 0:00,0,-122.0844774,37.42144824
+2040,S9058,West Valley Mission Community College,0,Not Available,Santa Clara,1,1,SUN,1/1/2012 0:00,0,-122.0128283,37.26429493
+2041,S9069,Network Appliance/Chevron Energy Solutions,0,Not Available,Santa Clara,1,1,SUN,1/1/2012 0:00,0,-122.0261095,37.4151352
+2042,S9075,Applied Materials Inc.,0,Not Available,Santa Clara,1,1,SUN,1/1/2012 0:00,0,-122.0044728,37.3800204
+2043,S9081,Ohlone Community College District,0,Not Available,Santa Clara,1,1,SUN,1/1/2012 0:00,0,-121.9806871,37.4113706
+2044,S9128,Network Appliance,0,Not Available,Santa Clara,1.4,1,SUN,1/1/2012 0:00,0,-122.0261552,37.4159534
+2045,S9134,City of Sunnyvale Wastewater Treatment Plant,0,Not Available,Santa Clara,1.6,1,SUN,1/1/2012 0:00,0,-122.034921,37.42260736
+2046,S9149,Advanced Micro Decives,0,Not Available,Santa Clara,3,1,SUN,1/1/2012 0:00,0,-121.9992026,37.38657084
+2047,S9151,Spansion LLC,0,Not Available,Santa Clara,3,1,SUN,1/1/2012 0:00,0,-122.0055474,37.37747951
+2056,S9047,Airport Division City of San Jose,0,Not Available,Santa Clara,1,1,SUN,1/1/2012 0:00,0,-121.9225349,37.36510365
+2057,S9094,City of San Jose,0,Not Available,Santa Clara,1,1,SUN,1/1/2012 0:00,0,-121.8616185,37.31785791
+2058,S9095,City of Santa Clara,0,Not Available,Santa Clara,1,1,SUN,1/1/2012 0:00,0,-121.9216895,37.38044117
+2059,S9101,County of Santa Clara,0,Not Available,Santa Clara,1,1,SUN,1/1/2012 0:00,0,-121.9225419,37.38105976
+2060,S9103,County of Santa Clara,0,Not Available,Santa Clara,1.1,1,SUN,1/1/2012 0:00,0,-121.9218208,37.38104496
+2061,S9112,Independence HS,0,Not Available,Santa Clara,1.2,1,SUN,1/1/2012 0:00,0,-121.859144,37.36623043
+2062,S9127,San Jose Evergreen Community College,0,Not Available,Santa Clara,1.4,1,SUN,1/1/2012 0:00,0,-121.765925,37.30392005
+2063,S9172,Gridley Main Two,0,LIGHTBEAM POWER COMPANY GRIDLEY MAIN TWO LLC,Santa Clara,2.5,Unit 1,SUN,4/1/2013 0:00,0,-121.9157388,37.36740133
+2068,S0459,Frontier Solar LLC (Crow Creek),0,Clenera - Renewable Energy,Stanislaus,20,1,SUN,6/7/2016 0:00,0,-121.1490831,37.36779667
+2070,S9035,E & J Gallo Winery,0,Not Available,Merced,1,1,SUN,1/1/2012 0:00,0,-120.810811,37.37642659
+2073,H0301,Fairfield,0,Merced Irrigation District,Merced,0.9,1,WAT,6/1/1983 0:00,0,-120.4325142,37.36856198
+2074,S0429,Merced Solar,0,Merced Solar LLC,Merced,1.5,Unit 1,SUN,4/1/2015 0:00,0,-120.4844311,37.26777296
+2075,S0430,Mission Solar,0,Mission Solar LLC,Merced,1.5,Unit 1,SUN,4/1/2015 0:00,0,-120.4824871,37.26777296
+2076,S9090,City of Atwater,0,Not Available,Merced,1,1,SUN,1/1/2012 0:00,0,-120.6004962,37.36027565
+2077,S9267,Pristine Sun Fund 10 Fresno PGE LLC_(2097_Helton),0,Not Available,Merced,1.5,Unit 1,SUN,5/1/2015 0:00,0,-120.5074397,37.3511019
+2078,S9029,UC Merced,0,Not Available,Merced,1,1,SUN,1/1/2012 0:00,0,-120.4144857,37.36268662
+2079,H0120,Crane Valley,0,Pacific Gas & Electric (PG&E),Madera,0.9,1,WAT,7/1/1919 0:00,0,-119.5294752,37.29158822
+2080,H0450,San Joaquin #3,0,Pacific Gas & Electric (PG&E),Madera,4,3,WAT,8/1/1923 0:00,0,-119.5190292,37.25400428
+2081,H0499,Portal,0,Southern California Edison (SCE),Fresno,10,UNIT 1,WAT,12/1/1956 0:00,0,-119.1591006,37.25693658
+2082,H0041,Bishop Creek 2,0,Southern California Edison (SCE),Inyo,7.3,1,WAT,11/1/1908 0:00,0,-118.5735051,37.27366418
+2083,H0042,Bishop Creek 3,0,Southern California Edison (SCE),Inyo,7.84,1,WAT,6/1/1913 0:00,0,-118.5320118,37.30204154
+2084,H0394,Pleasant Valley,0,Los Angeles Department of Water & Power (LADWP),Inyo,2.7,Unit 1,WAT,2/1/1958 0:00,0,-118.5237046,37.41386428
+2085,H0043,Bishop Creek 4,0,Southern California Edison (SCE),Inyo,7.95,1,WAT,9/1/1905 0:00,0,-118.5018396,37.32299659
+2086,H0044,Bishop Creek 5,0,Southern California Edison (SCE),Inyo,3.8,1,WAT,6/1/1919 0:00,0,-118.4796457,37.33445375
+2087,H0045,Bishop Creek 6,0,Southern California Edison (SCE),Inyo,1.6,1,WAT,3/1/1913 0:00,0,-118.4627524,37.34997061
+2093,S9104,JATCO,0,Not Available,Alameda,1.1,1,SUN,1/1/2012 0:00,0,-122.0094532,37.59217005
+2094,S9121,Alameda Water District,0,Not Available,Alameda,1.3,1,SUN,1/1/2012 0:00,0,-121.9626359,37.50466712
+2099,W0395,Teichert Vernalis,0,Foundation Windpower,San Joaquin,1.5,WPRS 1,WND,1/1/1988 0:00,0,-121.3567217,37.61664868
+2104,H0234,Hickman,0,Turlock Irrigation District,Stanislaus,1.1,"1, 2",WAT,9/1/1979 0:00,0,-120.7463283,37.62155537
+2105,H0300,Canal Creek (RETA),0,Merced Irrigation District,Merced,0.9,1,WAT,8/1/1983 0:00,0,-120.4897892,37.45422557
+2106,H0325,Merced ID (Parker),0,Merced Irrigation District,Merced,2.7,1,WAT,4/1/1982 0:00,0,-120.44443,37.47783829
+2107,H0530,Turlock Lake,0,Turlock Irrigation District,Stanislaus,3.3,"1, 2, 3",WAT,7/1/1980 0:00,0,-120.5946657,37.61145924
+2108,H0175,Exchequer,0,Merced Irrigation District,Mariposa,94.5,EXC-1,WAT,1/1/1967 0:00,0,-120.2727602,37.58437154
+2109,H0316,McSwain,0,Merced Irrigation District,Mariposa,9,MCS-1,WAT,7/1/1967 0:00,0,-120.3101581,37.5220859
+2110,H0324,Merced Falls,0,Merced Irrigation District,Merced,10,Unit 598,WAT,7/21/1930 0:00,0,-120.3298894,37.52318263
+2111,H0110,Control Gorge,0,Los Angeles Department of Water & Power (LADWP),Inyo,38,Unit 1,WAT,4/1/1952 0:00,0,-118.5569378,37.43798922
+2112,H0328,Middle Gorge,0,Los Angeles Department of Water & Power (LADWP),Inyo,38,Unit 1,WAT,5/1/1952 0:00,0,-118.5692533,37.50998573
+2113,H0536,Upper Gorge,0,Los Angeles Department of Water & Power (LADWP),Inyo,36,Unit 1,WAT,6/1/1953 0:00,0,-118.589993,37.54600104
+2115,S0123,Sunset Reservoir North Basin Solar,0,Deriva Energy,San Francisco,4.5,1,SUN,11/1/2010 0:00,0,-122.4834865,37.7508877
+2116,S9064,Fremont Group  50 Beale/DG Cogen Partners LLC,0,Not Available,San Francisco,1,1,SUN,1/1/2012 0:00,0,-122.3962992,37.79116918
+2117,S9068,Market & Second Inc/Real Energy,0,Not Available,San Francisco,1,1,SUN,1/1/2012 0:00,0,-122.4007871,37.78931662
+2118,S9113,Fremont Group Inc.  50 Beale/DG Cogen Partners LLC,0,Not Available,San Francisco,1.2,1,SUN,1/1/2012 0:00,0,-122.396601,37.79144601
+2119,S9119,San Francisco State University,0,Not Available,San Francisco,1.2,1,SUN,1/1/2012 0:00,0,-122.4770436,37.72753095
+2120,S9131,Equity Office Property,0,Not Available,San Francisco,1.5,1,SUN,1/1/2012 0:00,0,-122.3942561,37.7972399
+2121,S9138,University of San Francisco,0,Not Available,San Francisco,2,1,SUN,1/1/2012 0:00,0,-122.4504563,37.77657407
+2122,S9140,Southeast Wastwater Treatment Plant/CCSF,0,Not Available,San Francisco,2,1,SUN,1/1/2012 0:00,0,-122.3918145,37.74179613
+2128,S9030,Port of Oakland,0,Not Available,Alameda,1,1,SUN,1/1/2012 0:00,0,-122.3005226,37.80454443
+2129,S9043,Peralta Community College Dist,0,Not Available,Alameda,1,1,SUN,1/1/2012 0:00,0,-122.1611238,37.79088605
+2130,S9066,Ghiradelli Chocolate,0,Not Available,Alameda,1,1,SUN,1/1/2012 0:00,0,-122.1504107,37.71198105
+2131,S9133,Oro Loma Sanitary District,0,Not Available,Alameda,1.5,1,SUN,1/1/2012 0:00,0,-122.1531334,37.66499137
+2135,S9025,AT&T Services Inc.,0,Not Available,Contra Costa,1,1,SUN,1/1/2012 0:00,0,-121.9647523,37.76807528
+2136,S9073,AT&T San Ramon (PV)/AT&T Services Inc,0,Not Available,Contra Costa,1,1,SUN,1/1/2012 0:00,0,-121.9645723,37.7659314
+2137,S9039,Community College District Chabot Las Positas,0,Not Available,Alameda,1,1,SUN,1/1/2012 0:00,0,-121.7985966,37.71301216
+2138,S9083,Carl Zeiss Meditec Inc.,0,Not Available,Alameda,1,1,SUN,1/1/2012 0:00,0,-121.8898001,37.71277196
+2139,S9123,Chabot - Las Positas Community College,0,Not Available,Alameda,1.3,1,SUN,1/1/2012 0:00,0,-121.9270772,37.7062873
+2140,S9146,Chabot Las Positas Community College District,0,Not Available,Alameda,2.3,1,SUN,1/1/2012 0:00,0,-121.7949296,37.71221261
+2143,S0220,RE Mohican,0,Kaiser Permanente,Alameda,1,1,SUN,9/1/2010 0:00,0,-121.7155008,37.70611387
+2144,S0619,Whitehorn Solar LLC,0,REV Renewables,Alameda,3.3,Unit 1,SUN,2/18/2016 0:00,0,-121.7174467,37.69150412
+2145,S9049,Health Plan Inc. Kaiser Foundation,0,Not Available,Alameda,1,1,SUN,1/1/2012 0:00,0,-121.7166268,37.7079016
+2150,W0394,Vasco Wind Energy Center,0,NextEra Energy Resources LLC,Alameda,78.2,WPRS 1,WND,1/1/1988 0:00,0,-121.7231094,37.78883917
+2151,W0423,Diablo Wind LLC,0,NextEra Energy Resources LLC,Alameda,17.98,WPRS 1,WND,12/7/2012 0:00,0,-121.6173394,37.76182458
+2152,W0426,Buena Vista Energy LLC,0,See WPRS for details,Contra Costa,38,WPRS 1,WND,5/1/2005 0:00,0,-121.6583815,37.80867523
+2167,W0461,Golden Hills,0,See WPRS for details,Alameda,85.92,WPRS 1,WND,12/1/2015 0:00,0,-121.6152981,37.77236904
+2168,W0468,Golden Hills North,0,See WPRS for details,Alameda,46,WPRS 1,WND,11/8/2017 0:00,0,-121.6318387,37.76728495
+2170,W0482,Altamont Winds LLC,0,Greenbacker Renewable Energy Company LLC,Alameda,57.5,WPRS 1,WND,7/2/2021 0:00,0,-121.6715709,37.7393605
+2173,W0396,Safeway Tracy,0,Foundation Windpower,San Joaquin,2,WPRS 1,WND,10/1/2010 0:00,0,-121.5216866,37.71366242
+2176,S0180,McHenry Solar Plant,0,AxInfra US LP,Stanislaus,25.5,1,SUN,7/20/2012 0:00,0,-120.9909758,37.7362552
+2182,H0599,Stone Drop,0,Modesto Irrigation District,Stanislaus,0.6,1,WAT,4/1/1984 0:00,0,-120.7190749,37.64338203
+2183,H0144,Don Pedro,0,Turlock Irrigation District,Tuolumne,170.9,"6710281, 6710282, 6710283, 8513242",WAT,5/1/1971 0:00,0,-120.4200626,37.6960239
+2184,H0276,La Grange,0,Turlock Irrigation District,Stanislaus,8.4,"1, 117954, 2, 342321",WAT,11/1/1989 0:00,0,-120.4438402,37.66966831
+2185,H0535,Upper Dawson,0,Turlock Irrigation District,Stanislaus,6,1,WAT,11/1/1983 0:00,0,-120.4707246,37.65094918
+2186,H0601,Moccasin,0,SF Public Utilities Commission,Tuolumne,100,"UNIT 1, UNIT 2",WAT,8/1/1969 0:00,0,-120.2993173,37.80929812
+2187,H0426,Rush Creek,0,Southern California Edison (SCE),Mono,8.4,"1, 2",WAT,10/1/1916 0:00,0,-119.123299,37.76701546
+2188,S9201,Garces (Oswell A),0,Not Available,Kern,1.5,Unit 1,SUN,12/31/2015 0:00,0,-118.9434001,37.64016793
+2192,S0665,MCE Richmond Solar PV Project,0,S-Power (Sustainable Power Group),Contra Costa,10.5,Unit 1,SUN,12/22/2017 0:00,0,-122.3778833,37.94561775
+2193,S9065,General Chemical Corp/Chevron Energy Solutions,0,Not Available,Contra Costa,1,1,SUN,1/1/2012 0:00,0,-122.3853436,37.931169
+2194,S9093,Wastewater District West County,0,Not Available,Contra Costa,1,1,SUN,1/1/2012 0:00,0,-122.379636,37.96699842
+2195,S9130,Central Marin Sanitation Agency,0,Not Available,Marin,1.5,1,SUN,1/1/2012 0:00,0,-122.4914802,37.95539525
+2198,S0662,BART Lafayette,0,Tesla Inc.,Contra Costa,1.01,Unit 1,SUN,9/12/2018 0:00,0,-122.1231442,37.89436528
+2202,S9016,College District Contra Costa Community 1,0,Not Available,Contra Costa,1,1,SUN,1/1/2012 0:00,0,-122.0737178,37.96649341
+2203,S9117,Contra Costa Community College - DVC,0,Not Available,Contra Costa,1.2,1,SUN,1/1/2012 0:00,0,-122.0700867,37.967287
+2204,S9142,AT&T Services  Inc.,0,Not Available,Contra Costa,2.1,1,SUN,1/1/2012 0:00,0,-122.0605201,37.90435392
+2206,S9170,Oakley Solar Project,0,Not Available,Contra Costa,1.5,Unit 1,SUN,8/1/2013 0:00,0,-121.7484431,38.00231442
+2208,S0644,Manteca Land 1,0,Not Available,San Joaquin,1,Unit 1,SUN,12/28/2017 0:00,0,-121.2150948,37.84018062
+2209,S9062,California Natural Products,0,Not Available,San Joaquin,1,1,SUN,1/1/2012 0:00,0,-121.2735179,37.82471909
+2210,S9150,Stockton Delta Water Supply Project,0,Not Available,San Joaquin,3,1,SUN,1/1/2012 0:00,0,-121.3262597,37.93488038
+2216,S9289,Foothill Farmington 2MW PV Project (2) (2012 PV RFO - 1),0,Not Available,San Joaquin,2,1,SUN,12/31/2014 0:00,0,-121.090124,37.92661068
+2217,H0488,Frankenheimer,0,South San Joaquin Irr District,Stanislaus,5.04,Unit 1,WAT,5/3/1983 0:00,0,-120.8068884,37.83037981
+2218,H0489,Woodward,0,South San Joaquin Irr District,Stanislaus,2.85,Unit 1,WAT,4/12/1982 0:00,0,-120.8792022,37.8606698
+2219,S0120,Robert O. Schulz Solar Farm #1 and #2,0,South San Joaquin Irr District,Stanislaus,1.37,"1, 2",SUN,5/1/2009 0:00,0,-120.8949387,37.85800931
+2220,S9122,Irrigation District South San Joaquin,0,Not Available,Stanislaus,1.3,1,SUN,1/1/2012 0:00,0,-120.8952524,37.85920126
+2221,H0353,New Melones,0,United States Bureau of Reclamation,Tuolumne,300,"UNIT 1, UNIT 2",WAT,6/1/1979 0:00,0,-120.5300647,37.94637586
+2222,H0527,Tulloch,0,Tri-Dam Project & Tri-Dam Power Authority,Tuolumne,30.6,"1, 2, 3",WAT,7/1/1957 0:00,0,-120.6049197,37.87613812
+2223,S9175,Fresh Air Energy IV - Sonora 1,0,QE - Foresight Group US,Tuolumne,1.5,Unit 1,SUN,12/1/2013 0:00,0,-120.5263791,37.89079632
+2225,H0336,Moccasin Low Head,0,SF Public Utilities Commission,Tuolumne,2.9,UNIT 1,WAT,7/1/1987 0:00,0,-120.3120567,37.81644995
+2227,H0141,Dion R Holm,0,SF Public Utilities Commission,Tuolumne,165,"UNIT 1, UNIT 2",WAT,8/1/1960 0:00,0,-119.9684732,37.89660513
+2228,H0274,Kirkwood (RPS Certified),0,SF Public Utilities Commission,Tuolumne,118.22,"UNIT 1, UNIT 2, UNIT 3",WAT,2/1/1967 0:00,0,-119.9532362,37.87768768
+2229,H0398,Poole,0,Southern California Edison (SCE),Mono,10,UNIT 1,WAT,6/1/1924 0:00,0,-119.2159899,37.94412196
+2230,S0528,Cottonwood Carport Solar,0,Onward Energy,Marin,1,Unit 1,SUN,5/16/2016 0:00,0,-122.5651665,38.12554918
+2233,S0695,SFDK Solar,0,S-Power (Sustainable Power Group),Solano,6.33,Unit 1,SUN,12/27/2019 0:00,0,-122.2325016,38.14059828
+2234,S9037,Health Plan Inc. Kaiser Foundation,0,Not Available,Solano,1,1,SUN,1/1/2012 0:00,0,-122.2487115,38.12593845
+2235,S9115,Vallejo Sanitation and Flood Control District,0,Not Available,Solano,1.2,1,SUN,1/1/2012 0:00,0,-122.2513028,38.09606548
+2250,S0343,Columbia Solar Energy LLC,0,REV Renewables,Contra Costa,19,Unit 1,SUN,8/1/2015 0:00,0,-121.8638462,38.019495
+2251,S9017,College District Contra Costa Community 2,0,Not Available,Contra Costa,1,1,SUN,1/1/2012 0:00,0,-121.859537,38.00454891
+2252,S9118,Contra Costa Community College - Los Medanos,0,Not Available,Contra Costa,1.2,1,SUN,1/1/2012 0:00,0,-121.8623992,38.00431226
+2262,W0355,High Winds,0,Seawest Energy Group,Solano,162,WPRS 1,WND,12/23/2003 0:00,0,-121.810841,38.14036355
+2263,W0356,"Solano Wind 3, 4 (SMUD Solano Phase 1)",0,Seawest Energy Group,Solano,213.3,WPRS 1,WND,4/18/2012 0:00,0,-121.767215,38.12649186
+2264,W0357,"Solano Wind 1,2 (SMUD Solano Phase 2)",0,FPL Energy Operating Services Inc,Solano,87,WPRS 1,WND,1/1/1994 0:00,0,-121.7606632,38.11030576
+2265,W0358,Shiloh I Wind (Victory Garden Prtnr PHIV),0,FPL Energy Operating Services Inc,Solano,150,WPRS 1,WND,3/30/2006 0:00,0,-121.8563725,38.11614807
+2266,W0371,FPL Energy Montezuma Winds LLC,0,NextEra Energy Resources LLC,Solano,36.8,WPRS 1,WND,1/25/2011 0:00,0,-121.8006044,38.16626168
+2267,W0380,EDF Renewable Windfarm V Inc (ENXCO V),0,See WPRS for details,Solano,15.5,WPRS 1,WND,1/1/1990 0:00,0,-121.8350018,38.11850673
+2268,W0384,"Shiloh Wind Project 2, LLC (Shiloh II & III)",0,Shiloh III Wind Project,Solano,153.75,WPRS 1,WND,1/1/1997 0:00,0,-121.8695768,38.17891403
+2269,W0392,Montezuma Wind II,0,NextEra Energy Resources LLC,Solano,78.2,WPRS 1,WND,1/1/1983 0:00,0,-121.8129695,38.11392921
+2270,W0421,"Shiloh III Wind Project, LLC",0,See WPRS for details,Solano,102.5,WPRS 1,WND,12/20/2012 0:00,0,-121.8631494,38.16603198
+2271,W0422,"Shiloh IV Wind Project, LLC",0,See WPRS for details,Solano,102.5,WPRS 1,WND,12/22/2011 0:00,0,-121.8406483,38.14560013
+2276,S0303,Bear Creek Solar,0,Bear Creek Solar LLC,San Joaquin,1.5,1,SUN,1/1/2014 0:00,0,-121.1492186,38.13562831
+2277,S9290,Ecos Energy   LLC_(Bear Creek Solar Project),0,Not Available,San Joaquin,1.5,Unit 1,SUN,12/31/2013 0:00,0,-121.1492763,38.1363826
+2278,H0073,Hogan,0,Calaveras County Water District,Calaveras,3,"GEN 1, GEN 2",WAT,4/1/1989 0:00,0,-120.8149646,38.14959074
+2280,H0008,Angels,0,Utica Power Authority,Calaveras,1.4,5505380,WAT,1/1/1940 0:00,0,-120.5393562,38.07197545
+2281,H0346,Murphys,0,Utica Power Authority,Calaveras,4.5,6920412,WAT,1/1/1954 0:00,0,-120.4463918,38.14710812
+2282,S9137,Angels PH  Utica Power Authority,0,Not Available,Calaveras,1.8,1,SUN,1/1/2012 0:00,0,-120.5395621,38.0723947
+2283,H0107,Collierville,0,Northern California Power Agency,Calaveras,253,"GEN 1, GEN 2",WAT,11/1/1989 0:00,0,-120.3798407,38.14480355
+2284,H0383,Phoenix,0,Pacific Gas & Electric (PG&E),Tuolumne,1.6,1,WAT,2/1/1940 0:00,0,-120.3265606,38.03207751
+2285,H0498,Stanislaus,0,Pacific Gas & Electric (PG&E),Tuolumne,91,Unit 583,WAT,3/11/1963 0:00,0,-120.3705326,38.13898409
+2286,H0495,Spring Gap,0,Pacific Gas & Electric (PG&E),Tuolumne,6,1,WAT,9/1/1921 0:00,0,-120.1116954,38.18650412
+2287,H0519,Sand Bar,0,Tri-Dam Power Authority,Tuolumne,16.2,Unit 1,WAT,5/1/1986 0:00,0,-120.1501439,38.18611621
+2288,H0296,Lundy,0,Southern California Edison (SCE),Mono,3,1,WAT,12/1/1911 0:00,0,-119.1722937,38.04233911
+2289,S9109,U.S. Coast Guard,0,Not Available,Sonoma,1.1,1,SUN,1/1/2012 0:00,0,-123.0349533,38.31909926
+2294,S9024,Codding Enterprises,0,Not Available,Sonoma,1,1,SUN,1/1/2012 0:00,0,-122.6792392,38.32323239
+2295,S9057,Codding Enterprises Ltd Partnership,0,Not Available,Sonoma,1,1,SUN,1/1/2012 0:00,0,-122.6813662,38.32348035
+2296,S9307,Petaluma Solar Millennium Fund LLC_(Petaluma Solar #1101),0,Not Available,Sonoma,1.5,Unit 1,SUN,12/31/2013 0:00,0,-122.5782727,38.25155103
+2297,S9308,Petaluma Solar Millennium Fund LLC_(Petaluma Solar #1102),0,Not Available,Sonoma,1.5,Unit 1,SUN,12/31/2013 0:00,0,-122.5782727,38.25155103
+2298,S9125,County of Sonoma,0,Not Available,Sonoma,1.3,1,SUN,1/1/2012 0:00,0,-122.4579146,38.28081309
+2299,S9023,Napa Valley College,0,Not Available,Napa,1,1,SUN,1/1/2012 0:00,0,-122.2789372,38.27260632
+2300,S9070,Pokka Bottling,0,Not Available,Napa,1,1,SUN,1/1/2012 0:00,0,-122.2769646,38.19091643
+2301,S9132,Mid Valley Dairy,0,Not Available,,1.5,1,SUN,1/1/2012 0:00,0,-122.1570757,38.20435982
+2304,S0362,Fairfield-Suisun Sewer District - WTP,0,EDP Renewables North America LLC,Solano,1,1,SUN,12/23/2009 0:00,0,-122.0932367,38.23158367
+2305,S0414,North Bay Solar 1,0,S-Power (Sustainable Power Group),Solano,1,NBWT,SUN,8/1/2013 0:00,0,-121.965173,38.3009389
+2306,S9074,Anheuser Busch Fairfield  PV Phase/Anheuser Busch,0,Not Available,Solano,1,1,SUN,1/1/2012 0:00,0,-122.0933265,38.232308
+2307,S9148,ANHEUSER BUSCH INC,0,Not Available,Solano,1,1,SUN,1/1/2012 0:00,0,-122.0932426,38.23183941
+2308,S9162,CA Dept of Corrections Solano (CSPS),0,Not Available,Solano,1,1,SUN,1/1/2013 0:00,0,-121.9825652,38.32588575
+2309,S9303,GASNA 27P (GASNA 27P) - RAM 2,0,Not Available,Solano,14,Unit 1,SUN,12/31/2014 0:00,0,-121.994093,38.35158699
+2312,W0398,Anheuser-Busch,0,Foundation Windpower,Solano,1.5,WPRS 1,WND,12/1/2011 0:00,0,-122.0892346,38.23228213
+2313,W0456,Anheuser-Busch #2,0,Foundation Windpower,Solano,1.6,WPRS 1,WND,12/31/1989 0:00,0,-122.0920977,38.23350719
+2317,S9304,Vaca Solar Millenium Fund LLC (Vaca Solar #100),0,Not Available,Solano,1.5,Unit 1,SUN,12/31/2013 0:00,0,-121.9217928,38.32916197
+2319,S0154,Point Pleasant (Lawrence Solar Farm),0,Sacramento PV Energy LLC,Sacramento,1,PV1,SUN,12/30/2011 0:00,0,-121.4312781,38.33887019
+2320,S0156,Grundman-Wilkinson Solar Farm (Bruceville Road),0,Sacramento PV Energy LLC,Sacramento,18,PV1,SUN,12/28/2011 0:00,0,-121.4131708,38.36568322
+2321,S0203,Green Acres Solar Facility 2,0,OL Elk Grove Trust a Delaware Statutory Trust,Sacramento,1,1,SUN,9/1/2012 0:00,0,-121.4618093,38.2834614
+2322,S0204,Green Acres Solar Facility 1,0,OL Elk Grove Trust a Delaware Statutory Trust,Sacramento,3,1,SUN,9/1/2012 0:00,0,-121.4657724,38.28230645
+2323,S0205,RE Kammerer Road 1,0,Canadian Solar,Sacramento,6.65,1,SUN,1/1/2012 0:00,0,-121.3875505,38.36365566
+2324,S0206,RE Kammerer Road 2,0,Canadian Solar,Sacramento,6.65,1,SUN,1/1/2012 0:00,0,-121.383446,38.36368148
+2325,S0207,RE Kammerer Road 3,0,Canadian Solar,Sacramento,6.65,1,SUN,1/1/2012 0:00,0,-121.382269,38.36092861
+2326,S0284,RE Bruceville Solar 1,0,Canadian Solar,Sacramento,6.65,1,SUN,1/1/2012 0:00,0,-121.4145801,38.34896286
+2327,S0285,RE Bruceville Solar 2,0,Canadian Solar,Sacramento,6.65,1,SUN,1/1/2012 0:00,0,-121.4149701,38.34670869
+2328,S0286,RE Bruceville Solar 3,0,Canadian Solar,Sacramento,6.65,1,SUN,1/1/2012 0:00,0,-121.4099457,38.34763049
+2329,S0155,Kost (Fleshman Solar Farm),0,Sacramento PV Energy LLC,Sacramento,3,PV1,SUN,11/19/2011 0:00,0,-121.337797,38.23800298
+2330,S0157,Boessow (Van Connett Solar Farm),0,Sacramento PV Energy LLC,Sacramento,3,PV1,SUN,12/20/2011 0:00,0,-121.2789767,38.25374088
+2331,S0211,RE McKenzie 1,0,Canadian Solar,Sacramento,5,1,SUN,1/1/2012 0:00,0,-121.2949706,38.30911777
+2332,S0212,RE McKenzie 2,0,Canadian Solar,Sacramento,5,1,SUN,1/1/2012 0:00,0,-121.2917955,38.31051403
+2333,S0213,RE McKenzie 3,0,Canadian Solar,Sacramento,5,1,SUN,1/1/2012 0:00,0,-121.2916322,38.30711722
+2334,S0214,RE McKenzie 4,0,Canadian Solar,Sacramento,5,1,SUN,1/1/2012 0:00,0,-121.2933861,38.30410581
+2335,S0215,RE McKenzie 5,0,Canadian Solar,Sacramento,5,1,SUN,1/1/2012 0:00,0,-121.2873306,38.30556728
+2336,S0216,RE McKenzie 6,0,Canadian Solar,Sacramento,5,1,SUN,1/1/2012 0:00,0,-121.2834823,38.30543824
+2337,H0080,Camanche,0,East Bay Municipal Utility District (EBMUD),San Joaquin,10.8,"1, 2, 3",WAT,7/1/1983 0:00,0,-121.0240015,38.22549779
+2338,S0602,Rancho Seco Solar,0,D. E. Shaw,Sacramento,10.9,Unit 1,SUN,8/11/2016 0:00,0,-121.1144812,38.33985184
+2341,S0701,Rancho Seco Solar II,0,D. E. Shaw,Sacramento,160,RSS2,SUN,12/1/2020 0:00,0,-121.1185728,38.34377774
+2342,H0380,Pardee,0,East Bay Municipal Utility District (EBMUD),Calaveras,23.6,"Unit 1, Unit 2, Unit 3",WAT,7/1/1930 0:00,0,-120.8505076,38.25677796
+2347,H0171,Electra,0,Pacific Gas & Electric (PG&E),Amador,99,"Unit 575, Unit 576, Unit 577",WAT,6/29/1948 0:00,0,-120.6699994,38.33100429
+2348,H0022,Beardsley,0,Tri-Dam Project & Tri-Dam Power Authority,Tuolumne,11.7,1,WAT,7/1/1956 0:00,0,-120.0770442,38.20253424
+2349,H0145,Donnells,0,Tri-Dam Project & Tri-Dam Power Authority,Tuolumne,72,1,WAT,7/1/1956 0:00,0,-120.0341499,38.24647926
+2351,S9309,Chalk Hill Solar Project  LLC_(CHSP),0,Not Available,Sonoma,0.3,Unit 1,SUN,12/31/2013 0:00,0,-122.7501933,38.49370596
+2353,H0343,Monticello,0,Solano Irrigation District,Yolo,11.5,"1, 2, 3",WAT,6/1/1983 0:00,0,-122.1041786,38.51355511
+2354,S9404,Putah Creek Solar Farm,0,Not Available,Yolo,2,1,SUN,12/1/2014 0:00,0,-121.9946675,38.5215985
+2355,S0630,Genentech Inc. - Vacaville,0,Tesla Inc.,Solano,7.9,"Unit 1, Unit 2",SUN,5/8/2017 0:00,0,-121.9454871,38.38808503
+2356,S9006,Alza Corporation (700 Eubanks),0,Not Available,Solano,1,1,SUN,1/1/2012 0:00,0,-121.9643231,38.40023113
+2357,S9009,Mariani Packing Co. Inc.,0,Not Available,Solano,1,1,SUN,1/1/2012 0:00,0,-121.9509083,38.40698241
+2358,S9100,Norvartis Pharmaceuticals Corp,0,Not Available,Solano,1,1,SUN,1/1/2012 0:00,0,-121.9628171,38.38849893
+2360,S0110,Vaca Dixon Solar Station,0,Pacific Gas & Electric (PG&E),Solano,2,1,SUN,12/22/2009 0:00,0,-121.9264219,38.41073401
+2361,S9108,Superior Packing Co.,0,Not Available,Solano,1.1,1,SUN,1/1/2012 0:00,0,-121.8205444,38.42055077
+2362,W0405,Superior Farms,0,Foundation Windpower,Solano,1,WPRS 1,WND,12/1/2012 0:00,0,-121.8174537,38.42012385
+2363,S0310,Grasslands EPWF,0,Yolo County General Services,Yolo,2.5,1,SUN,7/1/2013 0:00,0,-121.6944322,38.50153924
+2364,S0311,Grasslands RES-BCT,0,Yolo County General Services,Yolo,2.5,1,SUN,7/1/2013 0:00,0,-121.6923464,38.50159921
+2366,S0660,Sacramento Regional County Sanitation District,0,Tesla Inc.,Sacramento,3.73,Unit 1,SUN,1/26/2018 0:00,0,-121.4661424,38.43619627
+2367,S9092,Siemens Industry Inc.,0,Not Available,Sacramento,1,1,SUN,1/1/2012 0:00,0,-121.3923821,38.48741041
+2368,S9102,Granite Construction Company,0,Not Available,Sacramento,1.1,1,SUN,1/1/2012 0:00,0,-121.4057884,38.54287508
+2369,S9139,Campbell Soup Supply Company LLC,0,Not Available,Sacramento,2,1,SUN,1/1/2012 0:00,0,-121.4756082,38.51675401
+2370,S9147,U.S. National Leasing LLC_(Depot Park),0,Not Available,Sacramento,3,1,SUN,1/1/2012 0:00,0,-121.401387,38.51535397
+2374,S0090,Hedge PV (S0090),0,Sacramento Municipal Utility District (SMUD),Sacramento,0.2,1,SUN,6/1/1994 0:00,0,-121.3540542,38.50517674
+2375,S0280,RE Dillard Road 1,0,Canadian Solar,Sacramento,3.99,1,SUN,1/1/2012 0:00,0,-121.1826038,38.46998654
+2376,S0281,RE Dillard Road 2,0,Canadian Solar,Sacramento,3.99,1,SUN,1/1/2012 0:00,0,-121.1775981,38.46683294
+2377,S0282,RE Dillard Road 3,0,Canadian Solar,Sacramento,3.99,1,SUN,1/1/2012 0:00,0,-121.1823891,38.46395492
+2378,S0283,RE Dillard Road 4,0,Canadian Solar,Sacramento,0.53,1,SUN,1/1/2012 0:00,0,-121.1801686,38.46279946
+2379,S9097,FAA Norcal TRACON,0,Not Available,Sacramento,1,1,SUN,1/1/2012 0:00,0,-121.2590563,38.56134046
+2382,S9107,Nilsen Farms,0,Not Available,Sacramento,1.1,1,SUN,1/1/2012 0:00,0,-121.1635997,38.45015476
+2383,H0516,Tiger Creek,0,Pacific Gas & Electric (PG&E),Amador,60,"Unit 584, Unit 585",WAT,8/1/1931 0:00,0,-120.4926351,38.44909128
+2384,H0558,West Point,0,Pacific Gas & Electric (PG&E),Amador,14,Unit 586,WAT,11/21/1948 0:00,0,-120.5494827,38.42090257
+2385,S9182,Fresh Air Energy  LLC_(Pioneer 1),0,Not Available,Amador,1.5,Unit 1,SUN,12/31/2013 0:00,0,-120.5954275,38.41324673
+2386,H0431,Salt Springs,0,Pacific Gas & Electric (PG&E),Amador,46,"Unit 580, Unit 581",WAT,6/15/1931 0:00,0,-120.2181542,38.49789352
+2387,H0356,Spicer,0,Northern California Power Agency,Tuolumne,6,"GEN 1, GEN 2, GEN 3",WAT,2/1/1990 0:00,0,-120.00077,38.39159936
+2389,H0485,Warm Springs,0,Sonoma County Water Agency,Sonoma,2.79,3385,WAT,12/1/1988 0:00,0,-123.011274,38.72212151
+2390,S9055,Clos Du Bois Wines Inc.,0,Not Available,Sonoma,1,1,SUN,1/1/2012 0:00,0,-122.8778117,38.68492006
+2392,S9082,Cemex Construction Materials Pacific LLC,0,Not Available,Yolo,1,1,SUN,1/1/2012 0:00,0,-121.9463289,38.68235455
+2393,W0399,Cemex Madison,0,Foundation Windpower,Yolo,1,WPRS 1,WND,11/1/2011 0:00,0,-121.9352091,38.68762225
+2394,S0115,Yolo County Solar Project,0,Yolo County General Services,Yolo,1,1,SUN,7/1/2010 0:00,0,-121.7295241,38.65993745
+2395,S9010,Co. Inc. #21 Walgreens,0,Not Available,Yolo,1,1,SUN,1/1/2012 0:00,0,-121.7127443,38.67498592
+2396,S9022,Tony's Fine Foods,0,Not Available,Yolo,1,1,SUN,1/1/2012 0:00,0,-121.5610083,38.59150207
+2397,S9110,Amir Development Company,0,Not Available,Yolo,1.1,1,SUN,1/1/2012 0:00,0,-121.7139229,38.67502369
+2400,S0405,Strata Roof 1,0,Strata Clean Energy,Sacramento,1,Unit 1,SUN,5/15/2013 0:00,0,-121.5062058,38.6427292
+2401,S0661,US General Service Administration - Sacramento,0,Tesla Inc.,Sacramento,1.38,Unit 1,SUN,3/29/2018 0:00,0,-121.3980155,38.60085957
+2403,S0719,Wildflower Solar 1,0,"Wildflower Solar I, LLC",Sacramento,13,CAWF1,SUN,12/14/2020 0:00,0,-121.4782364,38.70396409
+2404,H0360,Nimbus,0,United States Bureau of Reclamation,Sacramento,13.5,"UNIT 1, UNIT 2",WAT,5/1/1955 0:00,0,-121.2203091,38.63747549
+2405,H0186,Folsom,0,United States Bureau of Reclamation,Sacramento,198.72,"1, 2, 3",WAT,6/1/1955 0:00,0,-121.1584726,38.70672368
+2406,S0116,Aerojet I (3.6MW) Solar Plant,0,Altus Power America Inc,Sacramento,3.6,Aerojet I,SUN,12/23/2009 0:00,0,-121.1631206,38.61361985
+2407,S0130,Aerojet II (2.4MW) Solar Plant,0,Altus Power America Inc,Sacramento,2.4,Aerojet II,SUN,5/21/2010 0:00,0,-121.1705888,38.60955662
+2408,S0622,Intel Corporation - Folsom Carport Phase 1,0,Tesla Inc.,Sacramento,1.1,956100-CA,SUN,7/9/2010 0:00,0,-121.1661023,38.64681619
+2409,S0629,Intel Corporation - Folsom Carport Phase 3,0,Tesla Inc.,Sacramento,6.45,9568336-CA,SUN,9/29/2016 0:00,0,-121.1646431,38.64547005
+2410,S9096,Intel Corporation - Folsom Carport Phase 2,0,Not Available,Sacramento,1,1,SUN,1/1/2012 0:00,0,-121.1727249,38.64423572
+2411,S9098,Intel Corporation,0,Not Available,Sacramento,1,1,SUN,1/1/2012 0:00,0,-121.1677231,38.64549804
+2414,S0309,Cloverdale Solar I,0,GreenLead-TNX Management,Sonoma,2,1,SUN,6/1/2014 0:00,0,-123.0190857,38.77576032
+2415,S0692,Cloverdale Solar Center,0,"Adapture Renewables, Inc.",Sonoma,1,Unit 1,SUN,6/11/2019 0:00,0,-123.0204613,38.7691713
+2416,S9013,Fosters Wine Estates Inc.,0,Not Available,Sonoma,1,1,SUN,1/1/2012 0:00,0,-122.9726483,38.76256278
+2417,S9305,Cloverdale Solar 1  LLC_(FSEC1),0,Not Available,Sonoma,1.5,Unit 1,SUN,12/31/2013 0:00,0,-123.0170774,38.77389589
+2418,S9306,Cloverdale Solar 2  LLC_(FSEC2),0,Not Available,Sonoma,1.5,Unit 1,SUN,12/31/2013 0:00,0,-123.0166511,38.77475196
+2437,H0576,Clear Lake,0,Yolo County Flood Control & Water Conservation District,Lake,2.5,3381,WAT,1/1/1986 0:00,0,-122.5666544,38.92354984
+2438,S9051,Power Agency Northern California,0,Not Available,Lake,1,1,SUN,1/1/2012 0:00,0,-122.6509539,38.77048062
+2440,S9008,Foods Inc. United Natural,0,Not Available,Placer,1,1,SUN,1/1/2012 0:00,0,-121.2831919,38.81412884
+2441,S9268,Lincoln Solar Millenium Fund LLC_(Lincoln Solar #A),0,Not Available,Placer,1.5,Unit 1,SUN,12/31/2013 0:00,0,-121.3317276,38.90803998
+2442,S9269,Lincoln Solar Millenium Fund LLC_(Lincoln Solar #B),0,Not Available,Placer,1.5,Unit 1,SUN,12/31/2013 0:00,0,-121.3043748,38.87011875
+2443,S9270,Lincoln Solar Millenium Fund LLC_(Nicholas Solar #C),0,Not Available,Placer,1.5,Unit 1,SUN,12/31/2013 0:00,0,-121.2968506,38.87252688
+2448,H0357,Newcastle,0,Pacific Gas & Electric (PG&E),Placer,11.5,Unit 943,WAT,10/28/1986 0:00,0,-121.0929781,38.83523352
+2449,H0569,Wise,0,Pacific Gas & Electric (PG&E),Placer,17.1,"Unit 1, Unit 2",WAT,3/4/1917 0:00,0,-121.0985213,38.8897785
+2450,H0096,Chili Bar,0,Sacramento Municipal Utility District (SMUD),El Dorado,7.02,1,WAT,3/1/1965 0:00,0,-120.8131446,38.77182621
+2451,H0167,El Dorado,0,El Dorado Irrigation District,El Dorado,20,"1, 2",WAT,1/26/1924 0:00,0,-120.6191481,38.79350586
+2452,H0422,Rock Creek L.P.,0,Hydroland,El Dorado,3.6,"1, 2",WAT,4/1/1986 0:00,0,-120.7784816,38.7834169
+2453,H0482,Slab Creek,0,Sacramento Municipal Utility District (SMUD),El Dorado,0.4,1,WAT,7/1/1983 0:00,0,-120.6981056,38.7725536
+2454,H0565,White Rock,0,Sacramento Municipal Utility District (SMUD),El Dorado,230,"Unit 1, Unit 2",WAT,6/1/1968 0:00,0,-120.7873584,38.76530602
+2455,H0081,Camino,0,Sacramento Municipal Utility District (SMUD),El Dorado,308,"1, 2, H1, H2",WAT,10/1/1963 0:00,0,-120.5366207,38.82829407
+2456,H0253,Jaybird,0,Sacramento Municipal Utility District (SMUD),El Dorado,154,"Unit 1, Unit 2",WAT,4/1/1961 0:00,0,-120.531701,38.834069
+2457,H0532,Union Valley,0,Sacramento Municipal Utility District (SMUD),El Dorado,46.7,Unit 1,WAT,10/1/1963 0:00,0,-120.4443252,38.86430881
+2458,H0255,Jones Fork,0,Sacramento Municipal Utility District (SMUD),El Dorado,11.5,Unit 1,WAT,6/1/1985 0:00,0,-120.3818697,38.85029596
+2459,H0414,Robbs Peak,0,Sacramento Municipal Utility District (SMUD),El Dorado,29.5,Unit 1,WAT,10/1/1965 0:00,0,-120.3782885,38.89649089
+2460,S9015,County of Lake,0,Not Available,Lake,1,1,SUN,1/1/2012 0:00,0,-122.9190936,39.10665851
+2461,H0243,Indian Valley Dam,0,Yolo County Flood Control & Water Conservation District,Lake,3.01,"1641, 1642, 8332",WAT,10/1/1983 0:00,0,-122.5355669,39.078835
+2462,S9019,Power Agency Northern CA,0,Not Available,Lake,1,1,SUN,1/1/2012 0:00,0,-122.6270227,38.98407632
+2467,S9311,Pristine Sun Fund 8 Sutter PGE LLC_(2179_Smotherman),0,Not Available,Sutter,0.5,Unit 1,SUN,12/31/2013 0:00,0,-121.4985505,39.09393353
+2469,H0083,Camp Far West,0,Sacramento Municipal Utility District (SMUD),Placer,6.8,1,WAT,2/1/1985 0:00,0,-121.3169787,39.04879252
+2470,H0054,Combie South (3 @ 500kW = 1.5MW),0,Nevada Irrigation District,Nevada,1.5,1,WAT,4/27/1984 0:00,0,-121.0590655,39.00962617
+2471,H0109,Combie North (550 kW),0,Nevada Irrigation District,Placer,0.3,6P,WAT,10/1/1987 0:00,0,-121.0587405,39.01017581
+2472,H0217,Halsey,0,Pacific Gas & Electric (PG&E),Placer,11,Unit 569,WAT,12/6/1916 0:00,0,-121.0419116,38.95696446
+2473,H0374,Oxbow,0,Placer County Water Agency,Placer,6,915,WAT,10/1/1966 0:00,0,-120.7465513,39.0035435
+2474,H0406,Ralston,0,Placer County Water Agency,Placer,79,914,WAT,10/1/1966 0:00,0,-120.7250536,39.00097162
+2475,H0275,Middle Fork American River,0,Placer County Water Agency,Placer,116,"UNIT 1, UNIT 2",WAT,10/1/1966 0:00,0,-120.5963577,39.02473756
+2476,H0195,French Meadows,0,Placer County Water Agency,Placer,15,911,WAT,10/1/1966 0:00,0,-120.4060944,39.07796922
+2477,H0228,Hell Hole,0,Placer County Water Agency,Placer,0.73,1,WAT,7/1/1983 0:00,0,-120.4080589,39.05647585
+2478,H0289,Loon Lake,0,Sacramento Municipal Utility District (SMUD),El Dorado,82,Unit 1,WAT,9/1/1971 0:00,0,-120.3244777,38.98271096
+2479,H0283,Lake Mendocino,0,City of Ukiah,Mendocino,3.5,"G1, G2",WAT,5/1/1987 0:00,0,-123.1858144,39.19755399
+2480,S9052,Community College Mendocino,0,Not Available,Mendocino,1,1,SUN,1/1/2012 0:00,0,-123.2235481,39.18625096
+2481,S9264,East Side Calpella 2MW PV Project (1) (2012 PV RFO - 1),0,Not Available,Mendocino,2,Unit 1,SUN,12/31/2014 0:00,0,-123.1947562,39.14304738
+2482,S9265,Parducci 2MW PV Project (3) (2012 PV RFO - 1),0,Not Available,Mendocino,2,Unit 1,SUN,12/31/2014 0:00,0,-123.1947562,39.14304738
+2483,S9266,Ruddick-2 2MW PV Project (4) (2012 PV RFO - 1),0,Not Available,Mendocino,2,Unit 1,SUN,12/31/2014 0:00,0,-123.1947562,39.14304738
+2485,S9032,Lomo Cold Storage LLC,0,Not Available,Sutter,1,1,SUN,1/1/2012 0:00,0,-121.6394168,39.2199445
+2486,S9099,City of Yuba,0,Not Available,Sutter,1,1,SUN,1/1/2012 0:00,0,-121.636616,39.144094
+2487,S9310,Pristine Sun Fund 1  LLC_(2127_Harris),0,Pristine Sun LLC,Butte,1.25,Unit 1,SUN,12/31/2013 0:00,0,-121.6694843,39.29212295
+2490,S9078,Yuba College,0,Not Available,Yuba,1,1,SUN,1/1/2012 0:00,0,-121.5339974,39.12511967
+2491,H0348,Narrows 1,0,Yuba County Water Agency,Nevada,12,Unit 553,WAT,12/29/1942 0:00,0,-121.2717124,39.23638355
+2492,H0354,Narrows 2,0,Yuba County Water Agency,Yuba,55,1,WAT,6/5/1970 0:00,0,-121.2703519,39.23903734
+2493,H0005,Alta,0,Pacific Gas & Electric (PG&E),Placer,1,"1, 2",WAT,11/1/1902 0:00,0,-120.8035115,39.21598098
+2494,H0095,Chicago Park,0,Nevada Irrigation District,Nevada,44,UNIT 1,WAT,11/1/1965 0:00,0,-120.8910418,39.17811549
+2495,H0133,Deer Creek,0,Pacific Gas & Electric (PG&E),Nevada,5.5,1,WAT,5/1/1908 0:00,0,-120.8441582,39.29811858
+2496,H0156,Dutch Flat #1,0,Pacific Gas & Electric (PG&E),Placer,22,Unit 568,WAT,3/29/1943 0:00,0,-120.8356504,39.21696738
+2497,H0157,Dutch Flat 2,0,Nevada Irrigation District,Nevada,27.3,UNIT 1,WAT,11/1/1965 0:00,0,-120.8353231,39.21834872
+2498,H0347,Scotts Flat (860kW Nameplate Capacity),0,Nevada Irrigation District,Nevada,1,7P,WAT,2/1/1985 0:00,0,-120.932508,39.27211082
+2499,H0424,Rollins,0,Nevada Irrigation District,Nevada,13.5,UNIT 1,WAT,8/1/1980 0:00,0,-120.9532567,39.13426831
+2500,H0154,Drum #1,0,Pacific Gas & Electric (PG&E),Placer,55.5,"Unit 563, Unit 564, Unit 565, Unit 566",WAT,11/26/1913 0:00,0,-120.7672907,39.2568514
+2501,H0155,Drum #2,0,Pacific Gas & Electric (PG&E),Placer,49.5,Unit 567,WAT,12/18/1965 0:00,0,-120.7668888,39.25734281
+2504,H0401,Potter Valley,0,Pacific Gas & Electric (PG&E),Mendocino,9.46,"1, 2, 3",WAT,2/1/1939 0:00,0,-123.1279555,39.36180738
+2506,S9120,Roplast Industries Inc.,0,Not Available,Butte,1.2,1,SUN,1/1/2012 0:00,0,-121.5623726,39.47750468
+2507,S9183,Pristine Sun Fund 1  LLC_(2125_Jarvis),0,Not Available,Butte,1,Unit 1,SUN,12/31/2013 0:00,0,-121.5661698,39.48359823
+2508,S9184,Pristine Sun Fund 1  LLC_(2094_Buzzelle),0,Not Available,Butte,1.25,Unit 1,SUN,12/31/2013 0:00,0,-121.5639017,39.38780701
+2511,H0352,Colgate,0,Yuba County Water Agency,Yuba,315,"1, 2",WAT,3/12/1970 0:00,0,-121.18884,39.33091649
+2512,H0053,Fish Power (NPCap = 0.15MW - No Reporting RQD),0,Yuba County Water Agency,Yuba,0.15,HY1,WAT,6/1/1986 0:00,0,-121.140498,39.39019935
+2513,H0351,Bowman,0,Nevada Irrigation District,Nevada,3.6,Unit 1,WAT,9/1/1986 0:00,0,-120.6534217,39.44834109
+2514,H0490,Spaulding #1,0,Pacific Gas & Electric (PG&E),Nevada,7.04,1,WAT,5/1/1928 0:00,0,-120.644773,39.32462215
+2515,H0491,Spaulding #2,0,Pacific Gas & Electric (PG&E),Nevada,3.7,1,WAT,7/1/1928 0:00,0,-120.6453057,39.32460728
+2516,H0492,Spaulding #3,0,Pacific Gas & Electric (PG&E),Nevada,6.61,572,WAT,1/1/1929 0:00,0,-120.6355275,39.33767536
+2517,H0497,Stampede,0,United States Bureau of Reclamation,Sierra,3.65,"1, 2",WAT,1/1/1988 0:00,0,-120.1045254,39.47040867
+2519,H0500,Stony Gorge,0,Silicon Valley Power,Glenn,5,"1, 2",WAT,4/1/1986 0:00,0,-122.5332341,39.58681604
+2520,S9007,Rice Mill Inc. Far West,0,Not Available,Butte,1,1,SUN,1/1/2012 0:00,0,-121.8517954,39.55096594
+2521,H0510,Thermalito (Unit 1 HY Unit 2-3-4 Pumping-Generating),0,California Department of Water Resources,Butte,115.1,"1, 2, 3, 4",WAT,11/1/1968 0:00,0,-121.6300662,39.51480268
+2524,H0164,"Edward C Hyatt (Unit 1,3,5 Pumping-Generating)",0,California Department of Water Resources,Butte,644.25,"1, 2, 3, 4, 5, 6",WAT,3/1/1968 0:00,0,-121.4922683,39.54289422
+2525,H0263,Kelly Ridge,0,South Feather Water and Power,Butte,10,1,WAT,9/1/1963 0:00,0,-121.4912353,39.53167441
+2526,H0511,Thermalito Diversion Dam,0,California Department of Water Resources,Butte,2.97,TD1,WAT,7/1/1987 0:00,0,-121.5463328,39.52875707
+2527,S9185,Pristine Sun Fund 6 Butte PGE LLC_(2096_Cotton),0,Not Available,Butte,1,Unit 1,SUN,12/31/2013 0:00,0,-121.4593552,39.50830805
+2528,H0191,Forbestown,0,South Feather Water and Power,Butte,39.7,1,WAT,10/1/1963 0:00,0,-121.2787204,39.55097097
+2529,H0427,Kanaka,0,Not Available,Butte,1.12,KAN1,WAT,12/1/1988 0:00,0,-121.2961959,39.55891815
+2530,H0573,Woodleaf,0,South Feather Water and Power,Butte,55,1,WAT,11/1/1963 0:00,0,-121.204059,39.55392012
+2531,H0362,Deadwood Creek,0,Not Available,Yuba,2,1,WAT,12/1/1993 0:00,0,-121.0957647,39.52999581
+2532,H0484,Sly Creek,0,South Feather Water and Power,Butte,13.2,1,WAT,7/1/1983 0:00,0,-121.119566,39.5804535
+2533,H0226,Lower Haypress Hydroelectric,0,Grey Rock LLC,Sierra,5,L GEN,WAT,1/1/1989 0:00,0,-120.5816807,39.56569606
+2534,H0623,Middle Haypress Hydroelectric,0,Grey Rock LLC,Sierra,5,U GEN,WAT,12/1/1988 0:00,0,-120.5968868,39.56571567
+2537,H0046,Black Butte,0,Silicon Valley Power,Tehama,6.4,1,WAT,1/1/1988 0:00,0,-122.3323451,39.81489471
+2538,H0235,Highline Canal,0,Silicon Valley Power,Glenn,0.5,1,WAT,3/1/1989 0:00,0,-122.1556792,39.76239194
+2539,S0583,Enerparc CA2,0,"Adapture Renewables, Inc.",Glenn,1.5,Unit 1,SUN,3/1/2016 0:00,0,-122.1763015,39.69916472
+2541,S9021,City of Chico,0,Not Available,Butte,1,1,SUN,1/1/2012 0:00,0,-121.9092061,39.69603837
+2542,S9186,Pristine Sun Fund 6 Butte PGE LLC_(2129_Ballard),0,Not Available,Butte,1,Unit 1,SUN,12/31/2013 0:00,0,-121.7702998,39.70204076
+2543,H0092,Centerville,0,Pacific Gas & Electric (PG&E),Butte,7.3,"1, 2",WAT,6/1/1900 0:00,0,-121.6574255,39.78887451
+2544,H0287,Lime Saddle,0,Pacific Gas & Electric (PG&E),Butte,2,"1, 2",WAT,8/1/1906 0:00,0,-121.570975,39.69875924
+2545,H0121,Cresta,0,Pacific Gas & Electric (PG&E),Butte,70,"Unit 541, Unit 542",WAT,11/23/1949 0:00,0,-121.4097817,39.82591112
+2546,H0395,Poe,0,Pacific Gas & Electric (PG&E),Butte,120,"Unit 548, Unit 549",WAT,10/26/1958 0:00,0,-121.4697486,39.72284307
+2547,H0209,Graeagle,0,Northern California Power Agency,Plumas,0.44,1,WAT,12/28/1981 0:00,0,-120.6328788,39.75484573
+2549,S9313,Pristine Sun Fund 5 LLC_(2040_Alvares),0,Not Available,Tehama,1.5,Unit 1,SUN,12/31/2013 0:00,0,-122.1731008,39.94942142
+2550,S9315,Pristine Sun Fund 5 LLC_(2039_Flournoy),0,Not Available,Tehama,1,Unit 1,SUN,12/31/2013 0:00,0,-122.1731908,39.94734973
+2551,S9317,Pristine Sun Fund 5 LLC_(2020_Rolf),0,Not Available,Tehama,0.5,Unit 1,SUN,12/31/2013 0:00,0,-122.1739188,39.93669157
+2552,H0130,DeSabla,0,Pacific Gas & Electric (PG&E),Butte,18.5,Unit 543,WAT,2/28/1963 0:00,0,-121.6321934,39.8708089
+2553,H0192,Forks of Butte Hydro Project,0,Hypower Inc,Butte,13.3,GEN 1,WAT,3/1/1992 0:00,0,-121.6317971,39.86918366
+2554,H0518,Toadtown,0,Pacific Gas & Electric (PG&E),Butte,1.8,1,WAT,4/1/1986 0:00,0,-121.5933618,39.89346163
+2555,H0023,Belden,0,Pacific Gas & Electric (PG&E),Plumas,117.9,Unit 552,WAT,9/14/1969 0:00,0,-121.2494064,40.00751132
+2556,H0052,Bucks Creek,0,Pacific Gas & Electric (PG&E),Plumas,58,"Unit 530, Unit 531",WAT,3/4/1928 0:00,0,-121.3277172,39.91056394
+2557,H0213,Grizzly,0,Silicon Valley Power,Plumas,21,1,WAT,11/1/1993 0:00,0,-121.2792873,39.8892311
+2558,H0417,Rock Creek,0,Pacific Gas & Electric (PG&E),Plumas,112,"Unit 550, Unit 551",WAT,3/1/1950 0:00,0,-121.3453435,39.90517451
+2561,H0428,Kekawaka,0,Kaweah River Power Authority,Trinity,5,KEK1,WAT,12/1/1989 0:00,0,-123.509046,40.09411993
+2562,H0512,Three Forks Water Power Project,0,Norman Ross Burgess,Trinity,1.3,Unit 1,WAT,12/28/1984 0:00,0,-123.5231383,40.19983788
+2563,S9316,Pristine Sun Fund 5 LLC_(2158_Stroing),0,Not Available,Tehama,0.75,Unit 1,SUN,12/31/2013 0:00,0,-122.3314487,40.18266361
+2565,S9314,Pristine Sun Fund 5 LLC_(2119_Lvvorn),0,Not Available,Tehama,1,Unit 1,SUN,12/31/2013 0:00,0,-122.2574324,40.1777337
+2566,S9318,Pristine Sun Fund 5 LLC_(2065_Rogers),0,Not Available,Tehama,0.5,Unit 1,SUN,12/31/2013 0:00,0,-122.1863971,40.06731993
+2567,S9319,Pristine Sun Fund 5 LLC_(2041_Alvares),0,Not Available,Tehama,0.25,Unit 1,SUN,12/31/2013 0:00,0,-122.2252121,40.11698761
+2568,S9084,Wal-Mart,0,Not Available,Tehama,1,1,SUN,1/1/2012 0:00,0,-122.1250701,40.10077249
+2569,S9089,Charles R. Crain Jr.,0,Not Available,Tehama,1,1,SUN,1/1/2012 0:00,0,-122.1252417,40.10134773
+2570,W0400,Wal-Mart Red Bluff,0,Foundation Windpower,Tehama,1,WPRS 1,WND,9/1/2012 0:00,0,-122.194218,40.11136082
+2571,S0707,SPI - Red Bluff,0,Sierra Pacific Industries Inc,Tehama,8.4,Unit 1,SUN,5/1/2020 0:00,0,-122.194087,40.12155037
+2572,H0057,Butt Valley,0,Pacific Gas & Electric (PG&E),Plumas,40,Unit 532,WAT,12/31/1958 0:00,0,-121.1906669,40.17568026
+2573,H0087,Caribou #1,0,Pacific Gas & Electric (PG&E),Plumas,73.8,"Unit 533, Unit 534, Unit 535",WAT,5/6/1921 0:00,0,-121.1482277,40.08547077
+2574,H0088,Caribou #2,0,Pacific Gas & Electric (PG&E),Plumas,120,"Unit 536, Unit 537",WAT,11/9/1958 0:00,0,-121.1493924,40.0860303
+2575,H0364,Oak Flat,0,Pacific Gas & Electric (PG&E),Plumas,1.4,1,WAT,11/1/1985 0:00,0,-121.1614052,40.07533144
+2576,S0697,PSREC/SIAD Solar,0,Plumas Sierra Rural Electric Cooperative,Lassen,2.5,Unit 1,SUN,9/20/2018 0:00,0,-120.127435,40.14854032
+2577,H0241,Gosselin Hydroelectric Plant,0,Humboldt Bay Municipal Water District,Trinity,2,"GEN 1, GEN 2",WAT,6/1/1983 0:00,0,-123.4344868,40.36976338
+2578,S9312,Pristine Sun Fund 5 LLC_(2021_Doran),0,Not Available,Tehama,1.5,Unit 1,SUN,12/31/2013 0:00,0,-122.2738976,40.3681032
+2579,H0106,Coleman,0,Pacific Gas & Electric (PG&E),Shasta,13,Unit 526,WAT,6/19/1979 0:00,0,-122.121894,40.4046245
+2580,H0244,Inskip,0,Pacific Gas & Electric (PG&E),Tehama,7.65,1,WAT,10/1/1979 0:00,0,-121.9654721,40.40098437
+2581,H0486,South,0,Pacific Gas & Electric (PG&E),Tehama,6.75,1,WAT,12/1/1979 0:00,0,-121.8790236,40.39532956
+2583,H0218,Hamilton Branch,0,Pacific Gas & Electric (PG&E),Plumas,5.39,"1, 2",WAT,8/1/1921 0:00,0,-121.0894449,40.26870819
+2588,H0547,Baker Station Hydro,0,Not Available,Humboldt,1.5,Unit 1,WAT,12/10/1987 0:00,0,-123.7255401,40.52643725
+2589,S9302,Pristine Sun Fund 5 LLC_(2113_Fritzjarrell),0,Not Available,Shasta,1,Unit 1,SUN,12/31/2013 0:00,0,-122.453075,40.47544655
+2596,H0118,Cow Creek,0,Pacific Gas & Electric (PG&E),Shasta,1.44,"1, 2",WAT,1/1/1907 0:00,0,-122.0209655,40.57081167
+2597,H0507,Bear Creek,0,Central Rivers Power,Shasta,3.2,GEN1,WAT,1/1/1990 0:00,0,-121.9591581,40.53442767
+2598,H0237,Ponderosa Bailey Creek,0,Snow Mountain Hydro LLC,Shasta,1.1,GEN1,WAT,2/25/1990 0:00,0,-121.8427336,40.45794852
+2599,H0545,Volta #1,0,Pacific Gas & Electric (PG&E),Shasta,8.55,1,WAT,4/1/1980 0:00,0,-121.8670221,40.4590657
+2600,H0546,Volta #2,0,Pacific Gas & Electric (PG&E),Shasta,1,931,WAT,10/30/1981 0:00,0,-121.8621435,40.45192439
+2604,H0037,Big Creek Water Works,0,Big Creek Water Works Ltd,Trinity,5,BCHY,WAT,1/1/1987 0:00,0,-123.4980477,40.6467215
+2605,H0286,Lewiston,0,United States Bureau of Reclamation,Trinity,0.35,1,WAT,2/1/1964 0:00,0,-122.7937892,40.72543616
+2606,H0257,Judge F Carr,0,United States Bureau of Reclamation,Shasta,154.4,"UNIT 1, UNIT 2",WAT,5/1/1963 0:00,0,-122.6269192,40.64692438
+2607,H0564,Whiskeytown,0,City of Redding Electric Utility,Shasta,3.5,1,WAT,1/1/1985 0:00,0,-122.5386848,40.59762235
+2608,H0270,Keswick,0,United States Bureau of Reclamation,Shasta,117,"UNIT 1, UNIT 2, UNIT 3",WAT,3/1/1950 0:00,0,-122.4463715,40.61192356
+2609,H0475,Shasta,0,United States Bureau of Reclamation,Shasta,714,"UNIT 1, UNIT 2, UNIT 3, UNIT 4, UNIT 5, UNIT S1, UNIT S2",WAT,4/1/1949 0:00,0,-122.4220486,40.71744995
+2610,H0493,Spring Creek,0,United States Bureau of Reclamation,Shasta,180,"UNIT 1, UNIT 2",WAT,1/1/1964 0:00,0,-122.4675052,40.62809296
+2611,S9002,Shasta College,0,Not Available,Shasta,1,1,SUN,1/1/2012 0:00,0,-122.3197133,40.63230107
+2612,H0271,Kilarc,0,Pacific Gas & Electric (PG&E),Shasta,3,"1, 2",WAT,6/1/1904 0:00,0,-121.873215,40.67792752
+2613,H0371,Olsen,0,Synergics Energy Services LLC,Shasta,5,GEN1,WAT,12/1/1989 0:00,0,-121.8907079,40.67054581
+2614,H0238,Lost Creek 1,0,Snow Mountain Hydro LLC,Shasta,1.1,GEN1,WAT,10/9/1989 0:00,0,-121.4145413,40.75760315
+2619,H0520,Trinity,0,United States Bureau of Reclamation,Trinity,140,"UNIT 1, UNIT 2",WAT,2/1/1964 0:00,0,-122.7625962,40.79730223
+2620,H0168,Montgomery Creek Hydro,0,Central Rivers Power,Shasta,2.6,1,WAT,1/1/1987 0:00,0,-121.9564586,40.84675971
+2621,H0236,Cove Hydroelectric,0,Snow Mountain Hydro LLC,Shasta,5,GEN 1,WAT,2/20/1990 0:00,0,-121.9487985,40.87141022
+2622,H0322,Roaring Creek,0,Hydrodynamics,Shasta,2,UNIT 1,WAT,1/1/1987 0:00,0,-121.948353,40.8820218
+2623,H0392,Pit #6,0,Pacific Gas & Electric (PG&E),Shasta,80,"Unit 522, Unit 523",WAT,8/14/1965 0:00,0,-121.9928613,40.9225932
+2624,H0393,Pit #7,0,Pacific Gas & Electric (PG&E),Shasta,112,"Unit 524, Unit 525",WAT,9/10/1965 0:00,0,-121.9906882,40.84740953
+2625,H0321,Hatchet Creek Project,0,Hydrodynamics,Shasta,7,UNIT 1,WAT,1/1/1987 0:00,0,-121.9203795,40.87415452
+2626,W0369,"Hatchet Ridge Wind, LLC",0,Hatchet Ridge Wind LLC,Shasta,101.2,WPRS 1,WND,11/19/2010 0:00,0,-121.8137584,40.90903515
+2627,H0240,Burney Creek,0,Snow Mountain Hydro LLC,Shasta,3,GEN1,WAT,3/28/1990 0:00,0,-121.7225087,40.85796816
+2631,H0221,Hat Creek #1,0,Pacific Gas & Electric (PG&E),Shasta,9.9,1,WAT,8/1/1921 0:00,0,-121.5444855,40.9293406
+2632,H0323,Bidwell Ditch,0,Hydrodynamics,Shasta,2,UNIT 1,WAT,1/1/1987 0:00,0,-121.4480349,40.80137258
+2633,H0483,Slate Creek,0,Central Rivers Power,Shasta,4.2,GEN1,WAT,5/1/1990 0:00,0,-122.4561869,40.97685375
+2634,H0250,James B Black,0,Pacific Gas & Electric (PG&E),Shasta,172,"Unit 501, Unit 502",WAT,12/17/1965 0:00,0,-121.9751571,40.9922649
+2635,H0391,Pit #5,0,Pacific Gas & Electric (PG&E),Shasta,160,"Unit 517, Unit 518, Unit 519, Unit 521",WAT,4/29/1944 0:00,0,-121.9775805,40.98623385
+2636,H0349,Nelson Creek,0,Nelson Creek Power Inc,Shasta,1.1,1,WAT,12/20/1988 0:00,0,-121.8697395,40.99239042
+2637,H0389,Pit #3,0,Pacific Gas & Electric (PG&E),Shasta,69,"Unit 512, Unit 513, Unit 514",WAT,7/15/1925 0:00,0,-121.7478542,40.99749167
+2638,H0390,Pit #4,0,Pacific Gas & Electric (PG&E),Shasta,95,"Unit 515, Unit 516",WAT,10/1/1955 0:00,0,-121.849284,40.98630736
+2639,H0222,Hat Creek #2,0,Pacific Gas & Electric (PG&E),Shasta,9.9,1,WAT,9/1/1921 0:00,0,-121.5486799,40.96062732
+2640,H0388,Pit #1,0,Pacific Gas & Electric (PG&E),Shasta,63,"Unit 509, Unit 511",WAT,9/30/1922 0:00,0,-121.4982216,40.99081194
+2641,S0300,Fall River Mills Project A & B,0,REV Renewables,Shasta,3,"W3985, W3986",SUN,3/5/2014 0:00,0,-121.4242137,41.03198087
+2642,S9300,Ignite Solar LLC_(Achomawi),0,Not Available,Shasta,1.5,Unit 1,SUN,12/31/2013 0:00,0,-121.4294105,41.05619072
+2643,S9301,Ignite Solar LLC_(Ahjumawi),0,Not Available,Shasta,1.5,Unit 1,SUN,12/31/2013 0:00,0,-121.4294105,41.05619072
+2644,H0311,Muck Valley Hydroelectric,0,Malacha Hydro Ltd Partnership,Lassen,29.9,GEN1,WAT,12/1/1988 0:00,0,-121.2560212,40.97647429
+2645,H0284,Box Canyon,0,Siskiyou County,Siskiyou,10,"48-1, 48-2",WAT,6/8/1986 0:00,0,-122.3287609,41.2803645
+2648,H0111,Copco 1,0,PacifiCorp,Siskiyou,20,"1, 2",WAT,1/1/1918 0:00,0,-122.3353368,41.97891129
+2649,H0112,Copco 2,0,PacifiCorp,Siskiyou,27,"1, 2",WAT,7/1/1925 0:00,0,-122.3580679,41.97569863
+2650,H0177,Fall Creek,0,PacifiCorp,Siskiyou,2.2,"1, 2, 3",WAT,9/1/1903 0:00,0,-122.3603873,41.98558731
+2651,H0245,Iron Gate,0,PacifiCorp,Siskiyou,18,1,WAT,2/1/1962 0:00,0,-122.4368213,41.93297453
+2652,W0470,"Voyager Wind I, LLC                ",0,Terra-Gen Operating Company,Kern,131.1,WPRS 1,WND,1/1/2020 0:00,0,-118.2722494,35.05140452
+2653,W0474,Mann Packing      ,0,Foundation Windpower,Monterey,1.79,WPRS 1,WND,9/11/2020 0:00,0,-121.4535658,36.50396325
+2654,W0475,CDCR SVSP          ,0,Foundation Windpower,Monterey,1.79,WPRS 1,WND,9/11/2020 0:00,0,-121.3706891,36.47421193
+2655,W0476,CDCR CTF          ,0,Foundation Windpower,Monterey,1.79,WPRS 1,WND,9/1/2018 0:00,0,-121.3500882,36.45922807
+2658,H0627,White Rock/South Fork Powerhouse,0,Sacramento Municipal Utility District (SMUD),El Dorado,2.68,H3,WAT,12/4/2020 0:00,0,-121.2292019,38.6326719
+2659,S0657,North Rosamond Solar,0,Deriva Energy,Kern,150,Unit 1,SUN,4/26/2019 0:00,0,-118.1324898,34.94358404
+2660,S0672,CREST Contracts,0,Not Available,Los Angeles,6.5,Unit 1,SUN,8/10/2016 0:00,0,-123.8262393,40.11864799
+2661,S0673,Rector Solar,0,Not Available,Tulare,14,Unit 1,SUN,11/22/2016 0:00,0,-122.3514547,38.440937
+2662,S0674,CREST Contracts,0,Not Available,Los Angeles,4,Unit 1,SUN,3/16/2016 0:00,0,-118.2593928,34.04929815
+2663,S0675,Springville Solar,0,Not Available,Tulare,14,Unit 1,SUN,11/22/2016 0:00,0,-118.8202345,36.12864496
+2664,S0676,Victor Solar,0,Not Available,San Bernardino,24.5,Unit 1,SUN,6/2/2017 0:00,0,-117.230656,34.08650608
+2665,S0726,Redwood Coast Airport Microgrid,0,Redwood Coast Energy Authority,Humboldt,2.31,Unit 1,SUN,12/22/2021 0:00,0,-124.1062701,40.97195795
+2666,W0483,Energia Sierra Juarez Wind Project Expansion (Mexico),0,Energia Sierra Juarez S de RL de CV,Tecate,108,ESJ_2,WND,12/21/2021 0:00,0,-116.1068633,32.5906822
+2667,W9999,CAISO In-State Wind Generation,0,Not Available,ALL,5664,CAISO Wind,WND,9/15/2017 0:00,0,-120.2475772,36.84626998
+2669,S0400,USMC Maintenance Officer,0,United States Marine Corps,San Diego,1.53,1,SUN,8/8/2012 0:00,0,-117.196758,32.74869181
+2670,S0401,San Diego City Regional Airport Authority,0,San Diego City of,San Diego,1.6,1,SUN,2/5/2015 0:00,0,-117.2075018,32.73135081
+2674,S0720,San Diego Airport Solar,0,San Diego County Regional Airport Authority,San Diego,5.5,Unit 1,SUN,3/1/2017 0:00,0,-117.2021837,32.73174712
+2692,S0378,San Diego - Alta Rd. EMDF Canopy,0,EDP Renewables North America LLC,San Diego,1,1,SUN,12/2/2011 0:00,0,-116.9199393,32.5900427
+2693,S0399,Southwestern Community College,0,Southwestern Community College,San Diego,1.13,1,SUN,10/24/2014 0:00,0,-116.9954737,32.64174429
+2697,S9287,LanWest Solar Farm LLC,0,Not Available,San Diego,3.5,Unit 1,SUN,2/28/2014 0:00,0,-116.2704915,32.66567943
+2698,W0359,Kumeyaay Wind Farm,0,Terra-Gen Operating Company,San Diego,50,WPRS 1,WND,12/21/2005 0:00,0,-116.3452375,32.73237086
+2699,W0390,Golden Acorn Casino,0,See WPRS for details,San Diego,1,WPRS 1,WND,4/21/2011 0:00,0,-116.3513562,32.70140732
+2700,S0594,Jacumba Solar Farm,0,Not Available,San Diego,20,Unit 1,SUN,7/25/2017 0:00,0,-116.1278726,32.62333655
+2701,W0460,"Energia Sierra Juarez, S. de R.L. de C.V. (Baja Mexico Wind)",0,Energia Sierra Juarez S de RL de CV,Tecate,155.1,ESJ_1,WND,3/27/2015 0:00,0,-116.0649991,32.57465126
+2702,S0258,Campo Verde Solar Project,0,Campo Verde Solar LLC,Imperial,197,CVS1,SUN,10/25/2013 0:00,0,-115.7288429,32.74735707
+2705,H0146,Double Weir (<1MW),0,Imperial Irrigation District,Imperial,0.56,"UNIT 1, UNIT 2",WAT,6/1/1960 0:00,0,-115.49543,32.701211
+2706,S0291,Centinela Solar Energy,0,LS Power,Imperial,172.6,"Unit 1, Unit 2",SUN,10/1/2013 0:00,0,-115.6471963,32.68615372
+2707,S0298,Heber Solar Facility,0,AxInfra US LP,Imperial,10,Unit 1,SUN,4/23/2014 0:00,0,-115.5405687,32.71413847
+2708,S0440,Imperial Solar Energy Center West,0,Tenaska Inc.,Imperial,148.7,Unit 1,SUN,4/12/2016 0:00,0,-115.6575682,32.6657934
+2709,S0655,Mount Signal Solar Farm V (IVS 3 LLC),0,"Imperial Valley Solar 3, LLC",Imperial,252.29,Unit 1,SUN,10/11/2018 0:00,0,-115.5954401,32.67651751
+2710,S0687,Wistaria Ranch Solar,0,RWE Clean Energy,Imperial,100,Unit 1,SUN,11/19/2018 0:00,0,-115.6170636,32.67498596
+2711,S0696,Imperial Valley Solar 2,0,MN8 Energy,Imperial,150,Unit 1,SUN,10/1/2019 0:00,0,-115.6291568,32.66830454
+2712,S9174,Silver Ridge Mount Signal (Imperial Valley Solar 1),0,Not Available,Imperial,200,Unit 1,SUN,10/1/2013 0:00,0,-115.6445389,32.67546748
+2715,H0152,Drop 5,0,Imperial Irrigation District,Imperial,4,"UNIT 1, UNIT 2",WAT,3/1/1982 0:00,0,-115.3920124,32.67309841
+2716,H0150,Drop 3,0,Imperial Irrigation District,Imperial,9.8,"UNIT 1, UNIT 2",WAT,2/20/1941 0:00,0,-115.126056,32.7053911
+2717,H0151,Drop 4,0,Imperial Irrigation District,Imperial,19.6,"UNIT 1, UNIT 2",WAT,8/9/1950 0:00,0,-115.2190973,32.70529685
+2718,H0160,East Highline,0,Imperial Irrigation District,Imperial,2.42,UNIT 1,WAT,9/12/1984 0:00,0,-115.282635,32.699573
+2719,H0147,Drop 1,0,Imperial Irrigation District,Imperial,5.85,"UNIT 1, UNIT 2, UNIT 3",WAT,11/16/1984 0:00,0,-114.9427319,32.71158816
+2720,H0149,Drop 2,0,Imperial Irrigation District,Imperial,10,"UNIT 1, UNIT 2",WAT,12/5/1953 0:00,0,-115.0310125,32.70539049
+2721,H0385,Pilot Knob,0,Imperial Irrigation District,Imperial,33,"UNIT 1, UNIT 2",WAT,1/31/1957 0:00,0,-114.7139055,32.73664701
+2726,S0129,UCSD Solar PV System,0,University of California San Diego,San Diego,1.2,Unit 1,SUN,6/1/2008 0:00,0,-117.2391531,32.87420842
+2737,H0612,Rancho Penasquitos,0,San Diego County Water Authority,San Diego,4.65,RPHES-GEN,WAT,1/23/2007 0:00,0,-117.113711,32.93699387
+2750,S9288,Descanso Solar - CRE,0,Not Available,San Diego,1.5,Unit 1,SUN,12/31/2013 0:00,0,-116.6003909,32.85734189
+2751,W0467,Tule Wind,0,See WPRS for details,San Diego,131,WPRS 1,WND,1/5/2018 0:00,0,-116.3016207,32.76219724
+2752,W0409,Ocotillo Express LLC,0,Pettern Energy (Ocotillo LLC),Imperial,265.44,WPRS 1,WND,12/28/2012 0:00,0,-116.0493742,32.75979112
+2753,S0255,Imperial Solar Energy Center South,0,Tenaska Inc.,Imperial,128.9,56819,SUN,11/1/2013 0:00,0,-115.6929432,32.7506762
+2754,S0677,SEPV EAST,0,Not Available,Imperial,3,Unit 1,SUN,1/1/2018 0:00,0,-115.7725631,32.79347756
+2755,S0678,SPEV WEST,0,Not Available,Imperial,2,Unit 1,SUN,1/1/2018 0:00,0,-115.7814366,32.79345029
+2756,H0531,Turnip,0,Imperial Irrigation District,Imperial,0.42,1,WAT,10/1/1964 0:00,0,-115.6294552,32.88933973
+2757,S0461,ECPV Solar,0,Sol Orchard Imperial 1 LLC,Imperial,20,Unit 1,SUN,10/1/2013 0:00,0,-115.546429,32.8017992
+2767,H0471,Senator Wash (Pumping-Generating),0,United States Bureau of Reclamation,Imperial,7.83,Unit 1,WAT,10/1/1977 0:00,0,-114.4802157,32.90281643
+2775,H0613,Lake Hodges Station (Olivenhain Pumped Storage),0,San Diego County Water Authority,San Diego,40,"Unit 1, Unit 2",WAT,7/15/2011 0:00,0,-117.1187984,33.0578864
+2776,S9003,Hewlett Packard,0,Not Available,San Diego,1,1,SUN,1/1/2012 0:00,0,-117.0881591,33.01089571
+2780,S0305,Ramona 1 & 2,0,Sol Orchard,San Diego,7,"Unit 1, Unit 2",SUN,12/1/2013 0:00,0,-116.8717182,33.01195744
+2781,S0634,Ramona Solar Energy Facility,0,San Diego Gas & Electric,San Diego,4.9,Unit 1,SUN,5/1/2017 0:00,0,-116.86038,33.01976812
+2782,S0715,Titan Solar I,0,Longroad Energy,Imperial,70,Unit 1,SUN,12/21/2020 0:00,0,-116.3566192,33.1350259
+2783,S0408,Seville Solar One,0,Deriva Energy,San Diego,20,Unit 1,SUN,12/30/2015 0:00,0,-116.0030001,33.11610312
+2784,S0409,Seville Solar Two,0,Deriva Energy,San Diego,30,Unit 1,SUN,12/24/2015 0:00,0,-116.0035454,33.10903652
+2785,S0679,Valencia I,0,Not Available,Imperial,3,Unit 1,SUN,1/1/2018 0:00,0,-115.6274645,33.04379635
+2788,S0296,NRG Solar Community I LLC (SDSU Solar),0,NRG Solar Community I LLC,Imperial,5.72,1,SUN,6/13/2014 0:00,0,-115.4820128,32.9835429
+2789,S0324,Alhambra Solar Facility,0,Southern Power Company,Imperial,50,SGAH,SUN,11/26/2014 0:00,0,-115.4711077,33.08003196
+2790,S0325,Arkansas Solar Facility,0,Southern Power Company,Imperial,50,SGAK,SUN,11/26/2014 0:00,0,-115.4716765,33.14391037
+2793,H0408,Red Mountain,0,Metropolitan Water District,San Diego,5.9,1,WAT,3/1/1985 0:00,0,-117.2356644,33.32889683
+2794,S0403,Genentech Inc - Oceanside,0,Genentech Inc,San Diego,4.1,1,SUN,5/12/2015 0:00,0,-117.2983714,33.21274053
+2795,H0021,Bear Valley,0,City of Escondido,San Diego,1.5,2-Jan,WAT,6/8/1905 0:00,0,-117.0164292,33.16584931
+2796,S0584,Mesa Crest (Lilac),0,NLP Granger A82 LLC,San Diego,3,Unit 1,SUN,9/17/2016 0:00,0,-117.0304279,33.26431413
+2797,S0372,Borrego Solar - Twin Oaks,0,Not Available,San Diego,1,1,SUN,6/2/2011 0:00,0,-117.176822,33.21265576
+2798,S0593,Cole Grade,0,Not Available,San Diego,2.33,Unit 1,SUN,12/7/2016 0:00,0,-117.022742,33.24929759
+2799,S9178,Valley Center 1 & 2,0,Sol Orchard,San Diego,7.5,"Unit 1, Unit 2",SUN,12/1/2013 0:00,0,-117.0016424,33.23413949
+2800,S0238,NRG Solar Borrego I,0,Clearway Energy,San Diego,26,1,SUN,2/12/2013 0:00,0,-116.3547375,33.29570301
+2801,S9286,Desert Green Solar Farm LLC,0,Not Available,San Diego,3.5,1,SUN,10/31/2014 0:00,0,-116.3296921,33.26480447
+2803,S0161,IVSC1 - (SunPeak 1) - 23MW PV,0,Imperial Irrigation District,Imperial,23,Unit 1,SUN,6/1/2012 0:00,0,-115.4972388,33.24565008
+2804,S0342,Imperial Valley Solar Company (IVSC) 2 LLC,0,Onward Energy,Imperial,20,1,SUN,8/6/2015 0:00,0,-115.497397,33.25425736
+2805,S0347,Calipatria Solar Farm,0,Southern Power Company,Imperial,20,1,SUN,2/12/2016 0:00,0,-115.5322104,33.1658281
+2806,S0522,Midway Solar Farm I,0,X-Elio North America Inc.,Imperial,49.9,Unit 1,SUN,12/14/2017 0:00,0,-115.5491104,33.16569033
+2807,S0600,"Midway Solar Farm II (96WI 8ME, LLC)",0,Dominion Energy,Imperial,30.75,Unit 1,SUN,6/27/2017 0:00,0,-115.5410602,33.15692352
+2819,S0326,Sonora Solar Facility,0,Southern Power Company,Imperial,50,SGSO,SUN,11/26/2014 0:00,0,-115.4524239,33.16825147
+2824,S0402,USMC,0,United States Marine Corps,Orange,2.8,1,SUN,5/26/2015 0:00,0,-117.5799358,33.3949604
+2828,S9001,FPUD - Sanitary,0,Not Available,San Diego,1,1,SUN,1/1/2012 0:00,0,-117.2588538,33.36364307
+2829,S9004,Farm ACW,0,Not Available,San Diego,1,1,SUN,1/1/2012 0:00,0,-117.3360615,33.44742466
+2831,S0631,Temecula Valley USD Temecula Valley HS,0,Tesla Inc.,Riverside,1.11,9255391-CA,SUN,7/7/2017 0:00,0,-117.1163623,33.50300772
+2832,S0142,Port of Los Angeles Berth 93,0,Port of Los Angeles,Los Angeles,1.1,SIP964652,SUN,7/1/2011 0:00,0,-118.2766721,33.74740376
+2843,S0623,Walmart (CA) - Store #2952 - Murrieta,0,Tesla Inc.,Riverside,1.09,9253086-CA,SUN,7/23/2015 0:00,0,-117.1942545,33.55297456
+2845,H0611,Diamond Valley Lake (Pumping-Generating),0,Metropolitan Water District,Riverside,29.7,Units,WAT,5/1/2001 0:00,0,-117.0705982,33.68107722
+2846,S0422,AP North Lake Solar,0,Not Available,Riverside,20,Unit 1,SUN,7/1/2015 0:00,0,-117.0105998,33.74175073
+2847,S0460,Augustine Energy PV,0,Augustine Energy Corporation,Riverside,3,Unit 1,SUN,1/1/2016 0:00,0,-116.1976861,33.65357243
+2850,S0722,"Maverick Solar 6, LLC",0,EDF Renewable Energy Inc,Riverside,100,Unit 1,SUN,10/22/2021 0:00,0,-115.2298829,33.69267074
+2851,S0723,"Maverick Solar 7, LLC",0,EDF Renewable Energy Inc,Riverside,132,Unit 1,SUN,12/22/2021 0:00,0,-115.3320084,33.62701303
+2852,S0710,Desert Harvest LLC,0,EDF Renewable Energy Inc,Riverside,80,Unit 1,SUN,12/17/2020 0:00,0,-115.2371158,33.6892049
+2853,S0711,Desert Harvest II LLC,0,EDF Renewable Energy Inc,Riverside,70,Unit 1,SUN,12/17/2020 0:00,0,-115.236973,33.68739993
+2854,S0712,Maverick Solar,0,EDF Renewable Energy Inc,Riverside,125,Unit 1,SUN,12/16/2020 0:00,0,-115.2365008,33.69105493
+2855,S0713,Maverick Solar 4,0,EDF Renewable Energy Inc,Riverside,100,Unit 1,SUN,12/11/2020 0:00,0,-115.2348306,33.68783735
+2856,S0114,Ironwood State Prison,0,EDP Renewables North America LLC,Riverside,1,1,SUN,5/2/2008 0:00,0,-114.9184389,33.56540436
+2857,S0259,Genesis Solar Energy Project,0,Genesis Solar LLC,Riverside,250,"Unit 1, Unit 2",SUN,3/7/2014 0:00,1,-114.994146,33.6663832
+2858,S0357,Ironwood State Prison II,0,Not Available,Riverside,4,1,SUN,7/4/2012 0:00,0,-114.9192349,33.56703766
+2859,S0111,Blythe 1 Solar,0,Clearway Energy,Riverside,21,1,SUN,12/18/2009 0:00,0,-114.7451718,33.59168359
+2860,S0122,Chuckawalla Valley State Prison (CVSP),0,EDP Renewables North America LLC,Riverside,0.94,Unit 1,SUN,7/1/2006 0:00,0,-114.9030858,33.56512899
+2861,S0346,McCoy Solar LLC,0,McCoy Solar LLC,Riverside,250,Unit 1,SUN,8/8/2015 0:00,0,-114.7397105,33.69471699
+2862,S0519,Blythe Solar 110 LLC,0,Blythe Solar 110 LLC,Riverside,110,Unit 1,SUN,3/18/2016 0:00,1,-114.7419347,33.6797099
+2863,S0699,"Blythe Solar III, LLC",0,NextEra Energy Resources LLC,Riverside,125,Unit 3,SUN,5/21/2020 0:00,0,-114.7632403,33.67416111
+2864,S0708,Blythe Solar IV LLC,0,NextEra Energy Resources LLC,Riverside,125,Unit 4,SUN,9/11/2020 0:00,0,-114.7495691,33.65409204
+2865,S0406,Venable Solar 1,0,NextEra Energy Resources LLC,Riverside,1.5,Venable 1,SUN,4/13/2015 0:00,0,-114.5720896,33.59902107
+2866,S0407,Venable Solar 2,0,NextEra Energy Resources LLC,Riverside,1.5,Venable 2,SUN,4/14/2015 0:00,0,-114.5721533,33.59729063
+2867,S0529,Blythe Solar II LLC,0,NRG Solar Blythe II LLC,Riverside,125,Unit 1,SUN,7/18/2016 0:00,1,-114.6908713,33.61484967
+2868,S0601,NRG Blythe Solar II LLC,0,Blythe Solar 110 LLC,Riverside,20,Unit 1,SUN,4/5/2017 0:00,0,-114.7016498,33.62690964
+2882,S0152,LA Harbor College,0,Los Angeles Community College District,Los Angeles,2.11,"1, 2",SUN,8/13/2010 0:00,0,-118.2863722,33.7845674
+2883,S0182,Harbor College  LACCD,0,Los Angeles Community College District,Los Angeles,1.1,SIP1042132,SUN,12/20/2010 0:00,0,-118.2847861,33.7833454
+2884,S0455,SunE - Torrance,0,Not Available,Los Angeles,0.98,Unit 1,SUN,10/16/2015 0:00,0,-118.3103309,33.85763655
+2885,S0620,ATT (DirecTV Broadcast),0,Tesla Inc.,Los Angeles,1.02,908628-CA,SUN,3/4/2015 0:00,0,-118.2097879,33.82914317
+2903,H0119,Coyote Creek,0,Metropolitan Water District,Orange,3.13,1,WAT,3/1/1984 0:00,0,-117.9551388,33.925
+2905,S0208,Golden Springs Building C1,0,Thrifty Oil,Los Angeles,1.3,C1,SUN,2/10/2012 0:00,0,-118.0543311,33.91307955
+2906,S0209,Golden Springs Building D1,0,Thrifty Oil,Los Angeles,1.25,D1,SUN,8/1/2012 0:00,0,-118.0523534,33.9123339
+2907,S0366,Staples - La Mirada,0,EDP Renewables North America LLC,Los Angeles,1,1,SUN,3/19/2010 0:00,0,-118.0179651,33.88169493
+2908,S0438,Golden Springs Building H,0,Thrifty Oil,Los Angeles,1.5,1,SUN,3/12/2015 0:00,0,-118.0456985,33.9107501
+2909,S0439,Golden Springs Building M,0,Thrifty Oil,Los Angeles,1.75,1,SUN,3/10/2016 0:00,0,-118.0440454,33.91075881
+2910,S0575,Golden Springs Building G,0,Thrifty Oil,Los Angeles,1.25,Unit 1,SUN,12/31/2016 0:00,0,-118.048997,33.91404506
+2911,S0576,Golden Springs Building F,0,Thrifty Oil,Los Angeles,1.3,Unit 1,SUN,12/31/2016 0:00,0,-118.0414705,33.91249366
+2912,S0577,Golden Springs Building L,0,Thrifty Oil,Los Angeles,1,Unit 1,SUN,12/31/2016 0:00,0,-118.0497307,33.91245518
+2913,S0578,Freeway Springs,0,Golden Solar LLC (Dulles),Los Angeles,2,Unit 1,SUN,10/31/2016 0:00,0,-118.0498838,33.91085672
+2919,H0539,Valley View,0,Metropolitan Water District,Orange,4.1,1,WAT,8/1/1985 0:00,0,-117.8293061,33.90001403
+2920,H0577,Yorba Linda,0,Metropolitan Water District,Orange,5.09,1,WAT,8/1/1981 0:00,0,-117.8194234,33.91133787
+2928,H0114,Corona,0,Metropolitan Water District,Riverside,2.85,1,WAT,5/1/1983 0:00,0,-117.6107891,33.8590957
+2929,S0379,SCE - Corona,0,EDP Renewables North America LLC,Riverside,0.99,1,SUN,4/15/2013 0:00,0,-117.5881347,33.8920953
+2931,H0282,Lake Mathews,0,Metropolitan Water District,Riverside,4.9,1,WAT,5/1/1980 0:00,0,-117.4536628,33.85521415
+2932,H0509,Temescal,0,Metropolitan Water District,Riverside,2.85,1,WAT,4/1/1983 0:00,0,-117.4970518,33.83422974
+2933,S0133,Temescal Canyon RV  LLC,0,Temescal Canyon RV LLC,Riverside,1.5,1,SUN,5/17/2011 0:00,0,-117.5115581,33.82780482
+2937,S0202,SPVP044 Perris (Valley),0,Southern California Edison (SCE),Riverside,10.15,1,SUN,9/14/2012 0:00,0,-117.2229409,33.83892591
+2938,S0364,Walgreens - Moreno Valley,0,EDP Renewables North America LLC,Riverside,1,1,SUN,9/26/2007 0:00,0,-117.2212261,33.86600227
+2939,S0441,Park Meridian,0,Altus Power,Riverside,1.49,PM,SUN,3/26/2015 0:00,0,-117.2836559,33.89646612
+2940,H0382,Perris,0,Metropolitan Water District,Riverside,7.94,1,WAT,2/1/1983 0:00,0,-117.1831802,33.83605128
+2941,S0416,Tahquitz High School,0,S-Power (Sustainable Power Group),Riverside,1,1,SUN,9/1/2012 0:00,0,-117.0195006,33.76879451
+2942,W0401,Robertsons Ready-Mix,0,Foundation Windpower,Riverside,2,WPRS 1,WND,12/1/2012 0:00,0,-116.8146258,33.91710577
+2943,H0136,Whitewater Hydroelectric Plant,0,Desert Water Agency,Riverside,1.38,WWH1,WAT,3/1/1986 0:00,0,-116.640558,33.9347027
+2944,W0258,"Cabazon Wind Partners, LLC",0,Not Available,Riverside,40.92,WPRS 1,WND,12/3/1984 0:00,0,-116.7105448,33.91506399
+2945,W0260,Mesa Wind Power Corporation,0,Mesa Wind Power Corporation,Riverside,29.9,WPRS 1,WND,11/29/1984 0:00,0,-116.6767215,33.9469574
+2948,W0382,Alta Mesa Phase III - In Litigation - No reporting,0,See WPRS for details,Riverside,9.5,WPRS 1,WND,1/1/1997 0:00,0,-116.6633024,33.94501141
+2949,W0402,Nestle Waters,0,Foundation Windpower,Riverside,3.24,WPRS 1,WND,12/1/2012 0:00,0,-116.7516719,33.91773892
+2950,W0452,Cabazon Wind,0,See WPRS for details,Riverside,38.85,WPRS 1,WND,12/3/1984 0:00,0,-116.7183466,33.91487896
+2951,S0250,North Palm Springs 1A,0,Solar Power Inc,Riverside,2.8,1,SUN,4/2/2012 0:00,0,-116.5951895,33.92323434
+2952,S0251,North Palm Springs 4A,0,Solar Power Inc,Riverside,4.9,1,SUN,11/2/2012 0:00,0,-116.5623966,33.90929946
+2953,S0363,Palm Springs SD - Cathedral City HS,0,EDP Renewables North America LLC,Riverside,1,1,SUN,8/9/2013 0:00,0,-116.4500563,33.80274401
+2954,S0365,Palm Springs SD - Palm Springs HS,0,EDP Renewables North America LLC,Riverside,1.02,1,SUN,8/28/2013 0:00,0,-116.5207936,33.81904287
+2955,S9401,Garnet Solar Power Generation Station 1,0,Not Available,Riverside,4,1,SUN,12/1/2014 0:00,0,-116.5440007,33.892945
+2956,S0640,Desert Hot Springs 2,0,Not Available,Riverside,1.5,Unit 1,SUN,12/31/2013 0:00,0,-116.5301272,33.92298892
+2960,W0261,San Gorgonio Farms Wind Farm,0,San Gorgornio Farms Inc,Riverside,30.9,WPRS 1,WND,3/1/1983 0:00,0,-116.6147129,33.92741386
+2961,W0277,Phoenix Wind (Section 20 Trust),0,Seawest Energy Group,Riverside,2.1,WPRS 1,WND,1/10/1985 0:00,0,-116.5705547,33.93938029
+2962,W0278,East Winds Project (NAWP Inc),0,Seawest Energy Group,Riverside,3,WPRS 1,WND,1/1/1983 0:00,0,-116.5480662,33.89171948
+2963,W0283,San Gorgonio Westwinds II,0,Terra-Gen Operating Company,Riverside,43.4,WPRS 1,WND,1/1/1983 0:00,0,-116.5832574,33.93536772
+2964,W0286,Karen Avenue Wind Farm,0,San Gorgornio Farms Inc,Riverside,11.7,WPRS 1,WND,1/1/1983 0:00,0,-116.5607618,33.92194584
+2968,W0360,Mountain View III,0,See WPRS for details,Riverside,22.44,WPRS 1,WND,12/15/2003 0:00,0,-116.5914449,33.91856279
+2969,W0361,"Whitewater Hill Partners, LLC",0,Terra-Gen Operating Company,Riverside,61.5,WPRS 1,WND,8/31/2002 0:00,0,-116.6231037,33.92220977
+2970,W0364,Dillon Wind,0,FPL Energy Operating Services Inc,Riverside,45,WPRS 1,WND,4/18/2008 0:00,0,-116.5873622,33.93854522
+2974,W0391,"Edom Hills Project 1, LLC",0,BP Wind Energy North America,Riverside,20,WPRS 1,WND,1/1/1983 0:00,0,-116.4596314,33.88520511
+2975,W0413,"WAGNER WIND, LLC",0,See WPRS for details,Riverside,6,WPRS 1,WND,7/30/2013 0:00,0,-116.5558238,33.90970117
+2976,W0430,Mountain View IV,0,See WPRS for details,Riverside,49,WPRS 1,WND,12/31/1989 0:00,0,-116.5625575,33.8823784
+2977,W0437,Wintec Energy #2-A,0,See WPRS for details,Riverside,1.32,WPRS 1,WND,2/23/2012 0:00,0,-116.5606317,33.91335439
+2979,W0440,Garnet Wind Energy Center,0,See WPRS for details,Riverside,6.5,WPRS 1,WND,6/2/2009 0:00,0,-116.5823767,33.90752136
+2980,W0447,San Gorgonio Wind,0,See WPRS for details,Riverside,49.5,WPRS 1,WND,12/31/1989 0:00,0,-116.55065,33.9167142
+2984,W0478,"Painted Hills Wind Holdings, LLC",0,"Terra-Gen, LLC",Riverside,46.8,WPRS 1,WND,3/17/2021 0:00,0,-116.5436661,33.90788207
+2985,W0479,"Coachella Wind Holdings, LLC",0,"Terra-Gen, LLC",Riverside,61.2,WPRS 1,WND,3/31/2021 0:00,0,-116.5436661,33.90788207
+2986,S0367,Palm Springs SD - Rancho Mirage HS,0,EDP Renewables North America LLC,Riverside,1,1,SUN,8/28/2013 0:00,0,-116.4336691,33.82361039
+2987,S0256,Desert Sunlight 250,0,Desert Sunlight 250 LLC,Riverside,115.92,DSL250,SUN,12/25/2013 0:00,0,-115.4035448,33.81144535
+2988,S0257,Desert Sunlight 300,0,Desert Sunlight 300 LLC,Riverside,192.77,DSL300,SUN,10/15/2013 0:00,0,-115.4048899,33.82432489
+2992,H0193,Franklin,0,Los Angeles Department of Water & Power (LADWP),Los Angeles,2,Unit 1,WAT,6/3/1921 0:00,0,-118.4137914,34.1039956
+2993,H0466,San Gorgonio 2,0,Southern California Edison (SCE),Riverside,0.94,1,WAT,12/1/1923 0:00,0,-118.4252964,34.00887844
+2994,H0467,Sawtelle,0,Los Angeles Department of Water & Power (LADWP),Los Angeles,1,1,WAT,6/1/1986 0:00,0,-118.4672867,34.07183973
+2995,H0472,Sepulveda Canyon,0,Metropolitan Water District,Los Angeles,8.54,1,WAT,3/1/1982 0:00,0,-118.4798172,34.09697329
+2998,H0541,Venice,0,Metropolitan Water District,Los Angeles,10.12,1,WAT,5/1/1982 0:00,0,-118.416808,34.01130744
+2999,S9154,West Los Angeles VA Health Care System,0,Not Available,Los Angeles,9,1,SUN,1/1/2012 0:00,0,-118.4504777,34.05152521
+3000,S9157,CBS Television City,0,Not Available,Los Angeles,1.84,1,SUN,1/1/2013 0:00,0,-118.3596778,34.07479491
+3004,S0183,LA County MTA/Metro,0,LA County MTA/Metro,Los Angeles,1.05,SIP742152,SUN,4/1/2009 0:00,0,-118.2292067,34.05851472
+3005,S0184,Dependable Highway Express,0,Dependable Highway Express Inc,Los Angeles,1.05,SIP1027942,SUN,3/2/2012 0:00,0,-118.2240333,34.02761894
+3006,S0369,ELACC - Parking Lot,0,Not Available,Los Angeles,1,1,SUN,3/27/2008 0:00,0,-118.1480905,34.04025591
+3007,S9114,MTA,0,Not Available,Los Angeles,1.2,1,SUN,1/1/2012 0:00,0,-118.2294018,34.05720947
+3008,S9116,Dependable Highway Express Inc,0,Not Available,,1.2,1,SUN,1/1/2012 0:00,0,-118.2239588,34.02689715
+3009,S9156,Occidental College Solar Project,0,Not Available,Los Angeles,1.14,1,SUN,1/1/2013 0:00,0,-118.2068003,34.12819775
+3020,H0412,Rio Hondo,0,Metropolitan Water District,Los Angeles,1.91,1,WAT,12/1/1993 0:00,0,-118.099259,34.00471669
+3021,S0442,Pico Rivera,0,Not Available,Los Angeles,0.9,Unit 1,SUN,11/20/2015 0:00,0,-118.1032733,33.98225773
+3028,H0437,San Dimas Hydro Recovery Plant,0,Metropolitan Water District,Los Angeles,9.92,1,WAT,3/1/1981 0:00,0,-117.7957469,34.12752855
+3029,H0443,San Dimas Wash,0,San Gabriel Valley Municipal Water District,Los Angeles,1.05,UNIT 1,WAT,3/1/1986 0:00,0,-117.8050529,34.12416126
+3034,S0221,Industry MetroLink PV 1,0,Intertie,Los Angeles,1.5,1,SUN,5/1/2012 0:00,0,-117.8448149,34.00957492
+3035,S0527,Weymouth Solar Plant,0,Metropolitan Water District,Los Angeles,2.99,Unit 1,SUN,6/1/2016 0:00,0,-117.7835818,34.10776508
+3036,S9258,United States Department of Agriculture  Forest Service,0,Not Available,Los Angeles,0.25,Unit 1,SUN,12/31/2014 0:00,0,-117.8003873,34.10580052
+3039,S0709,Walnut High,0,Tesla Inc.,Los Angeles,1.23,91714744-CA,SUN,9/30/2019 0:00,0,-117.8511484,34.02270495
+3041,S0118,SPVP002 Chino Rooftop Solar,0,Southern California Edison (SCE),San Bernardino,1.22,1,SUN,10/1/2009 0:00,0,-117.7008571,33.9850236
+3042,S0199,SPVP032 Ontario - Kennedy 2,0,Southern California Edison (SCE),San Bernardino,1.74,1,SUN,12/22/2011 0:00,0,-117.5719071,34.03245462
+3043,S0210,SS San Antonio West  LLC,0,Not Available,Riverside,1.87,Unit 1,SUN,6/14/2012 0:00,0,-117.6590519,33.96678
+3044,S0433,Terra Francesco,0,Kona Solar LLC,San Bernardino,1.49,TF,SUN,3/1/2015 0:00,0,-117.6055603,34.03941056
+3047,S9412,Jurupa Valley Solar PV,0,Sacramento PV Energy LLC,San Bernardino,1.5,1,SUN,1/3/2014 0:00,0,-117.5917674,34.05048439
+3051,H0174,Etiwanda,0,Metropolitan Water District,San Bernardino,23.9,1,WAT,7/1/1994 0:00,0,-117.5256415,34.10341596
+3053,S0128,SPVP003 Rialto,0,Southern California Edison (SCE),San Bernardino,1.22,1,SUN,3/1/2011 0:00,0,-117.4000275,34.09417251
+3054,S0136,SPVP006 Ontario,0,Southern California Edison (SCE),San Bernardino,2.55,1,SUN,8/1/2011 0:00,0,-117.5713144,34.0416746
+3055,S0186,SPVP008 Ontario,0,Southern California Edison (SCE),San Bernardino,2.85,1,SUN,12/30/2010 0:00,0,-117.5656733,34.04206147
+3056,S0187,SPVP009 Ontario,0,Southern California Edison (SCE),San Bernardino,1.41,1,SUN,1/10/2011 0:00,0,-117.5705793,34.04298026
+3057,S0188,SPVP010 Fontana (Etiwanda),0,Southern California Edison (SCE),San Bernardino,2.25,1,SUN,5/18/2011 0:00,0,-117.5171096,34.07485946
+3058,S0191,SPVP015 Fontana (Etiwanda) includes SPVP001,0,Southern California Edison (SCE),San Bernardino,4.69,1,SUN,12/29/2010 0:00,0,-117.5167131,34.08022846
+3059,S0193,SPVP017 Fontana (Etiwanda),0,Southern California Edison (SCE),San Bernardino,4.5,1,SUN,12/14/2011 0:00,0,-117.5129139,34.07344792
+3060,S0194,SPVP018 Fontana (Etiwanda),0,Southern California Edison (SCE),San Bernardino,1.94,1,SUN,5/23/2011 0:00,0,-117.5166307,34.08399658
+3061,S0196,SPVP023 Fontana (Etiwanda),0,Southern California Edison (SCE),San Bernardino,3.86,1,SUN,5/12/2011 0:00,0,-117.5202785,34.0801525
+3062,S0197,SPVP026 Rialto,0,Southern California Edison (SCE),San Bernardino,8.6,1,SUN,8/26/2011 0:00,0,-117.4253426,34.13237676
+3063,S0200,SPVP033 Ontario - Kennedy 3,0,Southern California Edison (SCE),San Bernardino,1.28,1,SUN,12/12/2011 0:00,0,-117.5686782,34.03263357
+3064,S0227,SPVP027 Rialto,0,Southern California Edison (SCE),San Bernardino,2.62,1,SUN,11/27/2012 0:00,0,-117.4254829,34.12719917
+3065,S0444,Tequesquite Landfill Solar PV Project,0,CD Arevon USA Inc.,Riverside,7.5,Unit 1,SUN,9/9/2015 0:00,0,-117.4102098,33.973504
+3066,S0446,Rancho Cucamonga Distribution #1,0,Altus Power,San Bernardino,1.75,Unit 1,SUN,10/21/2014 0:00,0,-117.5536524,34.10010612
+3067,S0447,SunE - Rochester,0,Not Available,San Bernardino,1,Unit 1,SUN,10/16/2015 0:00,0,-117.5444922,34.09791961
+3068,S0448,SunE - Mira Loma,0,Not Available,Riverside,0.5,Unit 1,SUN,10/16/2015 0:00,0,-117.5173919,34.02855716
+3069,S0449,SunE - Dupont Ontario,0,Not Available,San Bernardino,0.65,Unit 1,SUN,10/16/2015 0:00,0,-117.5532349,34.0451414
+3070,S0453,SunE - E Philadelphia Ontario,0,Not Available,San Bernardino,1.3,Unit 1,SUN,10/16/2015 0:00,0,-117.5340928,34.03598615
+3071,S0454,SunE - Jurupa Fontana,0,Not Available,San Bernardino,1.19,Unit 1,SUN,10/16/2015 0:00,0,-117.5190976,34.03895204
+3072,S0572,Dulles,0,Golden Solar LLC (Dulles),Riverside,2,Unit 1,SUN,11/17/2016 0:00,0,-117.5174006,34.0297991
+3075,S9167,SPVP012 Ontario,0,Southern California Edison (SCE),San Bernardino,0.5,1,SUN,1/1/2011 0:00,0,-117.5618612,34.04205018
+3080,S9414,Champagne Solar PV,0,Sacramento PV Energy LLC,San Bernardino,1.23,1,SUN,1/3/2014 0:00,0,-117.5308103,34.04465571
+3081,W0397,IEUA,0,Foundation Windpower,San Bernardino,1,WPRS 1,WND,6/1/2011 0:00,0,-117.5264425,34.08493964
+3084,H0372,Ontario 1,0,Southern California Edison (SCE),San Bernardino,0.6,1,WAT,12/1/1902 0:00,0,-117.2567743,34.08436306
+3085,H0373,Ontario 2,0,Southern California Edison (SCE),San Bernardino,0.32,1,WAT,6/1/1963 0:00,0,-117.2518212,34.08554416
+3087,S0158,SPVP005 Redlands,0,Southern California Edison (SCE),San Bernardino,3.4,1,SUN,8/1/2011 0:00,0,-117.231104,34.08631759
+3088,S0185,SPVP007 Redlands,0,Southern California Edison (SCE),San Bernardino,3.2,1,SUN,12/29/2010 0:00,0,-117.2280825,34.08636444
+3089,S0189,SPVP011 Redlands RDC 4,0,Southern California Edison (SCE),San Bernardino,5.02,1,SUN,10/10/2011 0:00,0,-117.2410074,34.0760278
+3090,S0190,SPVP013 Redlands,0,Southern California Edison (SCE),San Bernardino,4.93,1,SUN,9/15/2011 0:00,0,-117.234812,34.08353399
+3091,S0192,SPVP016 Redlands,0,Southern California Edison (SCE),San Bernardino,1.75,1,SUN,5/18/2011 0:00,0,-117.234214,34.08570749
+3092,S0195,SPVP022 Redlands,0,Southern California Edison (SCE),San Bernardino,3.09,1,SUN,11/15/2010 0:00,0,-117.2134369,34.08000344
+3093,S0198,SPVP028 San Bernardino (Vista 28),0,Southern California Edison (SCE),San Bernardino,4.86,1,SUN,12/20/2011 0:00,0,-117.2743288,34.09483515
+3094,S0322,SPVP048 Redlands,0,Southern California Edison (SCE),San Bernardino,5,1,SUN,8/12/2014 0:00,0,-117.2280791,34.08265541
+3095,S0361,Patton State Hospital II ,0,Not Available,San Bernardino,0.99,1,SUN,7/3/2012 0:00,0,-117.2145889,34.14243415
+3096,S0370,Kohl's - San Bernardino - Mill,0,EDP Renewables North America LLC,San Bernardino,1,1,SUN,11/28/2007 0:00,0,-117.2667703,34.09487818
+3097,S0377,Kohl's - San Bernardino - Central,0,Silicon Ranch Corporation,San Bernardino,1,1,SUN,8/24/2012 0:00,0,-117.2670199,34.085361
+3098,S0451,SunE - San Bernardino,0,Not Available,San Bernardino,1.9,Unit 1,SUN,10/16/2015 0:00,0,-117.2476838,34.10037579
+3099,S0452,SunE - Redlands,0,Not Available,San Bernardino,1.83,Unit 1,SUN,10/16/2015 0:00,0,-117.2294819,34.07620147
+3100,S9153,Loma Linda VA Health Care System,0,Not Available,San Bernardino,2.83,"1, 2",SUN,1/1/2012 0:00,0,-117.2501881,34.05014601
+3107,H0331,Mill Creek 1,0,Southern California Edison (SCE),San Bernardino,0.8,1,WAT,1/17/1935 0:00,0,-117.0773069,34.07398098
+3108,H0332,Mill Creek 2,0,Southern California Edison (SCE),San Bernardino,0.25,1,WAT,8/1/1904 0:00,0,-117.0684319,34.07725743
+3109,H0333,Mill Creek 3,0,Southern California Edison (SCE),San Bernardino,3,"3, 4, 5",WAT,3/1/1903 0:00,0,-117.0394332,34.08798475
+3110,H0462,Santa Ana 3,0,Southern California Edison (SCE),San Bernardino,3.1,1,WAT,4/1/1947 0:00,0,-117.0990674,34.10759176
+3113,S0169,Coronus Yucca Valley East 1,0,Coronus,San Bernardino,1.5,Unit 1,SUN,7/15/2013 0:00,0,-116.3702465,34.12355597
+3114,S0170,Coronus Yucca Valley East 2,0,Coronus,San Bernardino,1.5,Unit 1,SUN,7/15/2013 0:00,0,-116.3704338,34.12354922
+3115,S0171,Coronus Yucca Valley East 3,0,Coronus,San Bernardino,1.5,Unit 1,SUN,7/15/2014 0:00,0,-116.3702216,34.12297167
+3116,S0172,Coronus Joshua Tree East 1,0,Coronus,San Bernardino,1.5,Unit 1,SUN,7/15/2013 0:00,0,-116.2244967,34.13413924
+3117,S0173,Coronus Joshua Tree East 2,0,Coronus,San Bernardino,1.5,Unit 1,SUN,7/15/2013 0:00,0,-116.2243586,34.13413631
+3118,S0174,Coronus Joshua Tree East 3,0,Coronus,San Bernardino,1.5,Unit 1,SUN,7/15/2013 0:00,0,-116.2242204,34.13414043
+3121,S0368,Procter & Gamble - Oxnard,0,EDP Renewables North America LLC,Ventura,1,1,SUN,9/25/2009 0:00,0,-119.1344039,34.20970554
+3122,S0450,SunE - Oxnard,0,Not Available,Ventura,2.7,Unit 1,SUN,10/16/2015 0:00,0,-119.1641205,34.19255721
+3128,H0076,Springville Reservoir,0,Calleguas Municipal Water District,Ventura,1,1,WAT,1/1/1994 0:00,0,-119.0691133,34.21301465
+3132,H0078,East Portal Generator,0,Calleguas Municipal Water District,Los Angeles,1.25,4022,WAT,1/1/1984 0:00,0,-118.6240355,34.26203295
+3133,S0181,Pierce College LACCD,0,Los Angeles Community College District,Los Angeles,2.1,3_SIPs,SUN,10/19/2010 0:00,0,-118.5746834,34.18376131
+3134,S0219,LAPC Carport Shade Structures (Los Angeles Pierce College),0,Los Angeles Community College District,Los Angeles,2.09,"1, 2",SUN,8/19/2010 0:00,0,-118.5823393,34.18555186
+3135,S9158,Los Angeles Community College District,0,Not Available,Los Angeles,2.28,1,SUN,1/1/2013 0:00,0,-118.5800707,34.18327753
+3137,H0189,Foothill,0,Los Angeles Department of Water & Power (LADWP),Los Angeles,9.9,Unit 1,WAT,10/6/1971 0:00,0,-118.4943684,34.31819157
+3139,H0438,San Fernando,0,Los Angeles Department of Water & Power (LADWP),Los Angeles,6.4,"Unit 1, Unit 2",WAT,10/22/1922 0:00,0,-118.3855333,34.26057004
+3140,H0616,North Hollywood Pumping Plant,0,Los Angeles Department of Water & Power (LADWP),Los Angeles,1,Unit 1,WAT,1/1/1993 0:00,0,-118.3908351,34.19448685
+3141,S9155,Sepulveda Ambulatory Care Center,0,Not Available,Los Angeles,4,1,SUN,1/1/2012 0:00,0,-118.4776544,34.24389024
+3153,H0014,Azusa,0,City of Pasadena,Los Angeles,3,1,WAT,2/1/1949 0:00,0,-117.9083665,34.15501145
+3154,H0442,San Gabriel Hydroelectric Project,0,Los Angeles County Flood Control District,Los Angeles,4.98,"U1, U2",WAT,12/1/1987 0:00,0,-117.8556975,34.20431107
+3155,H0479,Sierra,0,Southern California Edison (SCE),San Bernardino,0.48,"1, 2",WAT,1/1/1922 0:00,0,-117.6839597,34.15540187
+3156,H0187,Fontana,0,Southern California Edison (SCE),San Bernardino,1.9,1,WAT,12/1/1917 0:00,0,-117.3973027,34.15528069
+3157,H0298,Lytle Creek,0,Southern California Edison (SCE),San Bernardino,0.5,1,WAT,7/21/1947 0:00,0,-117.4863268,34.23162347
+3159,H0137,Devil Canyon,0,California Department of Water Resources,San Bernardino,276.46,"1, 2, 3, 4",WAT,12/1/1972 0:00,0,-117.334611,34.20561108
+3160,H0337,Mojave Siphon,0,California Department of Water Resources,San Bernardino,32.79,"1, 2, 3",WAT,8/1/1996 0:00,0,-117.3231311,34.30775924
+3161,H0460,Santa Ana 1,0,Southern California Edison (SCE),San Bernardino,3.2,"1, 2, 3, 4",WAT,1/1/1899 12:00:00 AM,0,-117.0586738,34.14548821
+3164,S0164,SEPV 2 (Gestamp - GASNA),0,X-Elio North America Inc.,San Bernardino,2,1,SUN,6/1/2012 0:00,0,-116.1532744,34.17467824
+3165,S0165,Coronus 29-Palms North 1,0,Coronus,San Bernardino,1.5,Unit 1,SUN,1/15/2014 0:00,0,-116.0721102,34.17609286
+3166,S0166,Coronus 29-Palms North 2,0,Coronus,San Bernardino,1.5,Unit 1,SUN,1/15/2014 0:00,0,-116.0721117,34.17617174
+3167,S0167,Coronus 29-Palms North 3,0,Coronus,San Bernardino,1.5,Unit 1,SUN,1/15/2014 0:00,0,-116.0721009,34.17601351
+3168,S0289,Cascade Solar PV,0,Longroad Energy,San Bernardino,18.5,1,SUN,3/19/2014 0:00,0,-116.2365662,34.16571182
+3169,S9409,Highlander Solar 1 (SEPV8),0,Deriva Energy,San Bernardino,12,SEPV8,SUN,6/12/2013 0:00,0,-116.1526984,34.17060743
+3170,S9410,Highlander Solar 2 (SEPV9),0,Deriva Energy,San Bernardino,9,SEPV9,SUN,6/11/2013 0:00,0,-116.0921214,34.19144472
+3171,H0381,Parker,0,United States Bureau of Reclamation,San Bernardino,120,"UNIT 1, UNIT 2, UNIT 3, UNIT 4",WAT,12/1/1942 0:00,0,-114.1402679,34.29532139
+3179,H0533,Santa Felicia,0,United Water Conservation District,Ventura,1.42,"UNIT 1, UNIT 2",WAT,6/1/1987 0:00,0,-118.7524094,34.45956361
+3180,H0188,Foothill Feeder,0,Metropolitan Water District,Los Angeles,9.04,"1, 2",WAT,4/1/1981 0:00,0,-118.6092373,34.51473259
+3181,H0440,San Francisquito 2,0,Los Angeles Department of Water & Power (LADWP),Los Angeles,46,"Unit 1, Unit 2, Unit 3",WAT,7/6/1919 0:00,0,-118.5250454,34.53435648
+3186,S0543,Pearblossom Solar,0,SunPower Capital Services,Los Angeles,9.5,M1340,SUN,12/29/2016 0:00,0,-117.9162711,34.51270259
+3187,S0279,RE Victor Phelan Solar One,0,MN8 Energy,San Bernardino,17.5,1,SUN,12/6/2013 0:00,0,-117.4748416,34.51242507
+3188,S0351,Snowline - Duncan Road (North),0,Not Available,San Bernardino,1.5,1,SUN,10/2/2014 0:00,0,-117.5622331,34.47317649
+3189,S0352,Snowline - Duncan Road (South),0,Not Available,San Bernardino,1,1,SUN,10/2/2014 0:00,0,-117.563587,34.47457771
+3190,S0353,Snowline - White Road (North),0,Not Available,San Bernardino,1.5,1,SUN,11/25/2014 0:00,0,-117.469708,34.41749361
+3191,S0354,Snowline - White Road (South),0,Not Available,San Bernardino,1.5,1,SUN,10/2/2014 0:00,0,-117.4696444,34.41475043
+3192,S0355,Snowline - White Road (Central),0,Not Available,San Bernardino,1.5,1,SUN,11/25/2014 0:00,0,-117.4695251,34.41264592
+3193,S0417,Victor Dry Farm Ranch A,0,S-Power (Sustainable Power Group),San Bernardino,5,VDFRA,SUN,6/8/2015 0:00,0,-117.4698902,34.49793357
+3194,S0418,Victor Dry Farm Ranch B,0,S-Power (Sustainable Power Group),San Bernardino,5,VDFRB,SUN,6/8/2015 0:00,0,-117.4723279,34.49785996
+3195,S0419,Victor Mesa Linda D2,0,S-Power (Sustainable Power Group),San Bernardino,1.5,VMLD2,SUN,11/1/2014 0:00,0,-117.3869848,34.50943489
+3196,S0420,Victor Mesa Linda E2,0,S-Power (Sustainable Power Group),San Bernardino,1.5,VMLE2,SUN,11/1/2014 0:00,0,-117.3875367,34.50879057
+3197,S9274,Victor Mesa Linda B2,0,S-Power (Sustainable Power Group),San Bernardino,1.5,Unit 1,SUN,12/31/2013 0:00,0,-117.3878435,34.51343476
+3198,S9285,Victor Mesa Linda C2,0,S-Power (Sustainable Power Group),San Bernardino,1.5,Unit 1,SUN,11/10/2014 0:00,0,-117.3868263,34.51184291
+3199,S0168,SunEdison Hesperia Solar PV,0,Not Available,San Bernardino,1.5,1,SUN,8/4/2014 0:00,0,-117.3769562,34.43449143
+3200,S0360,SolFocus - Victor Valley Community College,0,Not Available,San Bernardino,1.25,1,SUN,6/30/2010 0:00,0,-117.2573581,34.48012025
+3201,S9281,Powhatan Solar Power Generation Station 1,0,S-Power (Sustainable Power Group),San Bernardino,1.5,Unit 1,SUN,12/1/2013 0:00,0,-117.1441263,34.49664582
+3202,S9283,Drew Energy  LLC,0,Not Available,San Bernardino,1,Unit 1,SUN,12/31/2014 0:00,0,-117.1539451,34.50950984
+3203,S0328,Lone Valley Solar Park 1,0,EDP Renewables North America LLC,San Bernardino,10,1,SUN,10/1/2014 0:00,0,-116.8658519,34.3970296
+3204,S0329,Lone Valley Solar Park 2,0,EDP Renewables North America LLC,San Bernardino,20,2,SUN,10/1/2014 0:00,0,-116.862488,34.40832802
+3205,H0567,William E. Warne,0,California Department of Water Resources,Los Angeles,74.3,"1, 2",WAT,11/1/1982 0:00,0,-118.7881852,34.68518763
+3206,H0039,Castaic Efficiency (Small Hydro),0,Los Angeles Department of Water & Power (LADWP),Los Angeles,9,Unit 1,WAT,10/1/1978 0:00,0,-118.6563351,34.58675828
+3207,H0090,Castaic (Pumped Storage),0,Los Angeles Department of Water & Power (LADWP),Los Angeles,1331,"Unit #1, Unit #2, Unit #3, Unit #4, Unit #5, Unit #6, Unit #7",WAT,9/1/1973 0:00,0,-118.6565998,34.58743145
+3208,H0441,San Francisquito 1,0,Los Angeles Department of Water & Power (LADWP),Los Angeles,69.38,"Unit #1A, Unit #3, Unit #4, Unit #5A",WAT,5/1/1983 0:00,0,-118.4546996,34.59016929
+3209,S0239,TA High Desert Antelope Power Plant,0,Clearway Energy,Los Angeles,20,1,SUN,3/25/2013 0:00,0,-118.3047097,34.70888408
+3210,S0261,Radiance Solar 4,0,QE - Foresight Group US,Los Angeles,1.5,1,SUN,7/1/2013 0:00,0,-118.2883159,34.66617632
+3211,S0262,Radiance Solar 5,0,QE - Foresight Group US,Los Angeles,1.5,1,SUN,7/1/2013 0:00,0,-118.2870055,34.66464563
+3212,S0271,Western Antelope Blue Sky Ranch A ,0,S-Power (Sustainable Power Group),Los Angeles,20,1,SUN,11/1/2014 0:00,0,-118.329969,34.68654685
+3213,S0318,West Antelope Solar Park,0,Onward Energy,Los Angeles,20,1,SUN,11/10/2014 0:00,0,-118.3278133,34.69348207
+3214,S0356,CA State Prison LA County (CSPL),0,Silicon Ranch Corporation,Los Angeles,2,1,SUN,12/19/2012 0:00,0,-118.2342473,34.69458031
+3215,S0432,Sierra Solar Greenworks LLC,0,S-Power (Sustainable Power Group),Los Angeles,20,Unit 1,SUN,11/1/2015 0:00,0,-118.3338305,34.7030126
+3216,S0548,Antelope Big Sky Ranch,0,S-Power (Sustainable Power Group),Los Angeles,20,Unit 1,SUN,8/19/2016 0:00,0,-118.2872375,34.69147199
+3217,S0549,Central Antelope Dry Ranch C,0,S-Power (Sustainable Power Group),Los Angeles,20,Unit 1,SUN,5/6/2016 0:00,0,-118.2286519,34.70059669
+3218,S0552,Antelope DSR 1 - Big Sky Solar 1,0,S-Power (Sustainable Power Group),Los Angeles,50,Unit 1,SUN,12/20/2016 0:00,0,-118.2855817,34.6560856
+3219,S0553,Antelope DSR 2 - Big Sky Solar 2,0,S-Power (Sustainable Power Group),Los Angeles,5,Unit 1,SUN,12/20/2016 0:00,0,-118.313309,34.65965516
+3220,S0556,Elevation Solar C,0,S-Power (Sustainable Power Group),Los Angeles,40,Unit 1,SUN,12/2/2016 0:00,0,-118.3033786,34.72691815
+3221,S0558,Solverde 1,0,S-Power (Sustainable Power Group),Los Angeles,85,Unit 1,SUN,12/20/2016 0:00,0,-118.2936188,34.66129667
+3222,S0559,Summer Solar,0,S-Power (Sustainable Power Group),Los Angeles,20,Unit 1,SUN,7/25/2016 0:00,0,-118.3127489,34.71568176
+3223,S0560,North Lancaster Ranch,0,S-Power (Sustainable Power Group),Los Angeles,20,Unit 1,SUN,12/31/2016 0:00,0,-118.3126289,34.7270412
+3224,S0568,Western Antelope Blue Sky Ranch B,0,S-Power (Sustainable Power Group),Los Angeles,20,Unit 1,SUN,12/2/2016 0:00,0,-118.3128433,34.68723553
+3225,S0592,Lancaster B,0,Not Available,Los Angeles,3,Unit 1,SUN,4/22/2017 0:00,0,-118.3055939,34.71685522
+3226,S0597,"Portal Ridge B, LLC",0,D. E. Shaw,Los Angeles,20,PRB,SUN,2/15/2017 0:00,0,-118.2815182,34.71750108
+3227,S0598,"Portal Ridge C, LLC",0,D. E. Shaw,Los Angeles,11.4,PRC,SUN,4/21/2017 0:00,0,-118.3051949,34.71269916
+3228,S0613,Bayshore Solar B,0,S-Power (Sustainable Power Group),Los Angeles,20,Unit 1,SUN,12/20/2017 0:00,0,-118.3140752,34.67829998
+3229,S0614,Bayshore Solar C,0,S-Power (Sustainable Power Group),Los Angeles,20,Unit 1,SUN,12/20/2017 0:00,0,-118.314182,34.68133792
+3230,S0615,Bayshore Solar A,0,S-Power (Sustainable Power Group),Los Angeles,20,Unit 1,SUN,12/20/2017 0:00,0,-118.2983378,34.66781262
+3231,S0627,Rite Aid - Lancaster,0,Tesla Inc.,Los Angeles,1.1,9352376-CA,SUN,3/16/2015 0:00,0,-118.1815198,34.72443732
+3232,S0645,Antelope Valley Lancaster Solar 1 (Avenue F),0,Tesla Inc.,Los Angeles,3.8,Unit 1,SUN,8/25/2017 0:00,0,-118.1877185,34.69160899
+3233,S0669,Delsur Solar,0,Not Available,Los Angeles,10,Unit 1,SUN,3/16/2016 0:00,0,-118.3088949,34.72061434
+3234,S0694,Antelope DSR 3,0,S-Power (Sustainable Power Group),Los Angeles,20,Unit 1,SUN,9/26/2019 0:00,0,-118.2998611,34.73354497
+3235,S9210,Abby Power  LLC,0,Not Available,Los Angeles,1.5,Unit 1,SUN,12/31/2014 0:00,0,-118.2018184,34.70001557
+3236,S9211,Amy Solar  LLC,0,Not Available,Los Angeles,1.5,Unit 1,SUN,12/31/2014 0:00,0,-118.2018184,34.70001557
+3237,S9213,Ayden Power  LLC,0,Not Available,Los Angeles,1.5,Unit 1,SUN,12/31/2014 0:00,0,-118.2018184,34.70001557
+3238,S9215,Carly Solar  LLC,0,Not Available,Los Angeles,1,Unit 1,SUN,12/31/2014 0:00,0,-118.2018184,34.70001557
+3239,S9217,CSC Solar I  LLC,0,Not Available,Los Angeles,1.5,Unit 1,SUN,12/31/2014 0:00,0,-118.2018184,34.70001557
+3240,S9218,CSC Solar II  LLC,0,Not Available,Los Angeles,1,Unit 1,SUN,12/31/2014 0:00,0,-118.2018184,34.70001557
+3241,S9219,CSC Solar  LLC,0,Not Available,Los Angeles,1.5,Unit 1,SUN,12/31/2014 0:00,0,-118.2018184,34.70001557
+3242,S9220,D2 Solar 1  LLC,0,Not Available,Los Angeles,1.5,Unit 1,SUN,12/31/2014 0:00,0,-118.2018184,34.70001557
+3243,S9221,D2 Solar 2  LLC,0,Not Available,Los Angeles,1.5,Unit 1,SUN,12/31/2014 0:00,0,-118.2018184,34.70001557
+3244,S9223,DT Solar 1  LLC,0,Not Available,Los Angeles,1.5,Unit 1,SUN,12/31/2014 0:00,0,-118.2018184,34.70001557
+3245,S9224,DT Solar 2  LLC,0,Not Available,Los Angeles,1.5,Unit 1,SUN,12/31/2014 0:00,0,-118.2018184,34.70001557
+3246,S9225,DT Solar 3  LLC,0,Not Available,Los Angeles,1,Unit 1,SUN,12/31/2014 0:00,0,-118.2018184,34.70001557
+3247,S9226,Erika Solar  LLC,0,Not Available,Los Angeles,1.5,Unit 1,SUN,12/31/2014 0:00,0,-118.174951,34.5937356
+3248,S9230,Kell Solar 1  LLC,0,Not Available,Los Angeles,1,Unit 1,SUN,12/31/2014 0:00,0,-118.2018184,34.70001557
+3249,S9231,Kell Solar 2  LLC,0,Not Available,Los Angeles,1,Unit 1,SUN,12/31/2014 0:00,0,-118.2018184,34.70001557
+3250,S9232,Lancaster Del Sur Ranch C2 LLC,0,Not Available,Los Angeles,1.5,Unit 1,SUN,12/31/2014 0:00,0,-118.2018184,34.70001557
+3251,S9237,Lola Energy 1  LLC,0,Not Available,Los Angeles,1,Unit 1,SUN,12/31/2014 0:00,0,-118.1818721,34.72498744
+3252,S9238,Lola Energy 2  LLC,0,Not Available,Los Angeles,1,Unit 1,SUN,12/31/2014 0:00,0,-118.1808924,34.72498745
+3253,S9239,Niner Energy 1 LLC,0,Not Available,Los Angeles,1.5,Unit 1,SUN,12/31/2014 0:00,0,-118.1714544,34.58554438
+3254,S9240,Niner Energy 2 LLC,0,Not Available,Los Angeles,1.5,Unit 1,SUN,12/31/2014 0:00,0,-118.1714544,34.58554438
+3255,S9241,Niner Energy 3 LLC,0,Not Available,Los Angeles,1,Unit 1,SUN,12/31/2014 0:00,0,-118.1714544,34.58554438
+3256,S9242,Rodeo Solar A2 LLC,0,Not Available,Los Angeles,1.5,Unit 1,SUN,12/31/2014 0:00,0,-118.2905947,34.71406318
+3257,S9243,Rodeo Solar B2 LLC,0,Not Available,Los Angeles,1.5,Unit 1,SUN,12/31/2014 0:00,0,-118.2931553,34.71227312
+3258,S9244,Rodeo Solar C2 LLC,0,S-Power (Sustainable Power Group),Los Angeles,1.5,Unit 1,SUN,6/6/2014 0:00,0,-118.292039,34.71227969
+3259,S9245,Rodeo Solar D2 LLC,0,S-Power (Sustainable Power Group),Los Angeles,1.5,Unit 1,SUN,6/6/2014 0:00,0,-118.2905904,34.71231844
+3260,S9246,Sandra Energy  LLC,0,Not Available,Los Angeles,1.5,Unit 1,SUN,12/31/2014 0:00,0,-118.2741548,34.70888407
+3261,S9247,Summer Solar A2 LLC,0,S-Power (Sustainable Power Group),Los Angeles,1.5,Unit 1,SUN,6/26/2014 0:00,0,-118.2965371,34.731629
+3262,S9248,Summer Solar B2 LLC,0,S-Power (Sustainable Power Group),Los Angeles,1.5,Unit 1,SUN,6/26/2014 0:00,0,-118.2963633,34.7274259
+3263,S9249,Summer Solar C2 LLC,0,S-Power (Sustainable Power Group),Los Angeles,1.5,Unit 1,SUN,6/26/2014 0:00,0,-118.2920373,34.72445664
+3264,S9250,Summer Solar D2 LLC,0,S-Power (Sustainable Power Group),Los Angeles,1.5,Unit 1,SUN,6/26/2014 0:00,0,-118.2925935,34.72532724
+3265,S9251,Summer North Solar 6.5,0,S-Power (Sustainable Power Group),Los Angeles,6.5,Unit 1,SUN,12/19/2014 0:00,0,-118.3029262,34.72918544
+3266,S9252,Summer Solar F2 LLC,0,Not Available,Los Angeles,1.5,Unit 1,SUN,12/31/2014 0:00,0,-118.2958908,34.72367673
+3267,S9253,Summer Solar G2 LLC,0,Not Available,Los Angeles,1.5,Unit 1,SUN,12/31/2014 0:00,0,-118.2957482,34.72035569
+3268,S9254,Summer Solar H2 LLC,0,Not Available,Los Angeles,1.5,Unit 1,SUN,12/31/2014 0:00,0,-118.3005018,34.72363766
+3269,S9259,Voyager Solar 1  LLC,0,Not Available,Los Angeles,1.5,Unit 1,SUN,12/31/2014 0:00,0,-118.1630572,34.64445524
+3270,S9260,Voyager Solar 2  LLC,0,Not Available,Los Angeles,1.5,Unit 1,SUN,12/31/2014 0:00,0,-118.1611706,34.64444903
+3271,S9261,Voyager Solar 3  LLC,0,Not Available,Los Angeles,1,Unit 1,SUN,12/31/2014 0:00,0,-118.1629764,34.64301894
+3272,S9263,Western Antelope Dry Ranch,0,S-Power (Sustainable Power Group),Los Angeles,10,Unit 1,SUN,12/1/2016 0:00,0,-118.320747,34.68618608
+3273,S9413,Lancaster Dry Farm Ranch B,0,S-Power (Sustainable Power Group),Los Angeles,5,Unit 1,SUN,12/18/2014 0:00,0,-118.29236,34.71739142
+3274,W0466,CDCR-LAC,0,Not Available,Los Angeles,1.85,WPRS 1,WND,1/1/2018 0:00,0,-118.233694,34.6953673
+3275,S0698,San Pablo Raceway,0,S-Power (Sustainable Power Group),Los Angeles,100,Unit 1,SUN,8/3/2019 0:00,0,-118.2891981,34.71814085
+3276,S0716,Antelope Expansion 3A,0,S-Power (Sustainable Power Group),Los Angeles,15,Unit 1,SUN,6/22/2021 0:00,0,-118.3242397,34.72594257
+3277,S0717,Antelope Expansion 3B,0,S-Power (Sustainable Power Group),Los Angeles,5,Unit 1,SUN,6/22/2021 0:00,0,-118.3243801,34.7259515
+3278,S0226,L-8 Solar Project,0,L-8 Solar Project LLC,Los Angeles,1.5,1,SUN,5/17/2012 0:00,0,-117.9732265,34.65513891
+3279,S0338,Oasis Solar,0,Clearway Energy,Los Angeles,20,1,SUN,1/19/2016 0:00,0,-118.0773372,34.64997086
+3280,S0435,Morgan Lancaster I LLC,0,"Coronal Lost Hills, LLC",Los Angeles,1.5,Unit 1,SUN,12/19/2015 0:00,0,-118.0875226,34.66502124
+3281,S0624,US-TOPCO: Division Site 3 45404,0,Tesla Inc.,Los Angeles,1,9351022-CA,SUN,6/24/2014 0:00,0,-118.1292577,34.70833933
+3282,S0625,US-TOPCO: Division Site 3 45406,0,Tesla Inc.,Los Angeles,1,9351023-CA,SUN,6/24/2014 0:00,0,-118.1293833,34.70783679
+3283,S0626,US-TOPCO: Kettering Site 1,0,Tesla Inc.,Los Angeles,1,9351024-CA,SUN,7/17/2014 0:00,0,-118.1249077,34.70149097
+3284,S0628,US-TOPCO: Soccer Center,0,Tesla Inc.,Los Angeles,3.3,9353058-CA,SUN,8/10/2017 0:00,0,-118.0879389,34.66152084
+3285,S0666,Green Beanworks B,0,S-Power (Sustainable Power Group),Los Angeles,3,Unit 1,SUN,12/28/2018 0:00,0,-117.9896128,34.68833006
+3286,S0668,Green Beanworks D,0,S-Power (Sustainable Power Group),Los Angeles,3,Unit 1,SUN,8/24/2018 0:00,0,-118.0812998,34.65540069
+3287,S0670,Lancaster Solar,0,Not Available,Los Angeles,5.5,Unit 1,SUN,4/11/2017 0:00,0,-118.1401645,34.66853319
+3288,S0671,Oasis Solar,0,Not Available,Riverside,13.5,Unit 1,SUN,3/16/2016 0:00,0,-118.0774104,34.64784705
+3290,S9212,Annie Power  LLC,0,Not Available,Los Angeles,1.5,Unit 1,SUN,12/31/2014 0:00,0,-118.0518948,34.65089606
+3291,S9214,Becca Solar  LLC,0,Not Available,Los Angeles,1.5,Unit 1,SUN,12/31/2014 0:00,0,-118.060925,34.66920425
+3292,S9216,Central Antelope Dry Ranch B2 LLC,0,Silicon Ranch Corporation,Los Angeles,3,Unit 1,SUN,12/31/2014 0:00,0,-118.1298304,34.70269155
+3293,S9222,Dreamer Solar  LLC,0,Not Available,Los Angeles,1.5,Unit 1,SUN,12/31/2014 0:00,0,-118.0625074,34.69620907
+3294,S9227,JRam Solar 1  LLC,0,Not Available,Los Angeles,1.5,Unit 1,SUN,12/31/2014 0:00,0,-118.0604676,34.64735081
+3295,S9228,JRam Solar 2  LLC,0,Not Available,Los Angeles,1.5,Unit 1,SUN,12/31/2014 0:00,0,-118.0605153,34.64901467
+3296,S9229,JRam Solar 3  LLC,0,Not Available,Los Angeles,1,Unit 1,SUN,12/31/2014 0:00,0,-118.0625619,34.64909373
+3297,S9233,Lancaster Solar 1 LLC,0,Clenera - Renewable Energy,Los Angeles,1.5,Unit 1,SUN,12/12/2014 0:00,0,-118.0942866,34.71500411
+3298,S9234,Lancaster Solar 2 LLC,0,Clenera - Renewable Energy,Los Angeles,1.5,Unit 1,SUN,12/12/2014 0:00,0,-118.1039324,34.68317462
+3299,S9235,Leolani Solar 1  LLC,0,Not Available,Los Angeles,1.5,Unit 1,SUN,12/31/2014 0:00,0,-118.0724219,34.66444812
+3300,S9255,Treen Solar 1  LLC,0,Not Available,Los Angeles,1,Unit 1,SUN,12/31/2014 0:00,0,-118.0510962,34.65462777
+3301,S9256,Treen Solar 2  LLC,0,Not Available,Los Angeles,1,Unit 1,SUN,12/31/2014 0:00,0,-118.0511615,34.65642961
+3302,S0589,Little Rock Pham Solar,0,Not Available,Los Angeles,3,Unit 1,SUN,3/22/2016 0:00,0,-117.9497742,34.59987464
+3303,S0163,SEPV 1 (Gestamp - GASNA),0,X-Elio North America Inc.,Los Angeles,2,1,SUN,4/23/2012 0:00,0,-117.9365676,34.61349009
+3304,S0415,SEPV Palmdale East LLC,0,S-Power (Sustainable Power Group),Los Angeles,10,PLMD,SUN,7/31/2015 0:00,0,-117.9410941,34.61198797
+3305,S0557,SEPV 18 - Palmdale 18,0,S-Power (Sustainable Power Group),Los Angeles,1.5,Unit 1,SUN,1/4/2016 0:00,0,-117.9393216,34.61938694
+3306,S0641,One Ten Partners,0,Not Available,Los Angeles,2,Unit 1,SUN,9/30/2017 0:00,0,-117.9393601,34.61783124
+3307,S0667,Green Beanworks C,0,S-Power (Sustainable Power Group),Los Angeles,3,Unit 1,SUN,8/18/2018 0:00,0,-117.9318292,34.59714738
+3308,S9236,Leolani Solar 2  LLC,0,Not Available,Los Angeles,1,Unit 1,SUN,12/31/2014 0:00,0,-117.9352662,34.5731444
+3309,S9415,Lancaster Little Rock C Solar PV,0,S-Power (Sustainable Power Group),Los Angeles,5,Unit 1,SUN,12/15/2014 0:00,0,-117.9403047,34.60270575
+3310,S0293,Watts,0,Not Available,San Bernardino,3,1,SUN,1/1/2014 0:00,0,-117.643485,34.60145838
+3311,S0373,Bolthouse Farms - S&P,0,EDP Renewables North America LLC,Kern,1,1,SUN,10/30/2008 0:00,0,-117.6943996,34.56450904
+3312,S0218,Adelanto Solar Power Project,0,Los Angeles Department of Water & Power (LADWP),San Bernardino,10,1,SUN,6/1/2012 0:00,0,-117.438139,34.54790427
+3313,S9277,Industry Solar Power Generation Station 1,0,S-Power (Sustainable Power Group),San Bernardino,1.5,ISP1,SUN,12/1/2013 0:00,0,-117.4568644,34.55305841
+3314,S9282,Toro Power 1  LLC,0,Not Available,San Bernardino,1.5,Unit 1,SUN,12/31/2014 0:00,0,-117.4908044,34.59116784
+3315,S9284,Toro Power 2  LLC,0,Not Available,San Bernardino,1,Unit 1,SUN,12/31/2014 0:00,0,-117.4908044,34.59116784
+3316,S0299,Expressway Solar A,0,S-Power (Sustainable Power Group),San Bernardino,2,A,SUN,4/30/2014 0:00,0,-117.3424296,34.58252325
+3317,S0333,Alamo Solar LLC,0,Onward Energy,San Bernardino,20,1,SUN,4/17/2015 0:00,0,-117.3427161,34.69075029
+3318,S0410,Adelanto Solar I,0,Adelanto Solar LLC,San Bernardino,20,SAS1,SUN,9/10/2015 0:00,0,-117.3697248,34.55534649
+3319,S0411,Adelanto Solar II,0,Adelanto Solar LLC,San Bernardino,7,SAS2,SUN,7/15/2015 0:00,0,-117.3767592,34.55525839
+3320,S0413,Expressway Solar B,0,S-Power (Sustainable Power Group),San Bernardino,2,EXSB,SUN,5/1/2014 0:00,0,-117.3418922,34.58334055
+3321,S9276,Expressway Solar C2,0,S-Power (Sustainable Power Group),San Bernardino,1.5,EXSC2,SUN,11/1/2014 0:00,0,-117.3425438,34.58467488
+3322,S9278,Navajo Solar Power Generation Station 1,0,S-Power (Sustainable Power Group),San Bernardino,1.5,Unit 1,SUN,12/1/2013 0:00,0,-117.1927852,34.55074091
+3323,S9280,Otoe Solar Power Generation Station 1,0,S-Power (Sustainable Power Group),San Bernardino,1.5,Unit 1,SUN,12/1/2013 0:00,0,-117.1927179,34.54455407
+3326,W0404,Cemex River Plant,0,Foundation Windpower,San Bernardino,3.24,WPRS 1,WND,12/1/2012 0:00,0,-117.3072561,34.56197545
+3327,S0725,High Desert Solar,0,MN8 Energy,San Bernardino,100,Unit 1,SUN,12/17/2021 0:00,0,-117.374003,34.63030524
+3328,W0403,Cemex BMQ,0,Foundation Windpower,San Bernardino,3,WPRS 1,WND,11/1/2012 0:00,0,-117.1129411,34.62334161
+3329,S9293,Pristine Sun Fund 7 San Luis Obispo PGE LLC_(2052_Cossa),0,Not Available,San Luis Obispo,1.5,Unit 1,SUN,12/31/2013 0:00,0,-120.437253,34.91477875
+3330,S0617,Cuyama Solar,0,D. E. Shaw,Santa Barbara,43.83,Unit 1,SUN,12/1/2017 0:00,0,-119.597689,34.90143581
+3331,H0058,Alamo,0,California Department of Water Resources,Los Angeles,19.67,1,WAT,7/1/1986 0:00,0,-118.685834,34.81544125
+3332,S0639,Gaskell West 1,0,RE Gaskwell West 1 LLC,Los Angeles,20,Unit 1,SUN,3/23/2018 0:00,0,-118.5419352,34.83627292
+3333,S0237,Alpine Solar,0,NRG Solar Alpine LLC,Los Angeles,66,1,SUN,1/18/2013 0:00,0,-118.5088834,34.79617579
+3334,S0241,Antelope Valley Solar Ranch 1,0,AV Solar Ranch 1 LLC,Los Angeles,250,1,SUN,4/1/2013 0:00,0,-118.4255505,34.78070979
+3335,S0252,Solar Star I (MidAmerican),0,"BHE Renewables, LLC",Kern,177,SSI,SUN,10/1/2013 0:00,0,-118.4083201,34.82448797
+3336,S0253,Solar Star II (MidAmerican),0,"BHE Renewables, LLC",Kern,235,SSII,SUN,10/1/2013 0:00,0,-118.3489447,34.85261867
+3337,S0334,Catalina Two LLC,0,Onward Energy,Kern,18,1,SUN,5/20/2015 0:00,0,-118.3466951,34.83632837
+3338,S0531,Garland Solar Facility,0,Southern Power Company,Kern,200,GARS1,SUN,9/26/2016 0:00,0,-118.5158352,34.83052188
+3339,S0536,RE Astoria,0,Recurrent Energy LLC,Kern,100,Unit 1,SUN,6/29/2016 0:00,0,-118.4562668,34.84383202
+3340,S0537,RE Astoria 2,0,Recurrent Energy LLC,Kern,75,Unit 1,SUN,8/26/2016 0:00,0,-118.4697413,34.83117992
+3341,S0566,Kingbird Solar A,0,CD Arevon USA Inc.,Kern,20.73,Unit 1,SUN,4/30/2016 0:00,0,-118.4440768,34.82910017
+3342,S0567,Kingbird Solar B,0,CD Arevon USA Inc.,Kern,20.73,Unit 1,SUN,4/30/2016 0:00,0,-118.4190803,34.82215131
+3343,S0569,Rosamond West Solar 1 (Stanford Solar),0,MN8 Energy,Kern,54,M1317,SUN,12/22/2016 0:00,0,-118.3925327,34.84257249
+3344,S0570,Rosamond West Solar 2 (TID Solar),0,MN8 Energy,Kern,54,M1318,SUN,12/22/2016 0:00,0,-118.4401017,34.82336876
+3345,S0656,Willow Springs Solar,0,D. E. Shaw,Kern,108,Unit 1,SUN,12/21/2018 0:00,0,-118.3312436,34.83621936
+3346,S9206,Rachel Energy  LLC,0,Not Available,Kern,1.5,Unit 1,SUN,12/31/2014 0:00,0,-118.358695,34.92519801
+3347,W0367,"Pacific Wind Project, LLC",0,Terra-Gen Operating Company,Kern,143.5,WPRS 1,WND,5/1/1984 0:00,0,-118.4225099,34.90129506
+3348,S0700,Rosamond Central,0,Clearway Energy,Kern,192,Unit 1,SUN,12/22/2020 0:00,0,-118.3938242,34.84706175
+3349,S0287,RE Rosamond Two,0,MN8 Energy,Kern,20,1,SUN,12/23/2013 0:00,0,-118.2439815,34.90422845
+3350,S0288,RE Rosamond One,0,MN8 Energy,Kern,20,Unit 1,SUN,12/1/2013 0:00,0,-118.2529897,34.90425539
+3351,S0612,Lancaster WAD B,0,S-Power (Sustainable Power Group),Los Angeles,3,Unit 1,SUN,4/21/2017 0:00,0,-118.1912326,34.77871201
+3352,S0663,Antelope Expansion 2,0,S-Power (Sustainable Power Group),Los Angeles,105,Unit 1,SUN,12/24/2018 0:00,0,-118.3128086,34.75407674
+3353,S9202,Goodbar Solar 1  LLC,0,Not Available,Kern,1.5,Unit 1,SUN,12/31/2014 0:00,0,-118.2518632,34.87156886
+3354,S9203,Josh Energy  LLC,0,Not Available,Kern,1.5,Unit 1,SUN,12/31/2014 0:00,0,-118.2330571,34.83436407
+3355,S9205,MJ Power  LLC,0,Not Available,Kern,1.5,Unit 1,SUN,12/31/2014 0:00,0,-118.2518704,34.87167221
+3356,S9275,Cami Solar  LLC,0,Not Available,San Bernardino,1.5,Unit 1,SUN,12/31/2014 0:00,0,-117.3393539,34.74101072
+3357,S0545,LongBoat Solar,0,Deriva Energy,San Bernardino,20,PV1,SUN,12/1/2016 0:00,0,-117.1023782,34.90572427
+3359,S0590,Sunray 2 (formerly SEGS I),0,Stellar Power Renewable LLC,San Bernardino,20,W466,SUN,5/31/2017 0:00,0,-116.831583,34.86364932
+3360,S0591,Sunray 3 (formerly SEGS II),0,Stellar Power Renewable LLC,San Bernardino,13.8,W465,SUN,6/12/2017 0:00,0,-116.8278542,34.86650436
+3363,S9279,Newberry Solar 1 LLC,0,Not Available,San Bernardino,1.5,Unit 1,SUN,7/11/2013 0:00,0,-116.6844232,34.85345835
+3368,S0412,Maricopa West Solar PV,0,Onward Energy,Kern,20,1,SUN,12/30/2015 0:00,0,-119.3275049,35.11418774
+3372,S0606,Algonquin Power SKIC 10 Solar LLC,0,Algonquin Power Sanger LLC,Kern,10,Unit 1,SUN,1/11/2017 0:00,0,-119.247475,35.12415843
+3373,S0308,Adobe Solar,0,Southern Power Company,Kern,20,1,SUN,5/1/2014 0:00,0,-118.9520826,35.10587385
+3374,S9036,Services  Inc. #345 Ikea Distribution,0,Not Available,Kern,1,1,SUN,1/1/2012 0:00,0,-118.9480231,34.97538226
+3375,S9194,Fotowatio Renewable Ventures,0,Not Available,Kern,12,Unit 1,SUN,12/31/2013 0:00,0,-118.9569046,35.1058409
+3377,S0374,Soledad,0,Not Available,Kern,1,1,SUN,12/30/2013 0:00,0,-118.5648621,35.11701365
+3378,S0375,CA Correctional Institution - Tahachapi,0,Silicon Ranch Corporation,Kern,0.99,1,SUN,2/22/2012 0:00,0,-118.5640355,35.11589837
+3379,S0376,CA Correctional Institution II - Tehachapi,0,Silicon Ranch Corporation,Kern,1.33,1,SUN,6/24/2013 0:00,0,-118.5707981,35.11813733
+3380,S0081,Catalina Solar Phase I and II,0,EDF Renewable Energy Inc,Kern,110,1,SUN,12/15/2012 0:00,0,-118.3379375,34.93437615
+3382,W0271,Wind Stream Operations 6039 (Zond Systems  Inc - 6039),0,Not Available,Kern,6.34,WPRS 1,WND,2/1/1984 0:00,0,-118.3825823,35.06874428
+3383,W0272,Wind Stream Operations 6040 (Zond Systems  Inc - 6040),0,Not Available,Kern,6.66,WPRS 1,WND,9/1/1984 0:00,0,-118.3843377,35.07050181
+3384,W0273,Wind Stream Operations 6041 (Zond Systems  Inc - 6041),0,Not Available,Kern,4.5,WPRS 1,WND,12/1/1984 0:00,0,-118.3776327,35.0740194
+3385,W0274,Wind Stream Operations 6042 (Zond Systems  Inc - 6042),0,Not Available,Kern,6.34,WPRS 1,WND,1/1/1982 0:00,0,-118.3684595,35.10614049
+3388,W0284,Wind Resource I (Calwind Wind Resource I),0,CalWind Resources Inc,Kern,8.71,WPRS 1,WND,3/24/2012 0:00,0,-118.3914474,35.05965687
+3392,W0310,Wind Stream Operations 6111 (AES Tehachapi Wind - Zond Systems  Inc - Northwind),0,Not Available,Kern,6.32,WPRS 1,WND,1/1/1982 0:00,0,-118.3847436,35.08652313
+3393,W0370,Alta I Wind Energy Center,0,Terra-Gen Operating Company,Kern,150,WPRS 1,WND,12/29/2010 0:00,0,-118.3690351,35.03795814
+3394,W0419,"Windstar Energy, LLC",0,Windstar Energy LLC,Kern,120,WPRS 1,WND,1/1/2013 0:00,0,-118.3639913,35.05798464
+3395,W0420,Manzana Wind,0,See WPRS for details,Kern,189,WPRS 1,WND,1/28/2012 0:00,0,-118.4678324,34.94432624
+3396,W0442,Alta XI Wind Energy Center,0,See WPRS for details,Kern,89.65,WPRS 1,WND,12/31/1989 0:00,0,-118.3920994,35.06712422
+3397,W0445,Coram Tehachapi LP,0,See WPRS for details,Kern,6.53,WPRS 1,WND,12/1/1983 0:00,0,-118.3318922,35.07137214
+3398,W0449,Terra-Gen VG Wind,0,See WPRS for details,Kern,7.41,WPRS 1,WND,1/1/1982 0:00,0,-118.3836024,35.09823898
+3404,W0463,Coram Energy LLC,0,See WPRS for details,Kern,15,WPRS 1,WND,1/1/2016 0:00,0,-118.3418265,35.0580219
+3405,W0481,Point Wind,0,"Terra-Gen, LLC",Kern,64.5,WPRS 1,WND,3/8/2021 0:00,0,-118.3647287,35.08643704
+3406,S0278,RE Rio Grande,0,Canadian Solar,Kern,5,1,SUN,11/18/2013 0:00,0,-118.1639422,35.04923371
+3407,S0294,RE Columbia 3,0,MN8 Energy,Kern,10,1,SUN,12/1/2013 0:00,0,-118.1720906,35.02001649
+3408,S0313,Camelot  LLC,0,Onward Energy,Kern,45,1,SUN,11/26/2014 0:00,0,-118.1823273,35.01415895
+3409,S0314,Columbia Two  LLC,0,Onward Energy,Kern,15,1,SUN,11/26/2014 0:00,0,-118.1836126,35.01960822
+3410,S0550,SEPV Mojave West,0,S-Power (Sustainable Power Group),Kern,20,Unit 1,SUN,6/15/2015 0:00,0,-118.2782266,35.02441951
+3412,W0265,Ridgetop Energy II (Cannon Energy Corp),0,Ridgetop Energy LLC,Kern,46.86,WPRS 1,WND,12/31/1983 0:00,0,-118.3183515,35.0704603
+3413,W0270,Terra-Gen Mojave Windfarms (TPC Wind Farms - Tehachapi Power Purchase Trust),0,FPL Energy Operating Services Inc,Kern,28.28,WPRS 1,WND,1/1/1982 0:00,0,-118.2627648,35.04495564
+3414,W0297,Ridgetop Energy (Cannon Energy Corp - 6092),0,Ridgetop Energy LLC,Kern,28.5,WPRS 1,WND,1/1/1982 0:00,0,-118.3138879,35.07066428
+3416,W0313,"Mojave 16, 17, 18 (Mojave 16-17-18  (Desertwind III PPC Trust) - 6063-6114)",0,Mojave 16/17/18 LLC,Kern,83.55,WPRS 1,WND,1/1/1985 0:00,0,-118.2650403,35.05138146
+3417,W0319,Oak Creek Wind Power,0,See WPRS for details,Kern,31.5,WPRS 1,WND,2/7/2014 0:00,0,-118.2708934,35.04844899
+3418,W0320,Wind Resource II (Calwind),0,CalWind Resources Inc,Kern,19.96,WPRS 1,WND,5/17/2013 0:00,0,-118.3067754,35.10477346
+3419,W0372,Alta II Wind Energy Center,0,Terra-Gen Operating Company,Kern,150,WPRS 1,WND,12/29/2010 0:00,0,-118.3085291,35.01518549
+3420,W0374,Difwind Farms Ltd VI,0,See WPRS for details,Kern,23,WPRS 1,WND,1/1/1983 0:00,0,-118.2161183,35.0602865
+3421,W0385,"Oasis Power Partners, LLC",0,Oasis Power Partners LLC,Kern,60,WPRS 1,WND,1/27/2009 0:00,0,-118.2952318,35.05923057
+3422,W0387,Alta III Wind Energy Center,0,Terra-Gen Operating Company,Kern,150,WPRS 1,WND,1/1/1984 0:00,0,-118.2977846,35.01354459
+3423,W0388,Alta IV Wind Energy Center,0,Terra-Gen Operating Company,Kern,102,WPRS 1,WND,3/12/2011 0:00,0,-118.2560137,35.00620041
+3424,W0389,Alta V Wind Energy Center,0,Terra-Gen Operating Company,Kern,168,WPRS 1,WND,4/21/2011 0:00,0,-118.2376419,35.00079167
+3425,W0393,"Alta Wind VIII, LLC",0,Alta Wind VIII LLC,Kern,150,WPRS 1,WND,2/1/2012 0:00,0,-118.241637,35.03057031
+3426,W0406,Mustang Hills LLC (Alta Wind VI Energy Center),0,EverPower Wind Holdings Inc,Kern,150,WPRS 1,WND,3/17/2012 0:00,0,-118.3175645,35.05107077
+3427,W0407,Cameron Ridge,0,Terra-Gen Operating Company,Kern,59.67,WPRS 1,WND,12/10/2014 0:00,0,-118.3219752,35.07576993
+3428,W0408,"Coram California Development, LP",0,Coram California Development LP,Kern,102,WPRS 1,WND,3/29/2012 0:00,0,-118.2480181,35.01524641
+3429,W0415,Pinyon Pines Winds I,0,Terra-Gen Operating Company,Kern,168,WPRS 1,WND,12/7/2012 0:00,0,-118.2143667,35.03973212
+3430,W0416,Pinyon Pines Winds II,0,Terra-Gen Operating Company,Kern,132,WPRS 1,WND,1/1/2013 0:00,0,-118.2096138,35.0190649
+3431,W0438,Rising Tree Wind Farm III,0,See WPRS for details,Kern,99,WPRS 1,WND,5/15/2015 0:00,0,-118.2413959,35.05325399
+3432,W0441,Alta X Wind Energy Center,0,See WPRS for details,Kern,136.8,WPRS 1,WND,12/31/1989 0:00,0,-118.2133706,35.06998571
+3436,W0458,Rising Tree Wind Farm I,0,See WPRS for details,Kern,79.2,WPRS 1,WND,12/31/1989 0:00,0,-118.2207913,35.07776468
+3437,W0459,Rising Tree Wind Farm II,0,See WPRS for details,Kern,19.8,WPRS 1,WND,12/31/1989 0:00,0,-118.2074734,35.09401879
+3438,W0471,"Voyager Wind II, LLC",0,Not Available,Kern,128.7,WPRS 1,WND,11/7/2018 0:00,0,-118.2761896,35.0496676
+3439,W0472,"Voyager Wind III, LLC",0,Not Available,Kern,43.2,WPRS 1,WND,12/23/2018 0:00,0,-118.2758861,35.04796404
+3440,W0473,"Voyager Wind IV, LLC",0,Not Available,Kern,21.6,WPRS 1,WND,12/20/2018 0:00,0,-118.2725914,35.0511227
+3441,S0714,Valentine Solar,0,EDF Renewable Energy Inc,Kern,100,Unit 1,SUN,12/1/2019 0:00,0,-118.3242968,34.98793344
+3442,W0477,Mojave 3-4-5,0,FPL Energy Operating Services Inc,,75,WPRS 1,WND,1/1/2021 0:00,0,-118.2607697,35.04613504
+3443,W0480,"Oasis Alta, LLC",0,"Terra-Gen, LLC",Kern,14.4,WPRS 1,WND,4/14/2021 0:00,0,-118.2832197,35.04565304
+3451,S0073,SEGS IX,0,Luz Solar Partners Ltd IX,San Bernardino,92,GEN1,SUN,10/11/1990 0:00,1,-117.337778,35.03347557
+3453,S0104,Mojave Solar Project,0,Mojave Solar LLC,San Bernardino,250,"Alpha, Beta",SUN,12/4/2014 0:00,1,-117.3103379,35.00726002
+3455,S9077,California National Guard,0,Not Available,San Luis Obispo,1,1,SUN,1/1/2012 0:00,0,-120.7229531,35.32129681
+3456,S9129,Stocker Resources/ Plains Exploration & Production Company,0,Not Available,San Luis Obispo,1.4,1,SUN,1/1/2012 0:00,0,-120.6233037,35.17751922
+3470,S9416,Pumpjack Solar 1 PV,0,Deriva Energy,Kern,20,1,SUN,12/23/2014 0:00,0,-119.5961471,35.23729376
+3471,S0551,Castor Solar Project,0,Green Light Energy Corporation,Kern,1.5,Unit 1,SUN,4/2/2016 0:00,0,-119.3872455,35.21103909
+3472,S9067,Inergy Propoane LLC,0,Not Available,Kern,1,1,SUN,1/1/2012 0:00,0,-119.3035912,35.3028446
+3473,S9195,Ignite Solar LLC_(Alkali Gardner A),0,Not Available,Kern,1.5,Unit 1,SUN,12/31/2013 0:00,0,-119.4250091,35.14907581
+3474,S0525,Algonquin Power SKIC 20 Solar LLC,0,Algonquin Power Sanger LLC,Kern,20,PV,SUN,5/15/2015 0:00,0,-119.2384695,35.13024017
+3475,S9208,South Kern Solar 1 (1) (SKIC 2012 PV RFO - 1),0,Not Available,Kern,10,Unit 1,SUN,12/31/2016 0:00,0,-119.2496131,35.12828078
+3480,S0316,Old River One LLC,0,Onward Energy,Kern,20,1,SUN,12/17/2014 0:00,0,-119.0851276,35.22055744
+3481,S9193,KDW Solar 1  LLC  (KDW Solar 1 ),0,Not Available,Kern,1.5,Unit 1,SUN,12/31/2012 0:00,0,-118.9884527,35.31495421
+3482,S9199,KDW Solar 2  LLC,0,Not Available,Kern,1.5,Unit 1,SUN,12/31/2013 0:00,0,-118.9290754,35.28284507
+3483,S0306,Orion 1 Solar,0,Longroad Energy,Kern,12,1,SUN,4/1/2014 0:00,0,-118.888702,35.145363
+3484,S0321,Regulus Solar,0,Not Available,Kern,60,1,SUN,10/31/2014 0:00,0,-118.8475351,35.30759454
+3485,S0431,Redcrest Solar Farm,0,S-Power (Sustainable Power Group),Kern,16.66,Unit 1,SUN,8/1/2015 0:00,0,-118.8094128,35.31554605
+3486,S9080,Vaquero Energy Inc.,0,Not Available,Kern,1,1,SUN,1/1/2012 0:00,0,-118.8169754,35.3176145
+3487,S9087,Grimmway Enterprises  Inc.,0,Not Available,Kern,1,1,SUN,1/1/2012 0:00,0,-118.8699653,35.24564011
+3488,S9088,Grimmway Enterprises  Inc.,0,Not Available,Kern,1,1,SUN,1/1/2012 0:00,0,-118.8699809,35.2472
+3489,S9091,Grimmway Enterprises Inc.,0,Not Available,Kern,1,1,SUN,1/1/2012 0:00,0,-118.8594049,35.26120594
+3490,S9204,Kern River (Bena B),0,Not Available,Kern,1.5,Unit 1,SUN,12/31/2014 0:00,0,-118.8755805,35.30372812
+3491,S9160,Pine Tree Solar Project,0,Los Angeles Department of Water & Power (LADWP),Kern,8.5,1,SUN,3/15/2013 0:00,0,-118.1942585,35.22930377
+3492,W0289,Sky River Partnership (ESI Energy  Inc - 6065),0,Not Available,Kern,70.65,WPRS 1,WND,12/11/2012 0:00,0,-118.2460148,35.26362339
+3493,W0368,Pine Tree Wind Power Plant,0,Los Angeles Department of Water & Power (LADWP),Kern,135,WPRS 1,WND,7/1/2009 0:00,0,-118.1798795,35.24704949
+3494,S0587,Beacon Solar 1,0,S-Power (Sustainable Power Group),Kern,56,Unit 1,SUN,4/28/2017 0:00,0,-118.0144317,35.269439
+3495,S0530,RE Barren Ridge 1,0,Recurrent Energy LLC,Kern,60,Unit 1,SUN,4/19/2016 0:00,0,-118.0687165,35.20532604
+3496,S0554,Beacon 3,0,S-Power (Sustainable Power Group),Kern,60,Unit 1,SUN,12/30/2016 0:00,0,-118.0266953,35.25201099
+3497,S0555,Beacon 4,0,S-Power (Sustainable Power Group),Kern,50,Unit 1,SUN,12/5/2016 0:00,0,-118.036113,35.24788564
+3498,S0603,Springbok Solar Farm 1,0,62SK 8MW LLC,Kern,105,Unit 1,SUN,4/11/2016 0:00,0,-117.9599795,35.25068415
+3499,S0604,Springbok Solar Farm 2,0,62SK 8MW LLC,Kern,155,Unit 1,SUN,9/6/2016 0:00,0,-117.9830641,35.25021465
+3500,S0637,Beacon 2,0,CD Arevon USA Inc.,Kern,45,Unit 1,SUN,12/29/2017 0:00,0,-118.036314,35.25477369
+3501,S0638,Beacon 5,0,CD Arevon USA Inc.,Kern,36,Unit 1,SUN,12/29/2017 0:00,0,-118.0373803,35.25350873
+3502,S0690,Springbok 3,0,CD Arevon USA Inc.,Kern,119.6,Unit 1,SUN,7/19/2019 0:00,0,-117.9598686,35.24326906
+3504,S9297,Pristine Sun Fund 7 San Luis Obispo PGE LLC_(2103_Hill),0,Not Available,San Luis Obispo,0.75,Unit 1,SUN,12/31/2013 0:00,0,-120.8569209,35.38191862
+3506,S9296,Pristine Sun Fund 1  LLC_(2059_Scherz),0,Not Available,San Luis Obispo,0.75,Unit 1,SUN,12/31/2013 0:00,0,-120.4990924,35.48044953
+3507,S0245,Topaz Solar Farms LLC,0,Topaz Solar Farms LLC,San Luis Obispo,550,Topaz 1,SUN,9/1/2013 0:00,0,-120.0619296,35.37617026
+3508,S0240,California Valley Solar Ranch,0,Clearway Energy,San Luis Obispo,250,"1A, 1B",SUN,9/15/2012 0:00,0,-119.9252724,35.34377727
+3512,S0547,Rio Bravo Solar II (PMPJCK),0,Deriva Energy,Kern,20,PV1,SUN,12/29/2016 0:00,0,-119.6269013,35.41654817
+3513,S0565,Rio Bravo Solar I LLC (Pumpjack Solar2),0,Deriva Energy,Kern,20,Unit 1,SUN,12/21/2016 0:00,0,-119.6385171,35.41623292
+3516,S0330,Shafter Solar LLC,0,NextEra Energy Resources LLC,Kern,20,1,SUN,6/3/2015 0:00,0,-119.1268663,35.45047905
+3517,S9027,CSU Bakersfield,0,Silicon Ranch Corporation,Kern,1,1,SUN,1/1/2012 0:00,0,-119.1040132,35.34664746
+3523,S0642,Bakersfield Industrial 1,0,Not Available,Kern,1,Unit 1,SUN,12/27/2017 0:00,0,-118.9931471,35.32997837
+3524,S0643,Bakersfield Solar 1,0,Not Available,San Joaquin,5.3,Unit 1,SUN,12/26/2017 0:00,0,-118.9784638,35.32649007
+3525,S9045,College District Kern Community,0,Not Available,Kern,1,1,SUN,1/1/2012 0:00,0,-118.9689041,35.41170132
+3526,S9079,County of Kern,0,Not Available,Kern,1,1,SUN,1/1/2012 0:00,0,-119.014767,35.3715237
+3527,S9106,Kern County Water Agency,0,Not Available,Kern,1.1,1,SUN,1/1/2012 0:00,0,-119.0392977,35.40294164
+3528,S9152,Kern County Water Agency,0,Not Available,Kern,4.1,1,SUN,1/1/2012 0:00,0,-119.038043,35.40303279
+3529,S9209,Tehachapi (Oswell B),0,Not Available,Kern,1.5,Unit 1,SUN,12/31/2014 0:00,0,-119.0738607,35.40597271
+3541,H0267,Kern Canyon,0,"Kern and Tule Hydro, LLC",Kern,11.5,Unit 596,WAT,8/8/1921 0:00,0,-118.7965162,35.44074018
+3542,H0268,Kern River 1,0,Southern California Edison (SCE),Kern,24.8,UNIT 1,WAT,5/1/1907 0:00,0,-118.779427,35.46025316
+3543,H0367,Rio Bravo Hydroelectric,0,Olcese Water District,Kern,14,2-Jan,WAT,5/1/1989 0:00,0,-118.8222985,35.43004235
+3544,S0427,Hayworth Solar Farm,0,S-Power (Sustainable Power Group),Kern,26.66,Unit 1,SUN,11/1/2015 0:00,0,-118.8771106,35.32731196
+3545,S0445,Woodmere Solar Farm,0,S-Power (Sustainable Power Group),Kern,14.99,Unit 1,SUN,12/22/2015 0:00,0,-118.823939,35.32351553
+3546,S0652,Redwood Solar Farm 4,0,Not Available,Kern,20,Unit 1,SUN,1/6/2018 0:00,0,-118.8126202,35.32372377
+3547,S9200,Agua Caliente (Bena A),0,Not Available,Kern,1.5,Unit 1,SUN,12/31/2014 0:00,0,-118.7458756,35.32734104
+3548,W0414,"North Sky River, LLC",0,North Sky River Energy LLC,Kern,162,WPRS 1,WND,12/24/2012 0:00,0,-118.1804634,35.3502841
+3549,S9292,Ecos Energy   LLC_(Vintner Solar Project),0,Not Available,San Luis Obispo,1.5,Unit 1,SUN,3/5/2014 0:00,0,-120.6813752,35.55777117
+3550,S9295,Pristine Sun Fund 7 San Luis Obispo PGE LLC_(2163_Bray),0,Not Available,San Luis Obispo,1,Unit 1,SUN,12/31/2013 0:00,0,-120.684746,35.61423276
+3551,S9298,Pristine Sun Fund 7 San Luis Obispo PGE LLC_(2050_Gomez),0,Not Available,San Luis Obispo,0.5,Unit 1,SUN,12/31/2013 0:00,0,-120.6457719,35.69157128
+3552,S0162,Meridian (Paso Robles Solar  LLC),0,X-Elio North America Inc.,San Luis Obispo,1.14,1,SUN,11/29/2010 0:00,0,-120.5681128,35.67120464
+3553,S9294,Pristine Sun Fund 1  LLC_(2056_Jardine),0,Not Available,San Luis Obispo,1,Unit 1,SUN,12/31/2013 0:00,0,-120.5961805,35.65633282
+3554,S0689,California Flats 150,0,CD Arevon USA Inc.,San Luis Obispo,150,Unit 1,SUN,3/5/2019 0:00,0,-120.3438558,35.6835858
+3555,S0339,Blackwell Solar,0,Blackwell Solar LLC,Kern,12,BWS1,SUN,4/17/2015 0:00,0,-119.857303,35.61683286
+3556,S0340,Lost Hills Solar,0,Lost Hills Solar LLC,Kern,21.28,LHS1,SUN,4/17/2015 0:00,0,-119.8557623,35.62553829
+3557,S9011,Paramount Farms Inc.,0,Not Available,Kern,1,1,SUN,1/1/2012 0:00,0,-119.8915801,35.65421556
+3558,S0688,"CED Lost Hills Solar, LLC",0,RWE Clean Energy,Kern,20,Unit 1,SUN,2/5/2019 0:00,0,-119.8449535,35.61000976
+3559,S9177,"Nickel 1 (""""NLH1"""")",0,Not Available,Kern,1.5,Unit 1,SUN,3/1/2013 0:00,0,-119.7160823,35.64749991
+3561,S0718,Chevron - Lost Hills Hybrid,0,"Solar Star Lost Hills, LLC",Kern,29.75,Unit 1,SUN,4/16/2020 0:00,0,-119.7023236,35.60763591
+3562,S0327,Wildwood Solar I,0,Deriva Energy,Kern,20,WLD1,SUN,2/18/2015 0:00,0,-119.5687258,35.618823
+3563,S0331,Cottonwood Goose Lake LLC,0,Onward Energy,Kern,12,1,SUN,4/28/2015 0:00,0,-119.5759386,35.59190913
+3564,S0546,Wildwood Solar II,0,Deriva Energy,Kern,15,PV1,SUN,1/11/2017 0:00,0,-119.5778582,35.63246369
+3567,S9044,Primex Farms LLC,0,Not Available,Kern,1,1,SUN,1/1/2012 0:00,0,-119.4378475,35.56830655
+3568,S9165,CA Dept of Correctionns WASCO (WSP),0,Not Available,Kern,2,1,SUN,1/1/2013 0:00,0,-119.4065692,35.59061142
+3569,S9198,Ignite Solar LLC_(Merced Ave C),0,Not Available,Kern,1.5,Unit 1,SUN,12/31/2013 0:00,0,-119.3595223,35.52373073
+3570,S9207,Sequoia (Bena C),0,Not Available,Kern,1.5,Unit 1,SUN,12/31/2014 0:00,0,-119.4503167,35.55689393
+3571,S9196,Ignite Solar LLC_(Merced Ave A),0,Not Available,Kern,1.5,Unit 1,SUN,12/31/2013 0:00,0,-119.1491437,35.54715081
+3572,S9197,Ignite Solar LLC_(Merced Ave B),0,Not Available,Kern,1.5,Unit 1,SUN,12/31/2013 0:00,0,-119.1498037,35.54714314
+3576,H0048,Borel,0,Southern California Edison (SCE),Kern,11,1,WAT,12/1/1904 0:00,0,-118.5245013,35.58794945
+3577,H0094,Isabella,0,Isabella Partners,Kern,13.9,"GEN1, GEN2",WAT,1/1/1990 0:00,0,-118.481906,35.64410959
+3578,S0297,Naval Air Weapons Station China Lake,0,MN8 Energy,Kern,13.78,Unit 1,SUN,9/17/2012 0:00,0,-117.6543739,35.63526864
+3579,S0078,Ivanpah I (Solar Partners II),0,Solar Partners I II VIII LLC,San Bernardino,126,Ivanpah 1,SUN,12/30/2013 0:00,1,-115.451703,35.53543752
+3580,S0079,Ivanpah II (Solar Partners I),0,Solar Partners I II VIII LLC,San Bernardino,133,Ivanpah 2,SUN,12/31/2013 0:00,1,-115.4829452,35.57551597
+3581,S0080,Ivanpah III (Solar Partners VIII),0,Solar Partners I II VIII LLC,San Bernardino,133,Ivanpah 3,SUN,12/31/2013 0:00,1,-115.470211,35.55688253
+3582,S0436,Silver State Power South (NV),0,"Silver State Solar Power South, LLC",Clark,250,Unit 1,SUN,10/1/2015 0:00,0,-115.3498142,35.62417079
+3583,S0457,Desert Stateline Solar Facility,0,"Desert Stateline Solar, LLC",San Bernardino,299.99,SLS1,SUN,12/10/2015 0:00,0,-115.426956,35.59115719
+3584,H0341,Nacimiento Hydro Project,0,Monterey County Water Resources Agency,San Luis Obispo,4.36,"1, 2",WAT,7/1/1987 0:00,0,-120.8832655,35.79857883
+3585,S9054,San Miguel Winery,0,Not Available,San Luis Obispo,1,1,SUN,1/1/2012 0:00,0,-120.6968954,35.76244378
+3586,S9299,Pristine Sun Fund 7 San Luis Obispo PGE LLC_(2053_Pisciotta),0,Not Available,San Luis Obispo,0.25,Unit 1,SUN,12/31/2013 0:00,0,-120.734593,35.79526687
+3587,S0636,California Flats North,0,CD Arevon USA Inc.,Monterey,130,Unit 1,SUN,11/29/2017 0:00,0,-120.3384401,35.87409008
+3588,S0434,Coronal Lost Hills Solar,0,CD Arevon USA Inc.,Kern,20,Unit 1,SUN,5/18/2015 0:00,0,-119.9060969,35.72875876
+3589,S0404,Morelos Solar Facility,0,Morelos Solar LLC,Kern,15,MRLS,SUN,12/2/2015 0:00,0,-119.8206544,35.73644154
+3591,S0246,Alpaugh 50  LLC,0,RWE Clean Energy,Tulare,50,1,SUN,3/1/2013 0:00,0,-119.4394132,35.89512998
+3592,S0247,Alpaugh North  LLC,0,RWE Clean Energy,Tulare,20,1,SUN,2/20/2013 0:00,0,-119.4373536,35.90197
+3593,S0320,White River Solar 2  LLC (White River West),0,RWE Clean Energy,Tulare,19.8,1,SUN,9/17/2014 0:00,0,-119.4621522,35.87477683
+3594,S0323,Atwell Island PV Solar Generating Facility,0,Not Available,Tulare,20,Unit 1,SUN,3/1/2013 0:00,0,-119.4527568,35.87859075
+3595,S0336,Atwell Island West LLC CED,0,RWE Clean Energy,Tulare,19.8,1,SUN,6/25/2015 0:00,0,-119.4596974,35.81546839
+3596,S0359,North Kern State Prison II,0,Not Available,Kern,4,1,SUN,9/28/2012 0:00,0,-119.3089871,35.77748796
+3597,S0358,North Kern State Prison,0,Silicon Ranch Corporation,Kern,0.99,1,SUN,12/22/2011 0:00,0,-119.2265196,35.77558602
+3598,S0648,Delano Land 1,0,Not Available,Kern,1,Unit 1,SUN,12/28/2017 0:00,0,-119.2445592,35.73912006
+3600,S0579,Ducor Solar 1,0,RWE Clean Energy,Tulare,20,Unit 1,SUN,11/30/2016 0:00,0,-119.0683997,35.85627072
+3601,S0580,Ducor Solar 2,0,RWE Clean Energy,Tulare,20,Unit 1,SUN,11/30/2016 0:00,0,-119.0678903,35.84572346
+3602,S0581,Ducor Solar 3,0,RWE Clean Energy,Tulare,15,Unit 1,SUN,12/1/2016 0:00,0,-119.0569798,35.84537279
+3603,S0582,Ducor Solar 4,0,RWE Clean Energy,Tulare,20,Unit 1,SUN,12/1/2016 0:00,0,-119.0269792,35.85039819
+3604,S0538,Nicolis,0,CD Arevon USA Inc.,Tulare,20,Unit 1,SUN,9/15/2016 0:00,0,-119.049326,35.83120366
+3605,S0539,Tropico,0,Coronal Group LLC,Tulare,14,Unit 1,SUN,9/14/2016 0:00,0,-119.0374527,35.82405782
+3607,H0269,Kern River 3,0,Southern California Edison (SCE),Kern,36.8,UNIT 1,WAT,3/1/1921 0:00,0,-118.4362032,35.77613464
+3612,S0243,Copper Mountain I (NV),0,Copper Mountain Solar,Clark,58,"CM10, CM48",SUN,6/28/2012 0:00,0,-114.9927409,35.78182192
+3613,S0244,Copper Mountain II (NV),0,Copper Mountain Solar,Clark,94.5,CMS2,SUN,6/28/2012 0:00,0,-114.9765001,35.80160309
+3614,S0295,Copper Mountain III (NV),0,Copper Mountain Solar,Clark,255,CMS3,SUN,5/12/2014 0:00,0,-114.9579002,35.88941374
+3615,S0540,Copper Mountain Solar 4 (NV),0,Copper Mountain Solar,Clark,93.6,CMS4,SUN,10/1/2016 0:00,0,-114.9671874,35.80261077
+3616,S9161,Fort Hunter Liggett Dept of Army,0,Not Available,Monterey,2,1,SUN,1/1/2013 0:00,0,-121.2332261,35.99820991
+3620,S0585,CED Avenal LLC,0,RWE Clean Energy,Kings,15,Unit 1,SUN,1/26/2017 0:00,0,-120.1513572,35.99584828
+3621,S0126,Avenal Park Solar,0,Eurus Energy America Corporation,Kings,6,1,SUN,8/5/2011 0:00,0,-120.1052789,35.99156474
+3622,S0127,Sun City,0,Eurus Energy America Corporation,Kings,20,1,SUN,12/31/2010 0:00,0,-120.1028504,35.9848677
+3623,S0131,Sand Drag,0,Eurus Energy America Corporation,Kings,19,1,SUN,12/31/2010 0:00,0,-120.1011986,35.98067385
+3624,S0301,Kettleman Solar,0,Not Available,Kings,1,1,SUN,3/1/2014 0:00,0,-119.9607204,36.00632721
+3625,S0424,EE Kettleman Solar 1,0,Clenera - Renewable Energy,Kings,20,Unit 1,SUN,7/1/2015 0:00,0,-119.9478308,36.05438202
+3626,S9166,CA Dept of Correctionns Corcoran,0,Not Available,Kings,3,1,SUN,1/1/2013 0:00,0,-119.5548219,36.0643847
+3628,S0248,White River Solar  LLC CED,0,RWE Clean Energy,Tulare,20,1,SUN,6/21/2013 0:00,0,-119.4281165,35.90939601
+3629,H0503,Success Power Project,0,Lower Tule River Irrigation District,Tulare,1.4,SPP1,WAT,2/1/1991 0:00,0,-118.9240682,36.05857439
+3630,S0201,SPVP042 Porterville (Vestal),0,Southern California Edison (SCE),Tulare,6.77,1,SUN,12/28/2010 0:00,0,-119.0738988,36.02858493
+3634,H0242,Hoover Dam (NV),0,United States Bureau of Reclamation,Mohave,2080,"154, 8902",WAT,10/1/1936 0:00,0,-114.7377037,36.01555239
+3635,W0465,Scheid Vineyards,0,Not Available,Monterey,1.85,WPRS 1,WND,9/15/2017 0:00,0,-121.190118,36.27484156
+3638,S0349,Pleasant Valley State Prison,0,Not Available,Fresno,1.22,1,SUN,7/22/2014 0:00,0,-120.2499911,36.12606939
+3639,S0350,Coalinga State Hospital,0,Not Available,Fresno,2,1,SUN,7/22/2014 0:00,0,-120.2435545,36.12621283
+3644,S0177,Huron Solar Station,0,Pacific Gas & Electric (PG&E),Fresno,20,1,SUN,6/27/2012 0:00,0,-120.1423801,36.1288384
+3645,S0223,West Gates Solar Station,0,Pacific Gas & Electric (PG&E),Fresno,10,1,SUN,6/24/2013 0:00,0,-120.1328836,36.14337176
+3646,S0224,Gates Solar Station,0,Pacific Gas & Electric (PG&E),Fresno,20,1,SUN,6/24/2013 0:00,0,-120.111739,36.17891622
+3647,S9053,Los Gatos Tomato Products,0,Not Available,Fresno,1,1,SUN,1/1/2012 0:00,0,-120.1554065,36.18487123
+3648,S9192,Westlands Solar Farms,0,Clenera - Renewable Energy,Fresno,18,W3963,SUN,2/14/2014 0:00,0,-120.0753025,36.13900106
+3649,S0307,Orion 2 Solar,0,Longroad Energy,Kings,8,1,SUN,6/1/2014 0:00,0,-119.9041423,36.25611234
+3650,S0315,Kent South  LLC,0,Onward Energy,Kings,20,1,SUN,12/1/2014 0:00,0,-119.9097192,36.22389003
+3651,S0533,RE Mustang,0,MN8 Energy,Kings,30,Unit 1,SUN,5/12/2016 0:00,0,-119.9184687,36.24471752
+3652,S0534,RE Mustang 3,0,Recurrent Energy LLC,Kings,40,Unit 1,SUN,3/1/2016 0:00,0,-119.9196504,36.23914808
+3653,S0535,RE Mustang 4,0,MN8 Energy,Kings,30,Unit 1,SUN,3/31/2016 0:00,0,-119.910642,36.23757957
+3654,S0544,Westside PV Solar,0,"Westside Assets, LLC",Kern,2,4928,SUN,5/6/2016 0:00,0,-119.9072718,36.2172373
+3656,S0702,American Kings,0,MN8 Energy,Kings,123,Unit 1,SUN,12/12/2020 0:00,0,-119.9074362,36.22425864
+3657,S0721,Aquamarine Westside,0,"Aquamarine Westside, LLC",Kings,250,W12082,SUN,9/22/2021 0:00,0,-119.9221492,36.19052178
+3658,S0724,RE Slate 1,0,MN8 Energy,Kings,300,Unit 1,SUN,11/12/2021 0:00,0,-119.9574216,36.18185302
+3659,S0260,Kansas South,0,Clearway Energy,Kings,20,Kansas South,SUN,6/25/2013 0:00,0,-119.8301096,36.22358778
+3660,S0319,Kansas LLC,0,Onward Energy,Kings,20,1,SUN,11/20/2014 0:00,0,-119.8309233,36.24484758
+3661,S0532,Henrietta Solar Facility,0,Southern Power Company,Kings,100,M1250,SUN,7/15/2016 0:00,0,-119.8043125,36.22079078
+3662,S0571,Lemoore PV 1 LLC,0,Lemoore PV 1 LLC,Kings,1.5,Unit 1,SUN,1/29/2016 0:00,0,-119.7973356,36.25777009
+3663,S0225,Guernsey Solar Station,0,Pacific Gas & Electric (PG&E),Kings,20,1,SUN,9/18/2013 0:00,0,-119.650475,36.1642758
+3664,S0249,Corcoran LLC CED,0,RWE Clean Energy,Kings,20,1,SUN,8/13/2013 0:00,0,-119.5737275,36.14217134
+3665,S0317,Corcoran Irrigation District Solar  LLC,0,Onward Energy,Kings,20,1,SUN,12/22/2014 0:00,0,-119.5813916,36.1413261
+3666,S0332,Cottonwood City of Corcoran LLC,0,Onward Energy,Kings,11,1,SUN,4/23/2015 0:00,0,-119.5530348,36.13702493
+3669,S0779,,0,,Yolo,3,Unit 1,SUN,,,-122.0051099,38.51658075
+3673,S0736,,0,,Solano,5,Unit 1,SUN,,,-122.1311509,38.09064321
+3674,S0646,Chevron 2 (Removed - see S0665),0,Not Available,Contra Costa,0,Unit 1,SUN,,0,-122.3743866,37.94610496
+3675,S0647,Chevron 8.5 (Removed - see S0665),0,Not Available,Contra Costa,0,Unit 1,SUN,,0,-122.374562,37.94482384
+3676,S0664,2 MW MCE Richmond Solar PV Project (Removed - see S0665),0,S-Power (Sustainable Power Group),Contra Costa,0,Unit 1,SUN,,0,-122.3798274,37.93450943
+3678,S0760,,0,,Contra Costa,5,Unit 1,SUN,,,-121.6173154,37.84700891
+3682,S0735,SPI - Chinese Camp,0,Sierra Pacific Industries Inc,Tuolumne,3.6,Unit 1,SUN,,0,-120.4514429,37.88155585
+3684,S0802,Amazon - Patterson,0,S-Power (Sustainable Power Group),Stanislaus,2.45,PATT1,SUN,,0,-121.1665738,37.46924416
+3685,S0772,,0,,Stanislaus,40,Unit 1,SUN,,,-121.1114145,37.24886475
+3686,S0762,,0,,Merced,3,Unit 1,SUN,,,-120.8785934,36.98946834
+3688,W0484,Dole Fresh Vegetables Wind Project,0,Foundation Windpower,Monterey,5.6,WPRS 1,WND,,0,-121.3513048,36.4559396
+3689,S0758,,0,,Madera,1.5,Unit 1,SUN,,,-120.1672448,37.05618678
+3690,S0773,,0,,Tulare,55.9,Unit 1,SUN,,,-120.1249381,36.92424951
+3691,S0745,,0,,Madera,50,Unit 1,SUN,,,-119.9559377,36.94083044
+3692,H0632,,0,,Fresno,1.3,Unit 1,WAT,,,-119.4427787,36.764973
+3693,S9189,Pristine Sun Fund 10 Fresno PGE LLC_(2081_Terzian),0,Not Available,Fresno,1.25,Unit 1,SUN,,0,-119.4132811,36.67109695
+3695,S0385,"Marinos Ventures LLC - (at 331kW, under 1MW)",0,Marinos Ventures LLC,Tulare,0.33,Unit 1,SUN,,0,-118.9217059,36.41588433
+3699,S0742,DG Java Solar,0,NextEra Energy Resources LLC,Kings,13.5,Unit 1,SUN,,0,-119.8149414,36.23151246
+3700,S0771,,0,,Kings,150,"Unit 1, Unit 2",SUN,,,-119.8940079,36.22315966
+3701,S0810,,0,,Fresno,150,Unit 1,SUN,,,-120.1125216,36.16047002
+3702,S0794,Vandenberg Solar,0,MN8 Energy,Santa Barbara,23.35,M1369,SUN,,0,-120.5140311,34.74857003
+3703,W0485,Strauss Wind Project,0,"BayWa r.e. Wind, LLC",Santa Barbara,95.25,WPRS 1,WND,,0,-120.5127523,34.57394298
+3705,S0821,SEPV Cuyama,0,B2U Storage Solutions,Santa Barbara,1.6,Unit 1,SUN,,0,-119.8870774,34.97606783
+3706,S0770,,0,,Kern,3,Unit 1,SUN,,,-119.3950695,35.21391166
+3709,S0817,,0,,Inyo,2,Unit 1,SUN,,,-117.3556295,35.7971559
+3710,S0754,,0,,Nye,100,Unit 1,SUN,,,-116.4846235,36.48597001
+3711,S0827,Yellow Pine Solar LLC (NV),0,NextEra Energy Resources LLC,Clark,125,Unit 1,SUN,,0,-115.8510757,35.98090281
+3712,S0799,Mojave Energy PV (Hybrid) (AZ),0,EDP Renewables North America LLC,Mohave Valley,23.3,Unit 1,SUN,,0,-114.5491638,34.99423309
+3716,S0792,"Arlington II, LLC",0,NextEra Energy Resources LLC,Riverside,133,Unit 1,SUN,,0,-114.7529906,33.69803385
+3717,S0793,"Arlington III, LLC",0,NextEra Energy Resources LLC,Riverside,233,Unit 1,SUN,,0,-114.7651456,33.69847019
+3718,S0728,Blythe Mesa Solar Project,0,Intersect Power,Riverside,223.6,Unit 1,SUN,,0,-114.730569,33.58398917
+3719,S0774,Athos I,0,"SE Athos I, LLC",Riverside,250,IPAT1,SUN,,0,-115.3469246,33.75288041
+3720,S0775,Athos II,0,"SE Athos I, LLC",Riverside,200,IPAT2,SUN,,0,-115.347922,33.7505533
+3721,S0795,IP Oberon I,0,Intersect Power,Riverside,250,Unit 1,SUN,,0,-115.3534885,33.74748691
+3722,S0796,IP Oberon II,0,Intersect Power,Riverside,250,Unit 1,SUN,,0,-115.3564388,33.74276637
+3723,S0618,Midway Solar Farm III,0,Solar Frontier Development LLC,Imperial,20,Unit 1,SUN,,0,-115.5328196,33.15675287
+3725,S0731,RE Gaskell West 2 LLC,0,Gaskell TEP LLC,Kern,45,Unit 1 - 2,SUN,,0,-118.5485913,34.82918186
+3726,S0732,RE Gaskell West 3 LLC,0,Gaskell TEP LLC,Kern,20,Unit 1,SUN,,0,-118.5417356,34.82897721
+3727,S0733,RE Gaskell West 4 LLC,0,Gaskell TEP LLC,Kern,20,Unit 1,SUN,,0,-118.5321171,34.82877256
+3728,S0734,RE Gaskell West 5 LLC,0,Gaskell TEP LLC,Kern,20,Unit 1,SUN,,0,-118.5238289,34.82882372
+3731,H0631,,0,,Ventura,1,Unit 1,WAT,,,-119.0859259,34.22540531
+3732,S0680,ColGreen North Shore,0,Not Available,Riverside,74.8,Unit 1,SUN,,0,-115.9804573,33.54828663
+3734,S0741,,0,,Imperial,150,Unit 1,SUN,,,-115.5815974,32.66860495
+3735,S0727,"Drew Solar, LLC",0,D. E. Shaw,Imperial,100,Unit 1,SUN,,0,-115.6703829,32.69012183
+3736,S0738,,0,,Imperial,100,Unit 1,SUN,,,-115.671662,32.68404632
+3737,S0824,,0,,San Diego,50,Unit 1,SUN,,,-116.0852885,33.08434844
+3739,S9406,LanEast Solar PV LLC - Not Operational,0,Lan East Solar PV LLC,San Diego,0,1,SUN,,0,-116.2602095,32.66645511
+3741,S0392,Innovative Cold Storage Enterprises (ICE),0,San Diego Gas & Electric,San Diego,0.5,1,SUN,,0,-116.9828729,32.54954815
+3743,S0395,SDCCD - Skills Center,0,San Diego Gas & Electric,San Diego,0.05,1,SUN,,0,-117.1008443,32.69951621
+3745,S0390,Fairfield Grossmont Trolley,0,San Diego Gas & Electric,San Diego,0.06,1,SUN,,0,-117.0115628,32.78243698
+3747,S0398,X-nth,0,San Diego Gas & Electric,San Diego,0.1,1,SUN,,0,-117.1962651,32.89252706
+3749,S0394,Sanford-Burnhan Medical Research Institute I,0,San Diego Gas & Electric,San Diego,0.22,1,SUN,,0,-117.2419321,32.90141886
+3751,S0389,Del Sur Elementary School,0,San Diego Gas & Electric,San Diego,0.04,1,SUN,,0,-117.1406665,33.01847382
+3753,S0393,Pacific Station,0,San Diego Gas & Electric,San Diego,0.1,1,SUN,,0,-117.2931807,33.04385373
+3754,H0615,David C. McCollom WTP (Two 373 kW Gens),0,Olivenhain Municipal Water District,San Diego,0.74,RPHES-GEN,WAT,,0,-117.2480181,33.06731074
+3755,S0391,Hunter Industries,0,San Diego Gas & Electric,San Diego,0.1,1,SUN,,0,-117.2191699,33.10342948
+3757,S0397,Wilco Investments,0,San Diego Gas & Electric,San Diego,0.38,1,SUN,,0,-117.2213878,33.1461082
+3758,S0396,Towers at Bressi Ranch,0,San Diego Gas & Electric,San Diego,0.08,1,SUN,,0,-117.2570712,33.12824712
+3759,W0488,Mountain View Repower,0,S-Power (Sustainable Power Group),Riverside,66.6,WPRS 1,WND,,0,-116.6089452,33.90724377
+3760,S0800,Daggett Solar 2,0,Clearway Energy,San Bernardino,182,Unit 1,SUN,,0,-116.807046,34.86640913
+3761,S0801,Daggett Solar 3,0,Clearway Energy,San Bernardino,300,Unit 1,SUN,,0,-116.8072231,34.86337387
+3762,S0812,,0,,San Bernardino,85,Unit 1,SUN,,,-117.3286718,35.01903655
+3763,S0813,,0,,San Bernardino,75,Unit 1,SUN,,,-117.3360821,35.01477564
+3764,S0797,Resurgence Solar I,0,NextEra Energy Resources LLC,San Bernardino,90,SRE I,SUN,,0,-117.5489883,35.01114017
+3765,S0798,Resurgence Solar II,0,NextEra Energy Resources LLC,San Bernardino,48,SRE II,SUN,,0,-117.548963,35.0089649
+3766,S0816,,0,,San Bernardino,3,Unit 1,SUN,,,-117.5792073,34.57900346
+3767,S0828,Baldy Mesa,0,S-Power (Sustainable Power Group),San Bernardino,150,Unit 1,SUN,,0,-117.4499571,34.60482593
+3768,S0790,Arica Solar,0,Clearway Energy,Riverside,200,Unit 1,SUN,,0,-115.280556,33.724722
+3769,S0791,Victory Pass,0,Clearway Energy,Riverside,200,Unit 1,SUN,,0,-115.282222,33.724444
+3771,S0805,West Valley,0,S-Power (Sustainable Power Group),Riverside,1,WEST,SUN,,0,-117.0108992,33.71972428
+3772,S0806,Winchester,0,S-Power (Sustainable Power Group),Riverside,1,Unit 1,SUN,,0,-117.0859132,33.70236885
+3773,S0388,Ladera Ranch I,0,San Diego Gas & Electric,San Diego,0.05,1,SUN,,0,-117.6299988,33.55639208
+3774,S0611,UCR West Campus PV Project,0,Not Available,Riverside,2.98,Unit 1,SUN,,0,-117.3321839,33.96924048
+3786,S0610,Anaheim Convention Center,0,Not Available,Orange,2.4,Unit 1,SUN,,0,-117.9213411,33.80055813
+3787,S0819,,0,,Orange,10,Unit 1,SUN,,,-118.0517508,33.7984814
+3788,S0820,,0,,Orange,10,Unit 1,SUN,,,-118.0521421,33.79849918
+3797,S0804,Sun Valley 1,0,S-Power (Sustainable Power Group),Los Angeles,1.88,W7188,SUN,,0,-118.3722793,34.2404025
+3799,S0815,,0,,Los Angeles,4,Unit 1,SUN,,,-118.053462,34.65441618
+3800,S0814,,0,,Los Angeles,1.5,Unit 1,SUN,,,-118.061985,34.64708058
+3801,S0744,SEPV Sierra,0,B2U Storage Solutions,Los Angeles,3,Unit 1,SUN,,0,-118.1356834,34.73119595
+3802,S0739,,0,,Kern,132,Unit 1,SUN,,,-118.1023482,34.96419653
+3803,S0823,,0,,Kern,116,Unit 1,SUN,,,-118.0892586,34.96437437
+3804,S0776,,0,,Kern,166,Unit 1,SUN,,,-118.1167004,34.96416096
+3805,S0777,,0,,Kern,24,Unit 1,SUN,,,-118.1247924,34.96280932
+3806,S0778,,0,,Kern,151,Unit 1,SUN,,,-118.0894626,34.97348586
+3807,S0751,,0,,Kern,166,Unit 1,SUN,,,-118.133938,35.02710319
+3808,S0752,,0,,Kern,42,Unit 1,SUN,,,-118.1329882,35.02282907
+3809,S0753,,0,,Kern,36,Unit 1,SUN,,,-118.1266788,35.01774083
+3810,S0782,,0,,Kern,51,Unit 1,SUN,,,-118.1219298,35.01400945
+3811,S0788,BigBeau Solar,0,EDF Renewable Energy Inc,Kern,128,Unit 1,SUN,,0,-118.3237355,34.98761417
+3812,S0737,,0,,Los Angeles,17,Unit 1,SUN,,,-118.1694928,34.66912635
+3813,S0809,,0,,Los Angeles,1.5,Unit 1,SUN,,,-118.2747127,34.72235155
+3814,S0729,Antelope Expansion 1B,0,S-Power (Sustainable Power Group),Los Angeles,17,Unit 1,SUN,,0,-118.2554132,34.76743688
+3815,S0803,Estrella,0,S-Power (Sustainable Power Group),Los Angeles,56,ESPV,SUN,,0,-118.292098,34.81817145
+3816,S0807,Raceway AV,0,S-Power (Sustainable Power Group),Los Angeles,125,Unit 1,SUN,,0,-118.2858183,34.84284161
+3817,S0822,,0,,Kern,174,Unit 1,SUN,,,-118.3303912,34.86526699
+3818,S0746,,0,,Kern,40,Unit 1,SUN,,,-118.3846865,34.85152501
+3819,S0747,,0,,Kern,56,Unit 1,SUN,,,-118.3840759,34.84134853
+3820,S0748,,0,,Kern,56,Unit 1,SUN,,,-118.3745779,34.85925913
+3821,S0749,,0,,Kern,26,Unit 1,SUN,,,-118.37451,34.84636892
+3822,S0750,,0,,Kern,13.6,Unit 1,SUN,,,-118.3656904,34.85254265
+3829,H0072,Collierville/Spicer Meadow (See individual plants - not used),0,Northern California Power Agency,Calaveras,249.1,"1, 2, 3, 4, 5, 6",WAT,,0,-120.4729899,38.09056952
+3831,H0455,San Luis Obispo 1,0,California Department of Water Resources,San Luis Obispo,0,1,WAT,,0,-120.6599614,35.28260559
+3833,H0544,Browns Valley (Rated 0.995MW) NO REPORT REQUIRED,0,Browns Valley Irrigation District,Yuba,1.3,1,WAT,,0,-121.4705576,39.22552111
+3835,H0628,,0,,Shasta,1,Unit 1,WAT,,,-122.0425395,40.68464435
+3836,H0629,,0,,Humboldt,1,Unit 1,WAT,,,-123.6070815,40.49233765
+3837,H0630,,0,,Mendocino,1.3,Unit 1,SUN,,,-123.1129913,39.3219219
+3840,S0740,,0,,San Bernardino,100,Unit 1,SUN,,,-117.3236209,34.511655
+3841,S0743,,0,,San Bernardino,92,Unit 1,SUN,,,-117.3172657,35.00606998
+3842,S0755,,0,,Kern,20,Unit 1,SUN,,,-118.1728656,35.02331242
+3843,S0756,,0,,Maricopa,150,Unit 1,SUN,,,-118.2206997,33.82098877
+3844,S0761,,0,,Los Angeles,3,Unit 1,SUN,,,-118.1445246,34.69754185
+3845,S0761,,0,,Los Angeles,3,Unit 1,SUN,,,-118.1445172,34.69748492
+3846,S0764,,0,,Los Angeles,3,Unit 1,SUN,,,-118.1445073,34.69741561
+3847,S0759,,0,,Riverside,1,Unit 1,SUN,,,-116.5101094,33.9614321
+3848,S0765,,0,,Kern,3,Unit 1,SUN,,,-117.9601236,35.12841583
+3849,S0769,,0,,Fresno,1.5,Unit 1,SUN,,,-120.1891941,36.60736389
+3850,S0780,,0,,Kern,60,Unit 1,SUN,,,-118.1932839,34.8638677
+3851,S0781,,0,,Kern,40,Unit 1,SUN,,,-118.1927649,34.86385328
+3852,S0783,,0,,Kern,42,Unit 1,SUN,,,-118.1809797,35.0231178
+3857,S0808,,0,,Kings,150,Unit 1,SUN,,,-119.7836031,36.30335492
+3858,S0811,,0,,Kings,20,Unit 1,SUN,,,-119.7835424,36.30311766
+3859,S0818,,0,,Kings,250,Unit 1,SUN,,,-119.7834787,36.30291224
+3860,S9188,Placer Solar,0,Not Available,Fresno,20,Unit 1,SUN,,0,-119.7858466,36.73164962
+3862,S9999,CAISO Gen-Tie Solar Dynamically Scheduled,0,Not Available,ALL,92,Solar PV,SUN,,0,-121.3346826,38.43052714
+3864,W0486,Wind Wall Monolith I,0,Eolus Vind,Kern,19.85,WPRS 1,WND,,0,-118.4354,35.14036008
+3865,W0487,Wind Wall Monolith II,0,Eolus Vind,Kern,23.66,WPRS 1,WND,,0,-118.4327952,35.13991859

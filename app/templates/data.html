@@ -1,0 +1,247 @@
+{% extends "base.html" %}
+
+{% block title %}{{ title }} - California Energy Map{% endblock %}
+
+{% block extra_head %}
+<style>
+    /* Force table to take up maximum width */
+    .data-table-container {
+        width: 95vw !important; /* Reduced from 100vw to 95vw */
+        max-width: 95vw !important;
+        margin-left: calc(-47.5vw + 50%); /* Adjusted to center properly */
+        margin-right: calc(-47.5vw + 50%);
+        position: relative;
+        left: 0;
+        right: 0;
+        overflow-x: scroll;
+        padding: 0 30px; /* Increased padding from 20px to 30px */
+    }
+    
+    /* Table styles */
+    .table {
+        width: 100% !important;
+        min-width: 100% !important;
+        border-collapse: collapse;
+        font-size: 1.1rem;
+        table-layout: auto;
+    }
+    
+    .table-striped tbody tr:nth-of-type(odd) {
+        background-color: rgba(0, 0, 0, 0.05);
+    }
+    
+    .table-hover tbody tr:hover {
+        background-color: rgba(0, 0, 0, 0.075);
+    }
+    
+    .table th, .table td {
+        padding: 1rem;
+        vertical-align: top;
+        border-top: 1px solid #dee2e6;
+        white-space: nowrap;
+    }
+    
+    .table thead th {
+        vertical-align: bottom;
+        border-bottom: 2px solid #dee2e6;
+        position: sticky;
+        top: 0;
+        background-color: white;
+        z-index: 10;
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+    
+    /* Override any max-width settings */
+    .bg-white, .max-w-7xl, .max-w-full {
+        max-width: 100vw !important;
+        width: 100% !important;
+    }
+    
+    /* Controls container */
+    .controls-container {
+        padding: 0 30px; /* Increased padding to match table container */
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="bg-white shadow overflow-hidden sm:rounded-lg">
+    <div class="px-5 py-6 sm:px-6">
+        <h1 class="text-3xl font-bold text-gray-900">Power Plant Data</h1>
+        <p class="mt-2 max-w-3xl text-lg text-gray-500">California renewable energy plants with weather and estimated output</p>
+    </div>
+    
+    <div class="border-t border-gray-200">
+        <div class="controls-container mb-6 flex justify-between items-center py-6">
+            <div>
+                <input type="text" id="table-search" class="shadow-sm focus:ring-blue-500 focus:border-blue-500 block w-full sm:w-80 p-3 text-lg border-gray-300 rounded-md" placeholder="Search plants...">
+            </div>
+            <div class="flex space-x-4">
+                <button id="csv-export" class="inline-flex items-center px-5 py-3 border border-gray-300 shadow-sm text-lg font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                    Export CSV
+                </button>
+                <button id="toggle-columns" class="inline-flex items-center px-5 py-3 border border-gray-300 shadow-sm text-lg font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                    Toggle Columns
+                </button>
+            </div>
+        </div>
+        
+        <!-- Full width table container -->
+        <div class="data-table-container">
+            {{ table|safe }}
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const searchInput = document.getElementById('table-search');
+        const table = document.querySelector('table');
+        
+        // Apply full width to the table
+        function forceFullWidth() {
+            if (table) {
+                table.style.width = '100%';
+                table.style.maxWidth = '100%';
+                
+                // Calculate the number of columns
+                const headerCells = table.querySelectorAll('thead th');
+                const columnCount = headerCells.length;
+                
+                // Distribute width equally among columns
+                if (columnCount > 0) {
+                    const width = `${100 / columnCount}%`;
+                    headerCells.forEach(cell => {
+                        cell.style.width = width;
+                    });
+                }
+                
+                // Force a repaint/reflow
+                table.offsetHeight;
+            }
+        }
+        
+        // Run width adjustment on load and on window resize
+        forceFullWidth();
+        window.addEventListener('resize', forceFullWidth);
+        
+        // Search functionality
+        if (searchInput && table) {
+            searchInput.addEventListener('keyup', function() {
+                const searchText = this.value.toLowerCase();
+                const rows = table.querySelectorAll('tbody tr');
+                
+                rows.forEach(row => {
+                    const text = row.textContent.toLowerCase();
+                    if (text.includes(searchText)) {
+                        row.style.display = '';
+                    } else {
+                        row.style.display = 'none';
+                    }
+                });
+            });
+        }
+        
+        // CSV Export functionality
+        const exportBtn = document.getElementById('csv-export');
+        if (exportBtn && table) {
+            exportBtn.addEventListener('click', function() {
+                // Get table headers
+                const headers = [];
+                const headerCells = table.querySelectorAll('thead th');
+                headerCells.forEach(cell => headers.push(cell.textContent.trim()));
+                
+                // Get table data
+                const rows = [];
+                const dataCells = table.querySelectorAll('tbody tr');
+                dataCells.forEach(row => {
+                    const cells = row.querySelectorAll('td');
+                    const rowData = [];
+                    cells.forEach(cell => rowData.push(cell.textContent.trim()));
+                    rows.push(rowData);
+                });
+                
+                // Create CSV content
+                let csvContent = headers.join(',') + '\n';
+                rows.forEach(row => {
+                    csvContent += row.join(',') + '\n';
+                });
+                
+                // Create download link
+                const encodedUri = encodeURI('data:text/csv;charset=utf-8,' + csvContent);
+                const link = document.createElement('a');
+                link.setAttribute('href', encodedUri);
+                link.setAttribute('download', 'california_power_plants_export.csv');
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+            });
+        }
+        
+        // Toggle columns functionality
+        const toggleBtn = document.getElementById('toggle-columns');
+        if (toggleBtn && table) {
+            toggleBtn.addEventListener('click', function() {
+                const columnSelector = document.createElement('div');
+                columnSelector.className = 'fixed inset-0 bg-gray-600 bg-opacity-75 flex items-center justify-center z-50';
+                
+                // Get column headers
+                const headers = [];
+                const headerCells = table.querySelectorAll('thead th');
+                headerCells.forEach((cell, index) => {
+                    headers.push({
+                        index: index,
+                        text: cell.textContent.trim()
+                    });
+                });
+                
+                // Create column selection UI
+                let content = '<div class="bg-white rounded-lg p-6 max-w-lg w-full max-h-screen overflow-y-auto">';
+                content += '<h3 class="text-lg font-medium text-gray-900 mb-4">Toggle Columns</h3>';
+                
+                headers.forEach((header, i) => {
+                    content += `
+                    <div class="flex items-center mb-2">
+                        <input type="checkbox" id="col-${i}" class="column-toggle h-4 w-4 text-blue-600 border-gray-300 rounded" data-index="${header.index}" checked>
+                        <label for="col-${i}" class="ml-2 block text-sm text-gray-900">${header.text}</label>
+                    </div>
+                    `;
+                });
+                
+                content += `
+                <div class="mt-5 sm:mt-6 flex justify-end">
+                    <button id="close-column-selector" class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                        Apply
+                    </button>
+                </div>
+                `;
+                content += '</div>';
+                
+                columnSelector.innerHTML = content;
+                document.body.appendChild(columnSelector);
+                
+                // Handle column toggling
+                const checkboxes = columnSelector.querySelectorAll('.column-toggle');
+                checkboxes.forEach(checkbox => {
+                    checkbox.addEventListener('change', function() {
+                        const colIndex = parseInt(this.getAttribute('data-index'));
+                        const cellsToToggle = table.querySelectorAll(`tr > :nth-child(${colIndex + 1})`);
+                        
+                        cellsToToggle.forEach(cell => {
+                            cell.style.display = this.checked ? '' : 'none';
+                        });
+                    });
+                });
+                
+                // Close button
+                document.getElementById('close-column-selector').addEventListener('click', function() {
+                    document.body.removeChild(columnSelector);
+                });
+            });
+        }
+    });
+</script>
+{% endblock %}

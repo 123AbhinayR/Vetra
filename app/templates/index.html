@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+
+{% block title %}Home - California Energy Map{% endblock %}
+
+{% block content %}
+<div class="bg-white shadow overflow-hidden sm:rounded-lg w-full max-w-full">
+    <div class="px-6 py-8 sm:px-8">
+        <h1 class="text-4xl font-bold text-gray-900">California Renewable Energy Map</h1>
+        <p class="mt-3 max-w-full text-xl text-gray-500">Interactive visualization of California's renewable energy infrastructure</p>
+    </div>
+    <div class="border-t border-gray-200 px-6 py-8 sm:px-8">
+        <div class="prose max-w-none text-lg">
+            <p class="text-gray-700 text-xl mb-8">
+                This application visualizes renewable energy plants across California, showing real-time estimated energy production
+                based on current weather conditions and plant specifications.
+            </p>
+            
+            <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-blue-50 overflow-hidden shadow rounded-lg flex flex-col">
+                    <div class="px-6 py-8 flex-grow">
+                        <h3 class="text-2xl font-medium text-blue-800">Interactive Map</h3>
+                        <p class="mt-4 text-lg text-blue-700">
+                            Explore the location and current performance of renewable energy plants across California.
+                        </p>
+                        <div class="mt-6">
+                            <a href="{{ url_for('map.map_view') }}" class="inline-flex items-center px-6 py-3 border border-transparent text-lg font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                                View Map
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-green-50 overflow-hidden shadow rounded-lg flex flex-col">
+                    <div class="px-6 py-8 flex-grow">
+                        <h3 class="text-2xl font-medium text-green-800">Data Browser</h3>
+                        <p class="mt-4 text-lg text-green-700">
+                            Access the raw data behind the visualizations with detailed information on each plant.
+                        </p>
+                        <div class="mt-6">
+                            <a href="{{ url_for('data.data_view') }}" class="inline-flex items-center px-6 py-3 border border-transparent text-lg font-medium rounded-md shadow-sm text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500">
+                                Browse Data
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-purple-50 overflow-hidden shadow rounded-lg flex flex-col">
+                    <div class="px-6 py-8 flex-grow">
+                        <h3 class="text-2xl font-medium text-purple-800">Analytics</h3>
+                        <p class="mt-4 text-lg text-purple-700">
+                            Explore trends and patterns in renewable energy production (coming soon).
+                        </p>
+                        <div class="mt-6">
+                            <a href="{{ url_for('research.analysis_view') }}" class="inline-flex items-center px-6 py-3 border border-transparent text-lg font-medium rounded-md shadow-sm text-white bg-purple-600 hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500">
+                                View Analytics
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

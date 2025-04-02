@@ -1,0 +1,138 @@
+<div class="search-button" id="searchButton">
+    <span>🔍</span>
+</div>
+
+<div class="search-sidebar" id="searchSidebar">
+    <div class="search-header">
+        <h3>Search Plants</h3>
+        <span class="close-button" id="closeSearch">×</span>
+    </div>
+    <div class="search-box">
+        <input type="text" id="plantSearchInput" placeholder="Search plants...">
+    </div>
+    <div class="filter-controls">
+        <span class="filter-label">Filter by source:</span>
+        <div class="filter-options">
+            <label><input type="radio" name="sourceFilter" value="all" checked> All</label>
+            <label><input type="radio" name="sourceFilter" value="SUN"> Solar</label>
+            <label><input type="radio" name="sourceFilter" value="WND"> Wind</label>
+            <label><input type="radio" name="sourceFilter" value="WAT"> Water</label>
+        </div>
+    </div>
+    <div class="plants-container">
+        <ul class="plants-list" id="plantsList">
+            <!-- Plants will be populated here -->
+        </ul>
+    </div>
+
+
+    // This is a JavaScript solution to add to your HTML file
+// You can add this script to your page by including it right before the </body> tag
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        console.log("Adding click handlers to plant items...");
+        
+        // Function to add click handlers
+        function addClickHandlers() {
+            // Find all plant items
+            const plantItems = document.querySelectorAll('.plant-item');
+            
+            if (plantItems.length === 0) {
+                console.log("No plant items found, retrying in 1 second...");
+                setTimeout(addClickHandlers, 1000);
+                return;
+            }
+            
+            console.log(`Found ${plantItems.length} plant items, adding click handlers`);
+            
+            // Add click handler to each plant item
+            plantItems.forEach(function(item) {
+                // Clear any existing click handlers (to avoid duplicates)
+                const newItem = item.cloneNode(true);
+                if (item.parentNode) {
+                    item.parentNode.replaceChild(newItem, item);
+                }
+                
+                // Add new click handler
+                newItem.addEventListener('click', function() {
+                    // Get coordinates
+                    const lat = parseFloat(this.getAttribute('data-lat'));
+                    const lon = parseFloat(this.getAttribute('data-lon'));
+                    
+                    console.log(`Clicked on plant at ${lat}, ${lon}`);
+                    
+                    // Get the map
+                    if (!document.querySelector('.folium-map') || 
+                        !document.querySelector('.folium-map')._leaflet_map) {
+                        console.error("Could not find map");
+                        return;
+                    }
+                    
+                    const map = document.querySelector('.folium-map')._leaflet_map;
+                    
+                    // Zoom to the location
+                    map.flyTo([lat, lon], 13);
+                    
+                    // Close the sidebar if it exists
+                    const sidebar = document.getElementById('searchSidebar');
+                    if (sidebar) {
+                        sidebar.classList.remove('active');
+                    }
+                    
+                    // Wait for the map to finish zooming before trying to open popup
+                    setTimeout(function() {
+                        console.log("Attempting to find and click marker...");
+                        
+                        // First approach: use Leaflet's eachLayer
+                        let found = false;
+                        map.eachLayer(function(layer) {
+                            if (!found && layer._latlng && 
+                                Math.abs(layer._latlng.lat - lat) < 0.001 && 
+                                Math.abs(layer._latlng.lng - lon) < 0.001) {
+                                console.log("Found marker, opening popup");
+                                if (layer.openPopup) {
+                                    layer.openPopup();
+                                    found = true;
+                                }
+                            }
+                        });
+                        
+                        // Second approach: try DOM method if first approach failed
+                        if (!found) {
+                            console.log("First approach failed, trying DOM method");
+                            const markers = document.querySelectorAll('path.leaflet-interactive');
+                            
+                            markers.forEach(function(marker) {
+                                if (!found) {
+                                    try {
+                                        // Simulate a click
+                                        marker.dispatchEvent(new MouseEvent('click', {
+                                            bubbles: true,
+                                            cancelable: true,
+                                            view: window
+                                        }));
+                                        
+                                        // Set found to true after the first marker click
+                                        // This is a bit of a hack since we can't easily determine
+                                        // which marker corresponds to which plant
+                                        found = true;
+                                    } catch (e) {
+                                        console.error("Error clicking marker:", e);
+                                    }
+                                }
+                            });
+                        }
+                    }, 800);  // Wait 800ms for the map to finish zooming
+                });
+            });
+            
+            console.log("Click handlers added successfully");
+        }
+        
+        // Start adding click handlers
+        addClickHandlers();
+    });
+    </script>
+
+</div>

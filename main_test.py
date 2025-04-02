@@ -1,170 +1,10 @@
-import pandas as pd
 import folium
 from folium.plugins import MarkerCluster
-import requests
-from concurrent.futures import ThreadPoolExecutor
 import os
 import json
-import uuid
-from typing import Union, List  # Add this import for type annotations
 
-# Load dataset
-def load_data(filepath):
-    """Load the filtered dataset of renewable energy plants."""
-    return pd.read_csv(filepath)
-
-# Cache file for storing previously fetched weather data
-CACHE_FILE = "weather_cache.json"
-API_KEY = ""  # Replace with your actual API key
-
-# Load cache if available
-def load_cache():
-    if os.path.exists(CACHE_FILE):
-        with open(CACHE_FILE, "r") as file:
-            return json.load(file)
-    return {}
-
-# Save cache to file
-def save_cache(cache):
-    with open(CACHE_FILE, "w") as file:
-        json.dump(cache, file)
-
-# Consolidated function for fetching weather data
-def fetch_weather_data(data: Union[dict, pd.DataFrame], cache, max_workers=50):
-    """
-    Fetch weather data for a single location or multiple locations using OpenWeatherMap API with caching.
-    
-    Args:
-        data (dict or pd.DataFrame): A single plant's data (dict) or a DataFrame of multiple plants.
-        cache (dict): Cache for storing previously fetched weather data.
-        max_workers (int): Maximum number of threads for multi-threading (used for multiple locations).
-    
-    Returns:
-        dict or list: Weather data for a single location (dict) or a list of weather data for multiple locations.
-    """
-    def fetch_single_weather(lat, lon):
-        """Fetch weather data for a single location."""
-        cache_key = f"{lat},{lon}"
-        if cache_key in cache:
-            return cache[cache_key]
-        
-        url = f"https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API_KEY}&units=metric"
-        try:
-            response = requests.get(url)
-            response.raise_for_status()
-            data = response.json()
-            
-            # Extract cloud cover percentage from the API response
-            cloud_cover = data.get("clouds", {}).get("all", 0)  # Cloud cover in percentage
-            
-            weather_data = {
-                "temperature": data["main"].get("temp", 0),
-                "wind_speed": data["wind"].get("speed", 0),
-                "water_flow": data.get("rain", {}).get("1h", 0),  # Precipitation as proxy for hydropower
-                "cloud_cover": cloud_cover  # Added cloud cover
-            }
-            
-            cache[cache_key] = weather_data
-            return weather_data
-        except Exception as e:
-            print(f"Error fetching weather data for {lat}, {lon}: {e}")
-            return {"temperature": 0, "wind_speed": 0, "water_flow": 0, "cloud_cover": 0}
-
-    if isinstance(data, dict):  # Single location
-        return fetch_single_weather(data['y'], data['x'])
-    elif isinstance(data, pd.DataFrame):  # Multiple locations
-        with ThreadPoolExecutor(max_workers=max_workers) as executor:
-            weather_data_list = list(executor.map(
-                lambda plant: fetch_single_weather(plant['y'], plant['x']),
-                [row[1] for row in data.iterrows()]
-            ))
-        save_cache(cache)
-        return weather_data_list
-    else:
-        raise ValueError("Invalid input: data must be a dict (single location) or a DataFrame (multiple locations).")
-
-# Energy production estimation
-def estimate_energy_production(plant, weather):
-    """Estimate energy output based on plant type and weather conditions."""
-    capacity = plant["Capacity_Latest"]
-    source = plant["PriEnergySource"]
-    
-    if source == "SUN":  # Solar power estimation
-        temperature_effect = max(0, 1 - abs(25 - weather["temperature"]) * 0.005)
-        cloud_factor = max(0, 1 - (weather.get("cloud_cover", 0) / 100))  # Safely get cloud_cover
-        efficiency = 0.2
-        return capacity * efficiency * temperature_effect * cloud_factor
-    
-    elif source == "WND":  # Wind power estimation (simplified)
-        air_density = 1.225
-        swept_area = 1000
-        power_coefficient = 0.4
-        wind_power = 0.5 * air_density * swept_area * (weather["wind_speed"] ** 3)
-        return min(capacity, wind_power * power_coefficient / 1000)
-    
-    elif source == "WAT":  # Hydropower estimation (simplified)
-        efficiency = 0.85  # Assumed efficiency
-        return capacity * efficiency * (weather["water_flow"] / 100)
-    
-    else:
-        return 0
-
-# Save dataset with weather data
-def save_dataset_with_weather(data, weather_data_list):
-    """Add weather data to dataset and save it."""
-    data["temperature"] = [weather["temperature"] for weather in weather_data_list]
-    data["wind_speed"] = [weather["wind_speed"] for weather in weather_data_list]
-    data["water_flow"] = [weather["water_flow"] for weather in weather_data_list]
-    
-    # Safely get cloud_cover, default to 0 if not present
-    data["cloud_cover"] = [weather.get("cloud_cover", 0) for weather in weather_data_list]
-    
-    data["estimated_output"] = [estimate_energy_production(row[1], weather) for row, weather in zip(data.iterrows(), weather_data_list)]
-    output_file = "california_power_plants_with_weather.csv"
-    data.to_csv(output_file, index=False)
-    return output_file
-
-# Create search control for the map
-def create_search_control(data, energy_map):
-    """Create a collapsible search control with clickable plant list."""
-    with open("search_control.html", "r") as file:
-        search_html = file.read()
-    
-    # Generate list items for each plant
-    for i, (_, plant) in enumerate(data.iterrows()):
-        plant_name = str(plant['PlantName'])
-        source = plant['PriEnergySource']
-        output = plant['estimated_output']
-        lat = plant['y']
-        lon = plant['x']
-        
-        search_html += f"""
-        <li class="plant-item source-{source}" 
-            onclick="zoomToPlant({lat}, {lon})" 
-            data-name="{plant_name.lower()}" 
-            data-source="{source}">
-            {plant_name} ({source}) - {output:.1f} MW
-        </li>
-        """
-    
-    # Add JavaScript for collapsible functionality and search
-    with open("search_control_script.js", "r") as script_file:
-        search_script = script_file.read()
-    search_html += """
-        </ul>
-    </div>
-    <div class="search-toggle" id="searchToggle">☰</div>
-    <script>
-    """ + search_script + """
-    </script>
-    """
-    
-    # Add the search control to the map
-    energy_map.get_root().html.add_child(folium.Element(search_html))
-
-# Map generation with a search feature
-def create_map(data):
-    """Generate an interactive map with power plants in California using overlays and search feature."""
+def create_map(data, output_path):
+    """Generate an interactive map with power plants in California."""
     # Initialize the map
     energy_map = folium.Map(location=[37.5, -119.5], zoom_start=6, control_scale=True, tiles="cartodbpositron")
     
@@ -173,15 +13,19 @@ def create_map(data):
     solar_group = folium.FeatureGroup(name="Solar Power", show=True).add_to(energy_map)
     water_group = folium.FeatureGroup(name="Water Power", show=True).add_to(energy_map)
     
+    # Create a list to store plant data for JavaScript
+    plant_list = []
+    
     # Add markers to the map with custom formatting
     for i, (_, plant) in enumerate(data.iterrows()):
         lat, lon = plant['y'], plant['x']
         energy_output = plant['estimated_output']
-        plant_name = str(plant['PlantName'])  # Convert to string here as well
+        plant_name = str(plant['PlantName'])
+        source = plant['PriEnergySource']
         
         weather_info = f"""
             <b>{plant_name}</b><br>
-            Source: {plant['PriEnergySource']}<br>
+            Source: {source}<br>
             Estimated Output: {energy_output:.2f} MW<br>
             Capacity: {plant['Capacity_Latest']} MW<br>
             Wind Speed: {plant['wind_speed']} m/s<br>
@@ -190,85 +34,323 @@ def create_map(data):
         """
         
         # Define marker color and opacity based on energy source
-        color = "yellow" if plant["PriEnergySource"] == "SUN" else \
-                "red" if plant["PriEnergySource"] == "WND" else "blue"
+        color = "yellow" if source == "SUN" else \
+                "red" if source == "WND" else "blue"
         opacity = 0.8
         
+        # Create a unique ID for this marker
+        marker_id = f"marker_{i}"
+        
+        # Store plant data for JavaScript
+        plant_list.append({
+            'id': marker_id,
+            'name': plant_name,
+            'lat': lat,
+            'lon': lon,
+            'source': source,
+            'output': energy_output
+        })
+        
+        # Create marker with a custom ID in the tooltip HTML
         marker = folium.CircleMarker(
             location=[lat, lon],
-            radius=6,  # Marker size
-            color="black",  # Border color
+            radius=6,
+            color="black",
             fill=True,
             fill_color=color,
             fill_opacity=opacity,
             popup=weather_info,
-            tooltip=plant_name  # Add tooltip for easier identification
+            tooltip=plant_name
         )
         
         # Add marker to the appropriate feature group
-        if plant["PriEnergySource"] == "WND":
+        if source == "WND":
             marker.add_to(wind_group)
-        elif plant["PriEnergySource"] == "SUN":
+        elif source == "SUN":
             marker.add_to(solar_group)
-        elif plant["PriEnergySource"] == "WAT":
+        elif source == "WAT":
             marker.add_to(water_group)
-    
-    # Add search control to the map
-    create_search_control(data, energy_map)
     
     # Add layer control with overlays only
     folium.LayerControl(collapsed=False).add_to(energy_map)
     
-    # Use custom JavaScript to fix map reference issue
-    map_fix_script = """
+    # Add HTML and JavaScript for search functionality
+    search_html = """
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+    .search-container {
+        position: absolute;
+        top: 10px;
+        left: 50px;
+        z-index: 999;
+    }
+    .search-button {
+        background: white;
+        border: none;
+        border-radius: 4px;
+        padding: 8px;
+        box-shadow: 0 0 8px rgba(0,0,0,0.3);
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+    }
+    .search-button i {
+        margin-right: 5px;
+    }
+    .search-popup {
+        display: none;
+        position: absolute;
+        top: 45px;
+        left: 0;
+        background: white;
+        border-radius: 4px;
+        width: 300px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.3);
+        z-index: 1000;
+    }
+    .search-header {
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #eee;
+    }
+    .search-header h3 {
+        margin: 0;
+        font-size: 16px;
+    }
+    .close-search {
+        cursor: pointer;
+        font-size: 18px;
+        color: #777;
+    }
+    .search-input {
+        width: 100%;
+        padding: 8px 10px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+    }
+    .filter-buttons {
+        display: flex;
+        gap: 5px;
+        margin-bottom: 10px;
+    }
+    .filter-button {
+        padding: 5px 10px;
+        border-radius: 4px;
+        cursor: pointer;
+        background: #eee;
+        font-size: 12px;
+    }
+    .filter-button.active {
+        background: #007bff;
+        color: white;
+    }
+    .plant-list {
+        max-height: 300px;
+        overflow-y: auto;
+        border-top: 1px solid #eee;
+    }
+    .plant-item {
+        padding: 8px 10px;
+        border-bottom: 1px solid #eee;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+    }
+    .plant-item:hover {
+        background: #f5f5f5;
+    }
+    .plant-item[data-source="SUN"] {
+        border-left: 4px solid yellow;
+    }
+    .plant-item[data-source="WND"] {
+        border-left: 4px solid red;
+    }
+    .plant-item[data-source="WAT"] {
+        border-left: 4px solid blue;
+    }
+    .plant-output {
+        color: #777;
+        font-size: 12px;
+    }
+    </style>
+    
+    <div class="search-container">
+        <button class="search-button" id="searchButton">
+            <i class="fas fa-search"></i> Search
+        </button>
+        <div class="search-popup" id="searchPopup">
+            <div class="search-header">
+                <h3>Plant Search</h3>
+                <span class="close-search" id="closeSearch">&times;</span>
+            </div>
+            <div style="padding: 10px;">
+                <input type="text" class="search-input" id="plantSearchInput" placeholder="Search plants...">
+                <div class="filter-buttons">
+                    <div class="filter-button active" data-filter="all">All</div>
+                    <div class="filter-button" data-filter="SUN">Solar</div>
+                    <div class="filter-button" data-filter="WND">Wind</div>
+                    <div class="filter-button" data-filter="WAT">Water</div>
+                </div>
+            </div>
+            <div class="plant-list" id="plantList">
+                <!-- Plants will be added here -->
+            </div>
+        </div>
+    </div>
+    
     <script>
-    // Make map accessible to our zoom function
+    // Plant data from Python
+    const plantData = PLANT_DATA_PLACEHOLDER;
+    
     document.addEventListener('DOMContentLoaded', function() {
-        // Wait for Leaflet to initialize
-        setTimeout(function() {
-            // Find the map object and store it in window scope
-            window.energyMap = Object.values(window).find(function(item) {
-                return item && item._container && item._container.classList && 
-                       item._container.classList.contains('leaflet-container');
+        // Elements
+        const searchButton = document.getElementById('searchButton');
+        const searchPopup = document.getElementById('searchPopup');
+        const closeSearch = document.getElementById('closeSearch');
+        const searchInput = document.getElementById('plantSearchInput');
+        const plantList = document.getElementById('plantList');
+        const filterButtons = document.querySelectorAll('.filter-button');
+        
+        // Get map
+        const map = document.querySelector('.folium-map')._leaflet_map;
+        
+        // Toggle search popup
+        searchButton.addEventListener('click', function() {
+            searchPopup.style.display = searchPopup.style.display === 'block' ? 'none' : 'block';
+            if (searchPopup.style.display === 'block') {
+                searchInput.focus();
+            }
+        });
+        
+        // Close search popup
+        closeSearch.addEventListener('click', function() {
+            searchPopup.style.display = 'none';
+        });
+        
+        // Click outside to close
+        document.addEventListener('click', function(event) {
+            if (!event.target.closest('.search-container') && searchPopup.style.display === 'block') {
+                searchPopup.style.display = 'none';
+            }
+        });
+        
+        // Handle filter buttons
+        filterButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                // Remove active class from all buttons
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                
+                // Add active class to clicked button
+                this.classList.add('active');
+                
+                // Update list
+                updatePlantList();
             });
-        }, 1000);
+        });
+        
+        // Handle search input
+        searchInput.addEventListener('input', updatePlantList);
+        
+        // Function to update plant list based on search and filter
+        function updatePlantList() {
+            const searchText = searchInput.value.toLowerCase();
+            const activeFilter = document.querySelector('.filter-button.active').getAttribute('data-filter');
+            
+            // Clear current list
+            plantList.innerHTML = '';
+            
+            // Filter plants
+            const filteredPlants = plantData.filter(plant => {
+                const nameMatch = plant.name.toLowerCase().includes(searchText);
+                const sourceMatch = activeFilter === 'all' || plant.source === activeFilter;
+                return nameMatch && sourceMatch;
+            });
+            
+            // Sort plants by name
+            filteredPlants.sort((a, b) => a.name.localeCompare(b.name));
+            
+            // Add filtered plants to list
+            filteredPlants.forEach(plant => {
+                const item = document.createElement('div');
+                item.className = 'plant-item';
+                item.setAttribute('data-source', plant.source);
+                item.setAttribute('data-lat', plant.lat);
+                item.setAttribute('data-lon', plant.lon);
+                
+                item.innerHTML = `
+                    <span>${plant.name}</span>
+                    <span class="plant-output">${plant.output.toFixed(1)} MW</span>
+                `;
+                
+                // Add click handler
+                item.addEventListener('click', function() {
+                    // Get coordinates
+                    const lat = parseFloat(this.getAttribute('data-lat'));
+                    const lon = parseFloat(this.getAttribute('data-lon'));
+                    
+                    // Zoom to location
+                    map.flyTo([lat, lon], 13);
+                    
+                    // Close search popup
+                    searchPopup.style.display = 'none';
+                    
+                    // Wait for zoom to complete before trying to open popup
+                    setTimeout(function() {
+                        // Try to find the marker at this location
+                        map.eachLayer(function(layer) {
+                            if (layer._latlng && 
+                                Math.abs(layer._latlng.lat - lat) < 0.0001 && 
+                                Math.abs(layer._latlng.lng - lon) < 0.0001) {
+                                
+                                // Open popup
+                                try {
+                                    layer.openPopup();
+                                } catch (e) {
+                                    console.error('Error opening popup:', e);
+                                }
+                            }
+                        });
+                    }, 800); // Wait 800ms for zoom to complete
+                });
+                
+                plantList.appendChild(item);
+            });
+            
+            // Show message if no plants found
+            if (filteredPlants.length === 0) {
+                const message = document.createElement('div');
+                message.textContent = 'No plants found';
+                message.style.padding = '10px';
+                message.style.textAlign = 'center';
+                message.style.color = '#777';
+                message.style.fontStyle = 'italic';
+                plantList.appendChild(message);
+            }
+        }
+        
+        // Initial plant list update
+        updatePlantList();
     });
     </script>
     """
     
-    energy_map.get_root().html.add_child(folium.Element(map_fix_script))
+    # Replace placeholder with actual plant data
+    plant_json = json.dumps(plant_list)
+    search_html = search_html.replace('PLANT_DATA_PLACEHOLDER', plant_json)
+    
+    # Add the search HTML to the map
+    energy_map.get_root().html.add_child(folium.Element(search_html))
+    
+    # Ensure directory exists
+    os.makedirs(os.path.dirname(output_path), exist_ok=True)
     
     # Save the map
-    energy_map.save("california_energy_map.html")
-    print("Map saved as 'california_energy_map.html'")
-
-# Main function
-if __name__ == "__main__":
-    filepath = "california_power_plants.csv"
-    data = load_data(filepath)
+    energy_map.save(output_path)
+    print(f"Map saved as '{output_path}'")
     
-    # Only fetch new weather data if no cache file exists
-    if not os.path.exists(CACHE_FILE):
-        print("No cache file found. Fetching new weather data...")
-        cache = load_cache()
-        weather_data_list = fetch_weather_data(data, cache)
-        updated_filepath = save_dataset_with_weather(data, weather_data_list)
-        updated_data = load_data(updated_filepath)
-    else:
-        print("Using existing weather data from cache...")
-        # If we have cache but no processed data file, process the data
-        if not os.path.exists("california_power_plants_with_weather.csv"):
-            cache = load_cache()
-            weather_data_list = [cache.get(f"{row[1]['y']},{row[1]['x']}", 
-                                        {"temperature": 0, "wind_speed": 0, "water_flow": 0, "cloud_cover": 0}) 
-                                for row in data.iterrows()]
-            updated_filepath = save_dataset_with_weather(data, weather_data_list)
-            updated_data = load_data(updated_filepath)
-        else:
-            print("Loading previously processed data...")
-            updated_data = load_data("california_power_plants_with_weather.csv")
-    
-    if {'PlantName', 'y', 'x', 'PriEnergySource', 'Capacity_Latest'}.issubset(data.columns):
-        create_map(updated_data)
-    else:
-        print("Error: Missing required columns in dataset.")
+    return output_path
