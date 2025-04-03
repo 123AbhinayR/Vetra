@@ -78,29 +78,73 @@ def fetch_weather_data(data: Union[dict, pd.DataFrame], cache, api_key, cache_fi
         raise ValueError("Invalid input: data must be a dict (single location) or a DataFrame (multiple locations).")
 
 def estimate_energy_production(plant, weather):
-    """Estimate energy output based on plant type and weather conditions."""
+    """
+    Estimate energy output based on plant type and weather conditions using updated formulas.
+    """
     capacity = plant["Capacity_Latest"]
     source = plant["PriEnergySource"]
-    
+
     if source == "SUN":  # Solar power estimation
-        temperature_effect = max(0, 1 - abs(25 - weather["temperature"]) * 0.005)
-        cloud_factor = max(0, 1 - (weather.get("cloud_cover", 0) / 100))  # Safely get cloud_cover
-        efficiency = 0.2
-        return capacity * efficiency * temperature_effect * cloud_factor
-    
-    elif source == "WND":  # Wind power estimation (simplified)
-        air_density = 1.225
-        swept_area = 1000
-        power_coefficient = 0.4
-        wind_power = 0.5 * air_density * swept_area * (weather["wind_speed"] ** 3)
-        return min(capacity, wind_power * power_coefficient / 1000)
-    
-    elif source == "WAT":  # Hydropower estimation (simplified)
-        efficiency = 0.85  # Assumed efficiency
-        return capacity * efficiency * (weather["water_flow"] / 100)
-    
+        # Updated solar power formula
+        panel_efficiency = 0.22  # Typical solar panel efficiency (22%)
+        temp_coeff = -0.004  # Efficiency loss per degree Celsius above 25°C
+        age = plant.get("Age", 0)  # Age of the solar panel in years (default to 0 if not provided)
+        soiling_loss = 0.05  # Loss due to dust and dirt accumulation (5%)
+
+        # Irradiance (W/m^2) based on cloud cover
+        irradiance = 1000 * (1 - weather.get("cloud_cover", 0) / 100)
+
+        # Temperature effect
+        cell_temp = weather["temperature"] + irradiance * 0.03  # Simplified cell temperature model
+        temp_effect = 1 + temp_coeff * (cell_temp - 25)
+
+        # Age degradation
+        age_effect = 1 - age * 0.005
+
+        # Soiling loss effect
+        soiling_effect = 1 - soiling_loss
+
+        # Solar power output calculation
+        return max(0, capacity * panel_efficiency * irradiance / 1000 * temp_effect * age_effect * soiling_effect)
+
+    elif source == "WND":  # Wind power estimation
+        # Updated wind power formula
+        turbine_diameter = plant.get("TurbineDiameter", 80)  # Default turbine diameter in meters
+        hub_height = plant.get("HubHeight", 100)  # Default hub height in meters
+        air_density = weather.get("air_density", 1.225)  # Air density in kg/m^3 (default to standard value)
+
+        # Adjust wind speed for hub height using a logarithmic wind profile law
+        wind_speed_hub = weather["wind_speed"] * (hub_height / 10) ** 0.14
+
+        # Simplified power curve logic
+        if wind_speed_hub < 3:  # Cut-in speed
+            return 0
+        elif wind_speed_hub > 15:  # Cut-out speed
+            return capacity
+        else:
+            swept_area = (3.14159 * (turbine_diameter / 2) ** 2)  # Swept area of the turbine blades
+            wind_power = (
+                0.5 * air_density * swept_area * wind_speed_hub**3 / 1000
+            )  # Power in kW
+            return min(capacity, wind_power * 0.4)  # Apply power coefficient (Cp)
+
+    elif source == "WAT":  # Hydropower estimation
+        # Updated hydropower formula
+        head = plant.get("Head", 50)  # Default head height in meters (if not provided)
+        efficiency = plant.get("Efficiency", 0.9)  # Turbine efficiency (default to 90%)
+
+        # Water flow rate in m^3/s (convert mm/h over a catchment area)
+        flow_rate = weather["water_flow"] * (2.78e-7 * plant.get("CatchmentArea", 1e6))  
+
+        g = 9.81  # Gravitational constant in m/s^2
+        density = 1000  # Water density in kg/m^3
+
+        hydro_power = efficiency * density * flow_rate * g * head / 1000  # Power in kW
+        return min(capacity, hydro_power)
+
     else:
         return 0
+
 
 def save_dataset_with_weather(data, weather_data_list, output_file):
     """Add weather data to dataset and save it."""
