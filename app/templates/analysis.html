@@ -10,17 +10,73 @@
     </div>
     
     <div class="border-t border-gray-200 px-5 py-6 sm:p-6">
-        <div class="flex flex-col items-center justify-center py-16">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-32 w-32 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-            </svg>
-            <h3 class="mt-6 text-2xl font-medium text-gray-900">Analysis Coming Soon</h3>
-            <p class="mt-3 text-lg text-gray-500 max-w-2xl text-center">
-                This section will provide detailed analysis of the energy production data.
-            </p>
-            <p class="mt-2 text-lg text-gray-500 max-w-2xl text-center">
-                Check back soon for interactive charts and statistical insights.
-            </p>
+        <div class="flex flex-col items-center justify-center py-8">
+            <div class="text-center mb-8">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-20 w-20 mx-auto text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                </svg>
+                <h3 class="mt-4 text-2xl font-medium text-gray-900">Renewable Energy Analysis</h3>
+                <p class="mt-2 text-lg text-gray-500 max-w-2xl mx-auto">
+                    Key insights from our analysis of California's renewable energy infrastructure and performance.
+                </p>
+            </div>
+            
+
+            <div class="w-full space-y-12 max-w-5xl">
+                <!-- Image 1 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden p-6">
+                    <h4 class="text-2xl font-semibold text-gray-800 mb-4 text-center">Average Power Output by Energy Source</h4>
+                    <div class="flex justify-center">
+                        <img src="{{ url_for('static', filename='img/image1.jpg') }}" alt="Average Power Output by Energy Source" class="max-w-full h-auto rounded" style="max-height: 600px;">
+                    </div>
+                    <p class="mt-4 text-lg text-gray-600">Comparison of average power output between solar (SUN) and wind (WND) energy sources in California, showing wind's significantly higher average output.</p>
+                </div>
+                
+                <!-- Image 2 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden p-6">
+                    <h4 class="text-2xl font-semibold text-gray-800 mb-4 text-center">Temperature vs Solar Power Output</h4>
+                    <div class="flex justify-center">
+                        <img src="{{ url_for('static', filename='img/image2.png') }}" alt="Temperature vs Solar Power Output" class="max-w-full h-auto rounded" style="max-height: 600px;">
+                    </div>
+                    <p class="mt-4 text-lg text-gray-600">Scatter plot showing the relationship between temperature and solar power output, with points colored by cloud cover percentage, illustrating how these weather conditions affect solar efficiency.</p>
+                </div>
+                
+                <!-- Image 3 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden p-6">
+                    <h4 class="text-2xl font-semibold text-gray-800 mb-4 text-center">Wind Speed vs Wind Power Output</h4>
+                    <div class="flex justify-center">
+                        <img src="{{ url_for('static', filename='img/image3.png') }}" alt="Wind Speed vs Wind Power Output" class="max-w-full h-auto rounded" style="max-height: 600px;">
+                    </div>
+                    <p class="mt-4 text-lg text-gray-600">Scatter plot demonstrating the strong correlation between wind speed and power output, with point sizes representing different estimated output levels.</p>
+                </div>
+                
+                <!-- Image 4 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden p-6">
+                    <h4 class="text-2xl font-semibold text-gray-800 mb-4 text-center">Power Output Heatmap Across California</h4>
+                    <div class="flex justify-center">
+                        <img src="{{ url_for('static', filename='img/image4.jpg') }}" alt="Power Output Heatmap Across California" class="max-w-full h-auto rounded" style="max-height: 600px;">
+                    </div>
+                    <p class="mt-4 text-lg text-gray-600">Geographic heatmap showing the distribution and intensity of renewable energy production across California, with blue dots representing individual plant locations.</p>
+                </div>
+                
+                <!-- Image 5 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden p-6">
+                    <h4 class="text-2xl font-semibold text-gray-800 mb-4 text-center">Correlation Matrix: Weather vs Output</h4>
+                    <div class="flex justify-center">
+                        <img src="{{ url_for('static', filename='img/image5.png') }}" alt="Correlation Matrix: Weather vs Output" class="max-w-full h-auto rounded" style="max-height: 600px;">
+                    </div>
+                    <p class="mt-4 text-lg text-gray-600">Heatmap showing correlation coefficients between weather variables and energy output, highlighting the strong positive correlation between wind speed and estimated output.</p>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center max-w-4xl">
+                <h3 class="text-xl font-medium text-gray-900">Data-Driven Insights</h3>
+                <p class="mt-3 text-lg text-gray-500">
+                    These visualizations reveal how weather conditions directly impact renewable energy production in California. 
+                    Wind power shows the strongest weather dependency, while geographic distribution plays a critical role in 
+                    overall system performance.
+                </p>
+            </div>
         </div>
     </div>
 </div>
