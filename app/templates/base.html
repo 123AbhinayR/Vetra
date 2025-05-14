@@ -58,7 +58,7 @@
                             <a href="{{ url_for('data.data_view') }}" class="px-4 py-3 rounded-md text-lg font-medium border-b-2 {% if request.endpoint.startswith('data.') %}active-nav{% else %}border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300{% endif %}">
                                 Data
                             </a>
-                            <a href="{{ url_for('research.analysis_view') }}" class="px-4 py-3 rounded-md text-lg font-medium border-b-2 {% if request.endpoint == 'research.analysis_view' %}active-nav{% else %}border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300{% endif %}">
+                            <a href="{{ url_for('research.analytics') }}" class="px-4 py-3 rounded-md text-lg font-medium border-b-2 {% if request.endpoint == 'research.analytics' %}active-nav{% else %}border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300{% endif %}">
                                 Analysis
                             </a>
                             <!-- <a href="{{ url_for('research.research_view') }}" class="px-4 py-3 rounded-md text-lg font-medium border-b-2 {% if request.endpoint == 'research.research_view' %}active-nav{% else %}border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300{% endif %}">
@@ -82,7 +82,7 @@
                 <a href="{{ url_for('data.data_view') }}" class="block px-4 py-3 rounded-md text-lg font-medium {% if request.endpoint.startswith('data.') %}bg-blue-50 text-blue-700{% else %}text-gray-600 hover:bg-gray-50 hover:text-gray-900{% endif %}">
                     Data
                 </a>
-                <a href="{{ url_for('research.analysis_view') }}" class="block px-4 py-3 rounded-md text-lg font-medium {% if request.endpoint == 'research.analysis_view' %}bg-blue-50 text-blue-700{% else %}text-gray-600 hover:bg-gray-50 hover:text-gray-900{% endif %}">
+                <a href="{{ url_for('research.analytics') }}" class="block px-4 py-3 rounded-md text-lg font-medium {% if request.endpoint == 'research.analytics' %}bg-blue-50 text-blue-700{% else %}text-gray-600 hover:bg-gray-50 hover:text-gray-900{% endif %}">
                     Analysis
                 </a>
                 <a href="{{ url_for('research.research_view') }}" class="block px-4 py-3 rounded-md text-lg font-medium {% if request.endpoint == 'research.research_view' %}bg-blue-50 text-blue-700{% else %}text-gray-600 hover:bg-gray-50 hover:text-gray-900{% endif %}">
