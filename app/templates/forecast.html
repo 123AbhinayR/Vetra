@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energy Forecasting - California Energy Map</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <a class="border-blue-500 text-blue-600">Link</a>
+
+    <style>
+        
+        body, html {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        
+        .pulse-animation {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+    </style>
+</head>
+<body class="bg-gray-100 min-h-screen flex flex-col">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md">
+        <div class="w-full max-w-full mx-auto px-4">
+            <div class="relative flex items-center justify-between h-20">
+                <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
+                    <div class="flex-shrink-0 flex items-center">
+                        <span class="text-2xl font-bold text-gray-800">California Energy Map</span>
+                    </div>
+                    <div class="hidden sm:block sm:ml-8">
+                        <div class="flex space-x-6">
+                            <a href="#" class="px-4 py-3 rounded-md text-lg font-medium border-b-2 border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300">
+                                Home
+                            </a>
+                            <a href="#" class="px-4 py-3 rounded-md text-lg font-medium border-b-2 border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300">
+                                Map
+                            </a>
+                            <a href="#" class="px-4 py-3 rounded-md text-lg font-medium border-b-2 border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300">
+                                Data
+                            </a>
+                            <a href="#" class="px-4 py-3 rounded-md text-lg font-medium border-b-2 border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300">
+                                Analysis
+                            </a>
+                            <a href="#" class="px-4 py-3 rounded-md text-lg font-medium border-b-2 active-nav">
+                                Forecast
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="flex-grow">
+        <div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
+            <!-- Hero Section -->
+            <div class="bg-white shadow overflow-hidden sm:rounded-lg mb-8">
+                <div class="px-6 py-8 sm:px-8">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <h1 class="text-4xl font-bold text-gray-900">Predictive Energy Forecasting</h1>
+                            <p class="mt-3 max-w-3xl text-xl text-gray-500">Advanced 3-day renewable energy production forecasts based on weather patterns and plant performance data</p>
+                        </div>
+                        <div class="hidden lg:block">
+                            <i class="fas fa-chart-line text-6xl text-blue-500"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Configuration Panel -->
+            <div class="bg-white shadow overflow-hidden sm:rounded-lg mb-8 card-hover">
+                <div class="px-6 py-6 sm:px-8">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-6">
+                        <i class="fas fa-cog text-blue-600 mr-3"></i>Forecast Configuration
+                    </h2>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-6">
+                        <!-- Forecast Type -->
+                        <div class="space-y-2">
+                            <label class="block text-sm font-semibold text-gray-700">Forecast Type</label>
+                            <select id="forecastType" class="w-full p-3 text-lg border border-gray-300 rounded-lg shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                                <option value="plant">Single Plant Analysis</option>
+                                <option value="region">Regional Overview</option>
+                            </select>
+                        </div>
+
+                        <!-- Forecast Duration -->
+                        <div class="space-y-2">
+                            <label class="block text-sm font-semibold text-gray-700">Forecast Duration</label>
+                            <select id="forecastDays" class="w-full p-3 text-lg border border-gray-300 rounded-lg shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                                <option value="1">1 Day</option>
+                                <option value="2">2 Days</option>
+                                <option value="3" selected>3 Days</option>
+                                <option value="5">5 Days</option>
+                                <option value="7">1 Week</option>
+                            </select>
+                        </div>
+
+                        <!-- Energy Source Filter -->
+                        <div class="space-y-2">
+                            <label class="block text-sm font-semibold text-gray-700">Energy Source</label>
+                            <select id="energySource" class="w-full p-3 text-lg border border-gray-300 rounded-lg shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                                <option value="all">All Sources</option>
+                                <option value="solar">Solar Only</option>
+                                <option value="wind">Wind Only</option>
+                                <option value="hydro">Hydro Only</option>
+                            </select>
+                        </div>
+
+                        <!-- Generate Button -->
+                        <div class="flex items-end">
+                            <button id="generateForecast" class="w-full bg-gradient-to-r from-blue-600 to-blue-700 text-white py-3 px-6 rounded-lg text-lg font-semibold hover:from-blue-700 hover:to-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 transition duration-200 transform hover:scale-105">
+                                <i class="fas fa-magic mr-2"></i>Generate Forecast
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Selection Areas -->
+                    <div class="space-y-4">
+                        <!-- Plant Selection -->
+                        <div id="plantSelection" class="space-y-2">
+                            <label class="block text-sm font-semibold text-gray-700">Select Power Plant</label>
+                            <select id="plantSelect" class="w-full p-3 text-lg border border-gray-300 rounded-lg shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                                <option value="">Choose a power plant...</option>
+                                <option value="1">[Solar] Desert Sunlight Solar Farm - 550MW</option>
+                                <option value="2">[Wind] Alta Wind Energy Center - 1548MW</option>
+                                <option value="3">[Solar] Topaz Solar Farm - 550MW</option>
+                                <option value="4">[Wind] Tehachapi Pass Wind Farm - 705MW</option>
+                                <option value="5">[Hydro] Shasta Dam - 676MW</option>
+                            </select>
+                        </div>
+
+                        <!-- Region Selection (Hidden by default) -->
+                        <div id="regionSelection" class="space-y-2 hidden">
+                            <label class="block text-sm font-semibold text-gray-700">Select Region</label>
+                            <select id="regionSelect" class="w-full p-3 text-lg border border-gray-300 rounded-lg shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                                <option value="">Choose a region...</option>
+                                <option value="central">Central Valley</option>
+                                <option value="southern">Southern California</option>
+                                <option value="northern">Northern California</option>
+                                <option value="coastal">Coastal Region</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Loading Indicator -->
+            <div id="loadingIndicator" class="hidden bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-200 rounded-lg p-6 mb-8">
+                <div class="flex items-center justify-center">
+                    <div class="animate-spin rounded-full h-8 w-8 border-b-4 border-blue-600 mr-4"></div>
+                    <div class="text-center">
+                        <p class="text-blue-800 text-lg font-semibold">Generating advanced energy forecast...</p>
+                        <p class="text-blue-600 text-sm mt-1">Analyzing weather patterns and plant performance data</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Results Section -->
+            <div id="resultsSection" class="hidden space-y-8">
+                <!-- Forecast Summary Cards -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+                        <div class="flex items-center">
+                            <div class="p-3 rounded-full bg-green-100">
+                                <i class="fas fa-bolt text-green-600 text-xl"></i>
+                            </div>
+                            <div class="ml-4">
+                                <p class="text-sm font-medium text-gray-500">Avg Daily Output</p>
+                                <p class="text-2xl font-bold text-gray-900" id="avgOutput">1,245 MW</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+                        <div class="flex items-center">
+                            <div class="p-3 rounded-full bg-blue-100">
+                                <i class="fas fa-chart-line text-blue-600 text-xl"></i>
+                            </div>
+                            <div class="ml-4">
+                                <p class="text-sm font-medium text-gray-500">Peak Forecast</p>
+                                <p class="text-2xl font-bold text-gray-900" id="peakOutput">1,890 MW</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+                        <div class="flex items-center">
+                            <div class="p-3 rounded-full bg-yellow-100">
+                                <i class="fas fa-cloud-sun text-yellow-600 text-xl"></i>
+                            </div>
+                            <div class="ml-4">
+                                <p class="text-sm font-medium text-gray-500">Weather Score</p>
+                                <p class="text-2xl font-bold text-gray-900" id="weatherScore">8.5/10</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+                        <div class="flex items-center">
+                            <div class="p-3 rounded-full bg-purple-100">
+                                <i class="fas fa-percentage text-purple-600 text-xl"></i>
+                            </div>
+                            <div class="ml-4">
+                                <p class="text-sm font-medium text-gray-500">Efficiency</p>
+                                <p class="text-2xl font-bold text-gray-900" id="efficiency">87%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Charts Section -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <!-- Hourly Forecast Chart -->
+                    <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+                        <div class="flex items-center justify-between mb-6">
+                            <h3 class="text-xl font-bold text-gray-900">
+                                <i class="fas fa-clock text-blue-600 mr-2"></i>Hourly Production Forecast
+                            </h3>
+                            <div class="flex space-x-2">
+                                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-blue-800">
+                                    Real-time
+                                </span>
+                            </div>
+                        </div>
+                        <div class="h-80">
+                            <canvas id="hourlyChart" class="w-full h-full"></canvas>
+                        </div>
+                    </div>
+
+                    <!-- Daily Summary Chart -->
+                    <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+                        <div class="flex items-center justify-between mb-6">
+                            <h3 class="text-xl font-bold text-gray-900">
+                                <i class="fas fa-calendar-day text-green-600 mr-2"></i>Daily Production Summary
+                            </h3>
+                            <div class="flex space-x-2">
+                                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">
+                                    3-Day Outlook
+                                </span>
+                            </div>
+                        </div>
+                        <div class="h-80">
+                            <canvas id="dailyChart" class="w-full h-full"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Weather Impact Analysis -->
+                <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+                    <h3 class="text-xl font-bold text-gray-900 mb-6">
+                        <i class="fas fa-cloud-sun text-orange-600 mr-2"></i>Weather Impact Analysis
+                    </h3>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div class="text-center p-4 bg-blue-50 rounded-lg">
+                            <i class="fas fa-sun text-3xl text-yellow-500 mb-3"></i>
+                            <h4 class="font-semibold text-gray-900">Solar Conditions</h4>
+                            <p class="text-sm text-gray-600 mt-1">Excellent visibility expected</p>
+                            <div class="mt-2">
+                                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">
+                                    Optimal
+                                </span>
+                            </div>
+                        </div>
+                        <div class="text-center p-4 bg-green-50 rounded-lg">
+                            <i class="fas fa-wind text-3xl text-blue-500 mb-3"></i>
+                            <h4 class="font-semibold text-gray-900">Wind Patterns</h4>
+                            <p class="text-sm text-gray-600 mt-1">Strong consistent winds</p>
+                            <div class="mt-2">
+                                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">
+                                    Favorable
+                                </span>
+                            </div>
+                        </div>
+                        <div class="text-center p-4 bg-purple-50 rounded-lg">
+                            <i class="fas fa-tint text-3xl text-indigo-500 mb-3"></i>
+                            <h4 class="font-semibold text-gray-900">Precipitation</h4>
+                            <p class="text-sm text-gray-600 mt-1">Minimal impact expected</p>
+                            <div class="mt-2">
+                                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-yellow-100 text-yellow-800">
+                                    Moderate
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Alerts and Recommendations -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <!-- Fluctuation Alerts -->
+                    <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+                        <h3 class="text-xl font-bold text-gray-900 mb-6">
+                            <i class="fas fa-exclamation-triangle text-yellow-500 mr-2"></i>Production Alerts
+                        </h3>
+                        <div id="fluctuationAlerts" class="space-y-4">
+                            <div class="flex items-start p-3 bg-yellow-50 rounded-lg border border-yellow-200">
+                                <i class="fas fa-info-circle text-yellow-600 mt-1 mr-3"></i>
+                                <div>
+                                    <p class="font-medium text-yellow-800">Variable Wind Speeds</p>
+                                    <p class="text-sm text-yellow-700 mt-1">Expected 15-20% output fluctuation on Day 2</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start p-3 bg-blue-50 rounded-lg border border-blue-200">
+                                <i class="fas fa-cloud text-blue-600 mt-1 mr-3"></i>
+                                <div>
+                                    <p class="font-medium text-blue-800">Cloud Coverage</p>
+                                    <p class="text-sm text-blue-700 mt-1">Intermittent clouds may reduce solar efficiency by 10%</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Recommendations -->
+                    <div class="bg-white rounded-lg shadow-md p-6 card-hover">
+                        <h3 class="text-xl font-bold text-gray-900 mb-6">
+                            <i class="fas fa-lightbulb text-green-500 mr-2"></i>Optimization Recommendations
+                        </h3>
+                        <div id="recommendationsContent" class="space-y-4">
+                            <div class="flex items-start p-3 bg-green-50 rounded-lg border border-green-200">
+                                <i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
+                                <div>
+                                    <p class="font-medium text-green-800">Peak Production Window</p>
+                                    <p class="text-sm text-green-700 mt-1">Maximize grid connection during 10 AM - 3 PM</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start p-3 bg-purple-50 rounded-lg border border-purple-200">
+                                <i class="fas fa-cog text-purple-600 mt-1 mr-3"></i>
+                                <div>
+                                    <p class="font-medium text-purple-800">Maintenance Window</p>
+                                    <p class="text-sm text-purple-700 mt-1">Schedule maintenance during low-wind period on Day 3</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white py-4 shadow-inner">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <p class="text-center text-gray-500 text-sm">
+                &copy; 2024 California Energy Map | Advanced Forecasting System
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Global variables
+        let currentForecastData = null;
+        let hourlyChart = null;
+        let dailyChart = null;
+
+        // DOM elements
+        const forecastType = document.getElementById('forecastType');
+        const plantSelection = document.getElementById('plantSelection');
+        const regionSelection = document.getElementById('regionSelection');
+        const generateBtn = document.getElementById('generateForecast');
+        const loadingIndicator = document.getElementById('loadingIndicator');
+        const resultsSection = document.getElementById('resultsSection');
+
+        // Event listeners
+        forecastType.addEventListener('change', function() {
+            if (this.value === 'region') {
+                plantSelection.classList.add('hidden');
+                regionSelection.classList.remove('hidden');
+            } else {
+                plantSelection.classList.remove('hidden');
+                regionSelection.classList.add('hidden');
+            }
+        });
+
+        generateBtn.addEventListener('click', function() {
+            generateForecast();
+        });
+
+        // Main forecast generation function
+        function generateForecast() {
+            const type = forecastType.value;
+            const days = document.getElementById('forecastDays').value;
+            const source = document.getElementById('energySource').value;
+            
+            // Validation
+            if (type === 'plant' && !document.getElementById('plantSelect').value) {
+                alert('Please select a power plant.');
+                return;
+            }
+            if (type === 'region' && !document.getElementById('regionSelect').value) {
+                alert('Please select a region.');
+                return;
+            }
+
+            // Show loading
+            loadingIndicator.classList.remove('hidden');
+            resultsSection.classList.add('hidden');
+
+            // Simulate API call
+            setTimeout(() => {
+                generateMockData(type, days, source);
+                loadingIndicator.classList.add('hidden');
+                resultsSection.classList.remove('hidden');
+                
+                // Smooth scroll to results
+                resultsSection.scrollIntoView({ behavior: 'smooth' });
+            }, 2000);
+        }
+
+        // Generate mock forecast data
+        function generateMockData(type, days, source) {
+            // Generate hourly data
+            const hourlyData = [];
+            const hourlyLabels = [];
+            const now = new Date();
+            
+            for (let i = 0; i < 24 * parseInt(days); i++) {
+                const time = new Date(now.getTime() + i * 60 * 60 * 1000);
+                hourlyLabels.push(time.toLocaleDateString() + ' ' + time.getHours() + ':00');
+                
+                // Simulate realistic power curves
+                const baseOutput = Math.sin((i % 24) * Math.PI / 12) * 500 + 700;
+                const randomVariation = (Math.random() - 0.5) * 200;
+                const weatherFactor = Math.random() * 0.3 + 0.7;
+                
+                hourlyData.push(Math.max(0, baseOutput * weatherFactor + randomVariation));
+            }
+
+            // Generate daily summary
+            const dailyData = [];
+            const dailyLabels = [];
+            
+            for (let i = 0; i < parseInt(days); i++) {
+                const date = new Date(now.getTime() + i * 24 * 60 * 60 * 1000);
+                dailyLabels.push(date.toLocaleDateString());
+                
+                const dayStart = i * 24;
+                const dayEnd = (i + 1) * 24;
+                const dayAverage = hourlyData.slice(dayStart, dayEnd).reduce((a, b) => a + b, 0) / 24;
+                dailyData.push(dayAverage);
+            }
+
+            // Create charts
+            createHourlyChart(hourlyLabels, hourlyData);
+            createDailyChart(dailyLabels, dailyData);
+
+            // Update summary cards
+            updateSummaryCards(hourlyData, dailyData);
+        }
+
+        // Create hourly forecast chart
+        function createHourlyChart(labels, data) {
+            const ctx = document.getElementById('hourlyChart').getContext('2d');
+            
+            if (hourlyChart) {
+                hourlyChart.destroy();
+            }
+
+            hourlyChart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        label: 'Power Output (MW)',
+                        data: data,
+                        borderColor: '#3B82F6',
+                        backgroundColor: 'rgba(59, 130, 246, 0.1)',
+                        borderWidth: 3,
+                        fill: true,
+                        tension: 0.4,
+                        pointRadius: 0,
+                        pointHoverRadius: 6
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            display: false
+                        }
+                    },
+                    scales: {
+                        x: {
+                            display: true,
+                            ticks: {
+                                maxTicksLimit: 12
+                            }
+                        },
+                        y: {
+                            display: true,
+                            beginAtZero: true,
+                            title: {
+                                display: true,
+                                text: 'Power Output (MW)'
+                            }
+                        }
+                    },
+                    interaction: {
+                        intersect: false,
+                    }
+                }
+            });
+        }
+
+        // Create daily summary chart
+        function createDailyChart(labels, data) {
+            const ctx = document.getElementById('dailyChart').getContext('2d');
+            
+            if (dailyChart) {
+                dailyChart.destroy();
+            }
+
+            dailyChart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        label: 'Average Daily Output (MW)',
+                        data: data,
+                        backgroundColor: [
+                            'rgba(34, 197, 94, 0.8)',
+                            'rgba(59, 130, 246, 0.8)',
+                            'rgba(168, 85, 247, 0.8)',
+                            'rgba(249, 115, 22, 0.8)',
+                            'rgba(239, 68, 68, 0.8)',
+                            'rgba(6, 182, 212, 0.8)',
+                            'rgba(132, 204, 22, 0.8)'
+                        ],
+                        borderColor: [
+                            'rgba(34, 197, 94, 1)',
+                            'rgba(59, 130, 246, 1)',
+                            'rgba(168, 85, 247, 1)',
+                            'rgba(249, 115, 22, 1)',
+                            'rgba(239, 68, 68, 1)',
+                            'rgba(6, 182, 212, 1)',
+                            'rgba(132, 204, 22, 1)'
+                        ],
+                        borderWidth: 2,
+                        borderRadius: 8
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            display: false
+                        }
+                    },
+                    scales: {
+                        x: {
+                            display: true
+                        },
+                        y: {
+                            display: true,
+                            beginAtZero: true,
+                            title: {
+                                display: true,
+                                text: 'Average Power Output (MW)'
+                            }
+                        }
+                    }
+                }
+            });
+        }
+
+        // Update summary cards
+        function updateSummaryCards(hourlyData, dailyData) {
+            const avgOutput = Math.round(hourlyData.reduce((a, b) => a + b, 0) / hourlyData.length);
+            const peakOutput = Math.round(Math.max(...hourlyData));
+            const weatherScore = (Math.random() * 3 + 7).toFixed(1);
+            const efficiency = Math.round(Math.random() * 20 + 75);
+
+            document.getElementById('avgOutput').textContent = `${avgOutput.toLocaleString()} MW`;
+            document.getElementById('peakOutput').textContent = `${peakOutput.toLocaleString()} MW`;
+            document.getElementById('weatherScore').textContent = `${weatherScore}/10`;
+            document.getElementById('efficiency').textContent = `${efficiency}%`;
+        }
+
+        // Initialize page
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('Energy Forecasting System Initialized');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌾 Smart Agriculture Energy Dashboard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: #f9fafb;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            color: #111827;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            color: #6b7280;
+            font-size: 1.1rem;
+        }
+
+        .dashboard-grid {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 24px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .card-header h2 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #111827;
+            margin-left: 10px;
+        }
+
+        .plant-card {
+            padding: 16px;
+            border: 2px solid #e5e7eb;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-bottom: 12px;
+            transition: all 0.2s;
+        }
+
+        .plant-card:hover {
+            border-color: #3b82f6;
+        }
+
+        .plant-card.selected {
+            border-color: #2563eb;
+            background-color: #eff6ff;
+        }
+
+        .plant-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+
+        .plant-name {
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        .efficiency-badge {
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        .efficiency-high { background: #d1fae5; color: #065f46; }
+        .efficiency-medium { background: #fef3c7; color: #92400e; }
+        .efficiency-low { background: #fee2e2; color: #991b1b; }
+
+        .plant-location {
+            color: #6b7280;
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+
+        .plant-stats {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .stat-value {
+            color: #10b981;
+            font-weight: 600;
+        }
+
+        .conditions-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .condition-item {
+            text-align: center;
+            padding: 16px;
+            background: #f9fafb;
+            border-radius: 8px;
+        }
+
+        .condition-value {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .condition-label {
+            color: #6b7280;
+            font-size: 14px;
+        }
+
+        .agriculture-scores {
+            margin-top: 20px;
+        }
+
+        .score-item {
+            margin-bottom: 16px;
+        }
+
+        .score-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+        }
+
+        .score-label {
+            font-weight: 500;
+            text-transform: capitalize;
+        }
+
+        .score-value {
+            color: #6b7280;
+            font-size: 14px;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 8px;
+            background: #e5e7eb;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            border-radius: 4px;
+            transition: width 0.3s ease;
+        }
+
+        .progress-green { background: #10b981; }
+        .progress-yellow { background: #f59e0b; }
+        .progress-red { background: #ef4444; }
+
+        .energy-output {
+            background: #f0f9ff;
+            border-radius: 8px;
+            padding: 20px;
+        }
+
+        .output-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 16px;
+        }
+
+        .output-value {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #1d4ed8;
+        }
+
+        .capacity-info {
+            color: #6b7280;
+            font-size: 14px;
+        }
+
+        .recommendations {
+            margin-top: 30px;
+        }
+
+        .rec-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 16px;
+        }
+
+        .rec-card {
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            padding: 16px;
+        }
+
+        .rec-header {
+            display: flex;
+            justify-content: between;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+
+        .rec-type {
+            font-weight: 600;
+            margin-right: auto;
+        }
+
+        .urgency-badge {
+            padding: 4px 8px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 500;
+        }
+
+        .urgency-high { background: #fee2e2; color: #991b1b; }
+        .urgency-medium { background: #fef3c7; color: #92400e; }
+
+        .rec-text {
+            color: #6b7280;
+            margin-bottom: 12px;
+        }
+
+        .savings-value {
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: #10b981;
+        }
+
+        @media (max-width: 768px) {
+            .dashboard-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .conditions-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .rec-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>🌾 Smart Agriculture Energy Dashboard</h1>
+            <p>Real-time renewable energy optimization for agricultural operations</p>
+        </div>
+
+        <!-- Main Dashboard -->
+        <div class="dashboard-grid">
+            <!-- Plant Selection Panel -->
+            <div class="card">
+                <div class="card-header">
+                    <span style="font-size: 1.5rem;">📍</span>
+                    <h2>Energy Plants</h2>
+                </div>
+                <div id="plant-list">
+                    <!-- Plants populated by JavaScript -->
+                </div>
+            </div>
+
+            <!-- Selected Plant Details -->
+            <div class="card">
+                <div class="card-header">
+                    <span style="font-size: 1.5rem;">⚡</span>
+                    <h2 id="selected-plant-name">Solar Farm Alpha</h2>
+                </div>
+                
+                <!-- Current Conditions -->
+                <div class="conditions-grid">
+                    <div class="condition-item">
+                        <div class="condition-value" style="color: #ef4444;">25°C</div>
+                        <div class="condition-label">Temperature</div>
+                    </div>
+                    <div class="condition-item">
+                        <div class="condition-value" style="color: #3b82f6;">8.5 m/s</div>
+                        <div class="condition-label">Wind Speed</div>
+                    </div>
+                    <div class="condition-item">
+                        <div class="condition-value" style="color: #6b7280;">65%</div>
+                        <div class="condition-label">Humidity</div>
+                    </div>
+                    <div class="condition-item">
+                        <div class="condition-value" style="color: #9ca3af;">30%</div>
+                        <div class="condition-label">Cloud Cover</div>
+                    </div>
+                </div>
+
+                <!-- Energy Output -->
+                <div class="energy-output">
+                    <div class="output-header">
+                        <div>
+                            <div class="output-value" id="current-output">1,875 kW</div>
+                            <div class="capacity-info" id="capacity-info">of 2,500 kW capacity</div>
+                        </div>
+                        <div style="text-align: right;">
+                            <div style="font-size: 1.5rem; font-weight: bold; color: #10b981;" id="efficiency-percent">75%</div>
+                            <div class="capacity-info">Efficiency</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Agriculture Suitability Scores -->
+                <div class="agriculture-scores">
+                    <h3 style="margin-bottom: 16px; color: #111827;">🌱 Agriculture Suitability</h3>
+                    <div id="agriculture-scores">
+                        <!-- Scores populated by JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Recommendations -->
+        <div class="card recommendations">
+            <div class="card-header">
+                <span style="font-size: 1.5rem;">💡</span>
+                <h2>Agriculture Energy Recommendations</h2>
+            </div>
+            <div class="rec-grid" id="recommendations-grid">
+                <!-- Recommendations populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Sample data
+        const plants = [
+            {
+                id: 1,
+                name: "Solar Farm Alpha",
+                type: "solar",
+                icon: "☀️",
+                capacity: 2500,
+                location: "Santa Clara County",
+                currentOutput: 1875,
+                efficiency: 75,
+                agricultureScore: { 
+                    irrigation: 85, 
+                    greenhouse: 78, 
+                    "crop drying": 92 
+                }
+            },
+            {
+                id: 2,
+                name: "WindTech Beta",
+                type: "wind",
+                icon: "💨",
+                capacity: 3000,
+                location: "Alameda County",
+                currentOutput: 2100,
+                efficiency: 70,
+                agricultureScore: { 
+                    irrigation: 65, 
+                    greenhouse: 72, 
+                    "crop drying": 88 
+                }
+            },
+            {
+                id: 3,
+                name: "GreenPower Gamma",
+                type: "solar",
+                icon: "☀️",
+                capacity: 1800,
+                location: "Los Angeles County",
+                currentOutput: 1260,
+                efficiency: 70,
+                agricultureScore: { 
+                    irrigation: 90, 
+                    greenhouse: 85, 
+                    "crop drying": 78 
+                }
+            }
+        ];
+
+        const recommendations = [
+            {type: 'Irrigation', recommendation: 'Optimal solar irrigation window: 10 AM - 4 PM', urgency: 'high', savings: '$120/day'},
+            {type: 'Greenhouse', recommendation: 'Wind power suitable for greenhouse heating during evening hours', urgency: 'medium', savings: '$85/day'},
+            {type: 'Crop Drying', recommendation: 'Excellent solar conditions for crop drying operations', urgency: 'high', savings: '$200/day'}
+        ];
+
+        let selectedPlant = plants[0];
+
+        // Get efficiency class
+        function getEfficiencyClass(efficiency) {
+            if (efficiency >= 80) return 'efficiency-high';
+            if (efficiency >= 60) return 'efficiency-medium';
+            return 'efficiency-low';
+        }
+
+        // Get progress color based on score
+        function getProgressColor(score) {
+            if (score >= 80) return 'progress-green';
+            if (score >= 60) return 'progress-yellow';
+            return 'progress-red';
+        }
+
+        // Plant selection
+        function selectPlant(plantId) {
+            selectedPlant = plants.find(p => p.id === plantId);
+            updatePlantDisplay();
+            initPlantsList(); // Refresh to update selection
+        }
+
+        // Update plant display
+        function updatePlantDisplay() {
+            document.getElementById('selected-plant-name').textContent = selectedPlant.name;
+            document.getElementById('current-output').textContent = `${selectedPlant.currentOutput.toLocaleString()} kW`;
+            document.getElementById('capacity-info').textContent = `of ${selectedPlant.capacity.toLocaleString()} kW capacity`;
+            document.getElementById('efficiency-percent').textContent = `${selectedPlant.efficiency}%`;
+            
+            updateAgricultureScores();
+        }
+
+        // Update agriculture scores
+        function updateAgricultureScores() {
+            const scoresContainer = document.getElementById('agriculture-scores');
+            scoresContainer.innerHTML = '';
+            
+            Object.entries(selectedPlant.agricultureScore).forEach(([key, score]) => {
+                const scoreDiv = document.createElement('div');
+                scoreDiv.className = 'score-item';
+                
+                scoreDiv.innerHTML = `
+                    <div class="score-header">
+                        <span class="score-label">${key}</span>
+                        <span class="score-value">${score}/100</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill ${getProgressColor(score)}" style="width: ${score}%;"></div>
+                    </div>
+                `;
+                
+                scoresContainer.appendChild(scoreDiv);
+            });
+        }
+
+        // Initialize plants list
+        function initPlantsList() {
+            const plantList = document.getElementById('plant-list');
+            plantList.innerHTML = '';
+            
+            plants.forEach(plant => {
+                const plantDiv = document.createElement('div');
+                plantDiv.className = `plant-card ${plant.id === selectedPlant.id ? 'selected' : ''}`;
+                plantDiv.onclick = () => selectPlant(plant.id);
+                
+                plantDiv.innerHTML = `
+                    <div class="plant-header">
+                        <div class="plant-name">
+                            <span style="margin-right: 8px;">${plant.icon}</span>
+                            ${plant.name}
+                        </div>
+                        <span class="efficiency-badge ${getEfficiencyClass(plant.efficiency)}">
+                            ${plant.efficiency}%
+                        </span>
+                    </div>
+                    <div class="plant-location">${plant.location}</div>
+                    <div class="plant-stats">
+                        <span style="color: #6b7280;">Capacity: ${plant.capacity.toLocaleString()} kW</span>
+                        <span class="stat-value">${plant.currentOutput.toLocaleString()} kW</span>
+                    </div>
+                `;
+                
+                plantList.appendChild(plantDiv);
+            });
+        }
+
+        // Initialize recommendations
+        function initRecommendations() {
+            const recGrid = document.getElementById('recommendations-grid');
+            recGrid.innerHTML = '';
+            
+            recommendations.forEach(rec => {
+                const recDiv = document.createElement('div');
+                recDiv.className = 'rec-card';
+                
+                recDiv.innerHTML = `
+                    <div class="rec-header">
+                        <span class="rec-type">🌾 ${rec.type}</span>
+                        <span class="urgency-badge urgency-${rec.urgency}">${rec.urgency.toUpperCase()}</span>
+                    </div>
+                    <div class="rec-text">${rec.recommendation}</div>
+                    <div class="savings-value">Potential savings: ${rec.savings}</div>
+                `;
+                
+                recGrid.appendChild(recDiv);
+            });
+        }
+
+        // Initialize dashboard
+        function init() {
+            initPlantsList();
+            updatePlantDisplay();
+            initRecommendations();
+        }
+
+        // Initialize when page loads
+        init();
+    </script>
+</body>
+</html>
