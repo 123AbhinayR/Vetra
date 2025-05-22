@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d8b4401d2193095b8ca568665c2ef8d6 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+        <div style="position: fixed; 
+                    bottom: 50px; left: 50px; width: 200px; height: 140px; 
+                    background-color: white; border:2px solid grey; z-index:9999; 
+                    font-size:14px; padding: 10px">
+        <h4>Legend</h4>
+        <p><i class="fa fa-sun" style="color:orange"></i> Solar Plants</p>
+        <p><i class="fa fa-leaf" style="color:blue"></i> Wind Plants</p>
+        <p><span style="color:green">●</span> High Agriculture Potential</p>
+        <p><span style="color:yellow">●</span> Moderate Agriculture Potential</p>
+        </div>
+        
+    
+            <div class="folium-map" id="map_d8b4401d2193095b8ca568665c2ef8d6" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_d8b4401d2193095b8ca568665c2ef8d6 = L.map(
+                "map_d8b4401d2193095b8ca568665c2ef8d6",
+                {
+                    center: [36.423, -120.93536666666667],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 8,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a0d18dd977f12f237d71bd1f7d251ab9 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_a0d18dd977f12f237d71bd1f7d251ab9.addTo(map_d8b4401d2193095b8ca568665c2ef8d6);
+        
+    
+            var tile_layer_eae198f8f20d3043b84ad14f266e9dde = L.tileLayer(
+                "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "Esri",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_eae198f8f20d3043b84ad14f266e9dde.addTo(map_d8b4401d2193095b8ca568665c2ef8d6);
+        
+    
+            var feature_group_9e55c7eea1fcf72780771bb9c88b86b0 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_0a45d109afae5ed695b55362f994dc1b = L.marker(
+                [37.4419, -122.143],
+                {
+}
+            ).addTo(feature_group_9e55c7eea1fcf72780771bb9c88b86b0);
+        
+    
+            var icon_c8bae6cff5959babfa4e41def516a6fe = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "sun",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3ac20d18035d593afb37aaa647e7782a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8a0e6a3ecbccd7abc77ffc4a7690cbf9 = $(`<div id="html_8a0e6a3ecbccd7abc77ffc4a7690cbf9" style="width: 100.0%; height: 100.0%;">             <div style="width:300px;">                 <h4>Solar Farm A - Solar Plant</h4>                 <p><b>Capacity:</b> 1,000 kW</p>                 <p><b>Status:</b> Operating</p>                 <p><b>Current Output Potential:</b> 0.0 kWh/day</p>                 <p><b>Efficiency:</b> 0%</p>                                  <hr>                 <h5>🌾 Agriculture Energy Potential</h5>                 <p><b>Irrigation Support:</b> Unknown (0%)</p>                 <p><b>Greenhouse Support:</b> Unknown (0%)</p>                                  <hr>                 <h5>📋 Recommendations</h5>                 <ul>                              </ul>                 <p><small>Click for detailed forecast</small></p>             </div>             </div>`)[0];
+                popup_3ac20d18035d593afb37aaa647e7782a.setContent(html_8a0e6a3ecbccd7abc77ffc4a7690cbf9);
+            
+        
+
+        marker_0a45d109afae5ed695b55362f994dc1b.bindPopup(popup_3ac20d18035d593afb37aaa647e7782a)
+        ;
+
+        
+    
+    
+            marker_0a45d109afae5ed695b55362f994dc1b.bindTooltip(
+                `<div>
+                     Solar Farm A - 0 kWh/day
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0a45d109afae5ed695b55362f994dc1b.setIcon(icon_c8bae6cff5959babfa4e41def516a6fe);
+            
+    
+            var marker_3c5eb0b913000e6ec84d58a4bcf9c057 = L.marker(
+                [34.0522, -118.2437],
+                {
+}
+            ).addTo(feature_group_9e55c7eea1fcf72780771bb9c88b86b0);
+        
+    
+            var icon_52098db8a3493c7cfa16be645f04e3bf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "sun",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f4ba024322707deb40651391dec00114 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5a880e7c2312843e4c6e870199906e5d = $(`<div id="html_5a880e7c2312843e4c6e870199906e5d" style="width: 100.0%; height: 100.0%;">             <div style="width:300px;">                 <h4>Green Energy LLC - Solar Plant</h4>                 <p><b>Capacity:</b> 1,500 kW</p>                 <p><b>Status:</b> Proposed</p>                 <p><b>Current Output Potential:</b> 0.0 kWh/day</p>                 <p><b>Efficiency:</b> 0%</p>                                  <hr>                 <h5>🌾 Agriculture Energy Potential</h5>                 <p><b>Irrigation Support:</b> Unknown (0%)</p>                 <p><b>Greenhouse Support:</b> Unknown (0%)</p>                                  <hr>                 <h5>📋 Recommendations</h5>                 <ul>                              </ul>                 <p><small>Click for detailed forecast</small></p>             </div>             </div>`)[0];
+                popup_f4ba024322707deb40651391dec00114.setContent(html_5a880e7c2312843e4c6e870199906e5d);
+            
+        
+
+        marker_3c5eb0b913000e6ec84d58a4bcf9c057.bindPopup(popup_f4ba024322707deb40651391dec00114)
+        ;
+
+        
+    
+    
+            marker_3c5eb0b913000e6ec84d58a4bcf9c057.bindTooltip(
+                `<div>
+                     Green Energy LLC - 0 kWh/day
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3c5eb0b913000e6ec84d58a4bcf9c057.setIcon(icon_52098db8a3493c7cfa16be645f04e3bf);
+            
+    
+            feature_group_9e55c7eea1fcf72780771bb9c88b86b0.addTo(map_d8b4401d2193095b8ca568665c2ef8d6);
+        
+    
+            var feature_group_6553fedafc4492dc2ca578e0d221ad0b = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_14a9b08ef59e7eb259d4c782b6bc674d = L.marker(
+                [37.7749, -122.4194],
+                {
+}
+            ).addTo(feature_group_6553fedafc4492dc2ca578e0d221ad0b);
+        
+    
+            var icon_adbc00f0c6b8295546817c1d39d13022 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "leaf",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1155d3707043ee0769d444c3aa75269f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b843030e0bc045f8d20552ce51dbf53b = $(`<div id="html_b843030e0bc045f8d20552ce51dbf53b" style="width: 100.0%; height: 100.0%;">             <div style="width:300px;">                 <h4>Wind Power Co - Wind Plant</h4>                 <p><b>Capacity:</b> 2,500 kW</p>                 <p><b>Status:</b> Operating</p>                 <p><b>Current Output Potential:</b> 0.0 kWh/day</p>                 <p><b>Efficiency:</b> 0%</p>                                  <hr>                 <h5>🌾 Agriculture Energy Potential</h5>                 <p><b>Irrigation Support:</b> Unknown (0%)</p>                 <p><b>Greenhouse Support:</b> Unknown (0%)</p>                                  <hr>                 <h5>📋 Recommendations</h5>                 <ul>                              </ul>                 <p><small>Click for detailed forecast</small></p>             </div>             </div>`)[0];
+                popup_1155d3707043ee0769d444c3aa75269f.setContent(html_b843030e0bc045f8d20552ce51dbf53b);
+            
+        
+
+        marker_14a9b08ef59e7eb259d4c782b6bc674d.bindPopup(popup_1155d3707043ee0769d444c3aa75269f)
+        ;
+
+        
+    
+    
+            marker_14a9b08ef59e7eb259d4c782b6bc674d.bindTooltip(
+                `<div>
+                     Wind Power Co - 0 kWh/day
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_14a9b08ef59e7eb259d4c782b6bc674d.setIcon(icon_adbc00f0c6b8295546817c1d39d13022);
+            
+    
+            feature_group_6553fedafc4492dc2ca578e0d221ad0b.addTo(map_d8b4401d2193095b8ca568665c2ef8d6);
+        
+    
+            var feature_group_665546cb729328ffe4e223d52214249d = L.featureGroup(
+                {
+}
+            );
+        
+    
+            feature_group_665546cb729328ffe4e223d52214249d.addTo(map_d8b4401d2193095b8ca568665c2ef8d6);
+        
+    
+            var feature_group_c63357e2ac3c1a22dc630d53e9d7a3de = L.featureGroup(
+                {
+}
+            );
+        
+    
+            feature_group_c63357e2ac3c1a22dc630d53e9d7a3de.addTo(map_d8b4401d2193095b8ca568665c2ef8d6);
+        
+    
+            var layer_control_2060c78424c7eaf484b74290ed983f62_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_a0d18dd977f12f237d71bd1f7d251ab9,
+                    "Satellite" : tile_layer_eae198f8f20d3043b84ad14f266e9dde,
+                },
+                overlays :  {
+                    "Solar Plants" : feature_group_9e55c7eea1fcf72780771bb9c88b86b0,
+                    "Wind Plants" : feature_group_6553fedafc4492dc2ca578e0d221ad0b,
+                    "Agriculture Energy Zones" : feature_group_665546cb729328ffe4e223d52214249d,
+                    "3-Day Forecast" : feature_group_c63357e2ac3c1a22dc630d53e9d7a3de,
+                },
+            };
+            let layer_control_2060c78424c7eaf484b74290ed983f62 = L.control.layers(
+                layer_control_2060c78424c7eaf484b74290ed983f62_layers.base_layers,
+                layer_control_2060c78424c7eaf484b74290ed983f62_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_d8b4401d2193095b8ca568665c2ef8d6);
+
+        
+</script>
+</html>
