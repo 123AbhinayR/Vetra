@@ -23,6 +23,8 @@ This Flask-based web application provides an interactive visualization of Califo
 - **Data Browser**  
   Searchable and filterable table of all renewable power plants
 
+![image alt](Graph1.png)
+![image alt](Graph2.png)
 - **Analysis Dashboard**  
   Visual insights and graphs showing:
   - Average Power Output by Energy Source
@@ -34,6 +36,7 @@ This Flask-based web application provides an interactive visualization of Califo
 - **Smart Agriculture Energy Zones**  
   Identifies optimal agricultural regions based on renewable energy availability, climate suitability, and land type — aiding in sustainable farm zone planning powered by green energy.
 
+![image alt](Dashboard1.png)
 - **Agriculture Energy Dashboard**  
   A dynamic, real-time dashboard that visualizes how renewable energy intersects with agriculture. Includes:
   - Forecasted energy outputs for agricultural regions
