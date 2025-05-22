@@ -5,9 +5,31 @@
 [![Flask](https://img.shields.io/badge/Flask-2.2+-green?logo=flask)](https://flask.palletsprojects.com/)
 [![OpenWeatherMap API](https://img.shields.io/badge/API-OpenWeatherMap-orange?logo=OpenWeatherMap)](https://openweathermap.org/api)
 
-An interactive web application for visualizing and analyzing renewable energy plants across California with real-time weather data integration. Submission for the Technology Student Association Nationals 2025 Competition
-
+An interactive web application for visualizing and analyzing renewable energy plants across California with real-time weather data integration.  
 ![California Energy Map](screenshot.png)
+
+---
+
+## Purpose & Impact
+
+### The Challenge of Renewable Energy Insights
+
+Understanding renewable energy production is complex. It involves real-time weather conditions, diverse plant types (solar, wind, hydro), and geographic variability — making it difficult for key stakeholders to make informed decisions.
+
+**Key Issues:**
+- Renewable energy businesses lack intuitive tools for optimizing plant performance and resource allocation.
+- Policymakers struggle to access timely data needed for smart energy planning.
+- Students and educators need engaging, accessible tools to explore the science and impact of clean energy.
+
+---
+
+### How This Project Helps
+
+**Vetra** addresses these challenges by providing a dynamic, real-time visualization of California’s renewable energy infrastructure. It integrates live weather data, estimates production capacity, and offers agricultural insights to support:
+
+- Smarter decisions around energy infrastructure and policy  
+- Sustainable planning for agriculture based on local energy reliability  
+- Engaging, hands-on learning for students exploring clean energy systems
 
 ## Overview
 
@@ -29,8 +51,8 @@ This Flask-based web application provides an interactive visualization of Califo
 - **Data Browser**  
   Searchable and filterable table of all renewable power plants
 
-<img src="Graph1.png" alt="Graph 1" height="200"/>
-<img src="Graph2.png" alt="Graph 2" width="300"/>
+<img src="Graph1.png" alt="Graph 1" height="215"/>
+<img src="Graph2.png" alt="Graph 2" width="400"/>
 
 - **Analysis Dashboard**  
   Visual insights and graphs showing:
@@ -148,3 +170,9 @@ The application includes several visualizations that provide insights into Calif
 - Data provided by the California Energy Commission
 - Weather data from OpenWeatherMap API
 - Icons and design elements from Tailwind CSS
+
+## Contact
+Developed by [Abhinay Ruddarraju](abhinay.ruddarraju@gmail.com), [Ahan Jaiswal](ahanjaisw919@gmail.com), and [Sehajpreet Bajwa](sehaj.s.bajwa@gmail.com), for the 2025 TSA Nationals Software Development Competition.
+
+Project Repo: [https://github.com/123AbhinayR/Vetra](https://github.com/123AbhinayR/Vetra)
+
