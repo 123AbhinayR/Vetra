@@ -10,7 +10,7 @@ This Flask-based web application provides an interactive visualization of Califo
 
 ## Features
 
-![image alt](InteractiveMap.png)
+<img src="InteractiveMap.png" alt="image alt" width="400"/>
 - **Interactive Map**  
   Visualize the location and type of renewable energy plants across California
 
@@ -23,8 +23,8 @@ This Flask-based web application provides an interactive visualization of Califo
 - **Data Browser**  
   Searchable and filterable table of all renewable power plants
 
-![image alt](Graph1.png)
-![image alt](Graph2.png)
+<img src="Graph1.png" alt="image alt" height="200"/>
+<img src="Graph2.png" alt="image alt" width="300"/>
 - **Analysis Dashboard**  
   Visual insights and graphs showing:
   - Average Power Output by Energy Source
@@ -36,12 +36,14 @@ This Flask-based web application provides an interactive visualization of Califo
 - **Smart Agriculture Energy Zones**  
   Identifies optimal agricultural regions based on renewable energy availability, climate suitability, and land type — aiding in sustainable farm zone planning powered by green energy.
 
-![image alt](Dashboard1.png)
+
+
 - **Agriculture Energy Dashboard**  
   A dynamic, real-time dashboard that visualizes how renewable energy intersects with agriculture. Includes:
   - Forecasted energy outputs for agricultural regions
   - Interactive charts showing energy reliability
   - Zone-based performance metrics
+<img src="Dashboard1.png" alt="image alt" width="300"/>
 
 - **Responsive Design**  
   Optimized for both desktop and mobile viewing
