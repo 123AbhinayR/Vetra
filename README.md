@@ -1,5 +1,10 @@
 # Vetra
 
+[![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Python](https://img.shields.io/badge/Python-3.9%2B-blue?logo=python)](https://www.python.org/)
+[![Flask](https://img.shields.io/badge/Flask-2.2+-green?logo=flask)](https://flask.palletsprojects.com/)
+[![OpenWeatherMap API](https://img.shields.io/badge/API-OpenWeatherMap-orange?logo=OpenWeatherMap)](https://openweathermap.org/api)
+
 An interactive web application for visualizing and analyzing renewable energy plants across California with real-time weather data integration. Submission for the Technology Student Association Nationals 2025 Competition
 
 ![California Energy Map](screenshot.png)
