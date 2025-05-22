@@ -10,12 +10,37 @@ This Flask-based web application provides an interactive visualization of Califo
 
 ## Features
 
-- **Interactive Map**: Visualize the location and type of renewable energy plants across California
-- **Real-time Data**: Integration with OpenWeatherMap API to fetch current weather conditions
-- **Production Estimation**: Algorithm to estimate energy output based on weather and plant characteristics
-- **Data Browser**: View and filter the complete dataset of power plants
-- **Analysis Dashboard**: Visual insights into energy production patterns and weather correlations
-- **Responsive Design**: Works seamlessly on desktop and mobile devices
+- **Interactive Map**  
+  Visualize the location and type of renewable energy plants across California
+
+- **Real-time Weather Integration**  
+  Pulls live weather data from the OpenWeatherMap API for each plant location
+
+- **Production Estimation**  
+  Estimates energy output based on current weather and plant characteristics (solar, wind, hydro)
+
+- **Data Browser**  
+  Searchable and filterable table of all renewable power plants
+
+- **Analysis Dashboard**  
+  Visual insights and graphs showing:
+  - Average Power Output by Energy Source
+  - Temperature vs Solar Output
+  - Wind Speed vs Wind Output
+  - Energy Output Heatmap
+  - Weather-to-Energy Correlation Matrix
+
+- **Smart Agriculture Energy Zones**  
+  Identifies optimal agricultural regions based on renewable energy availability, climate suitability, and land type — aiding in sustainable farm zone planning powered by green energy.
+
+- **Agriculture Energy Dashboard (React Component)**  
+  A dynamic, real-time dashboard built with React that visualizes how renewable energy intersects with agriculture. Includes:
+  - Forecasted energy outputs for agricultural regions
+  - Interactive charts showing energy reliability
+  - Zone-based performance metrics
+
+- **Responsive Design**  
+  Optimized for both desktop and mobile viewing
 
 ## Technology Stack
 
