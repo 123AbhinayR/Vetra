@@ -1,4 +1,4 @@
-# California Energy Map
+# Vetra
 
 An interactive web application for visualizing and analyzing renewable energy plants across California with real-time weather data integration. Submission for the Technology Student Association Nationals 2025 Competition
 
