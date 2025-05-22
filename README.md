@@ -10,6 +10,7 @@ This Flask-based web application provides an interactive visualization of Califo
 
 ## Features
 
+![image alt](InteractiveMap.png)
 - **Interactive Map**  
   Visualize the location and type of renewable energy plants across California
 
