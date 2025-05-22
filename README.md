@@ -33,8 +33,8 @@ This Flask-based web application provides an interactive visualization of Califo
 - **Smart Agriculture Energy Zones**  
   Identifies optimal agricultural regions based on renewable energy availability, climate suitability, and land type — aiding in sustainable farm zone planning powered by green energy.
 
-- **Agriculture Energy Dashboard (React Component)**  
-  A dynamic, real-time dashboard built with React that visualizes how renewable energy intersects with agriculture. Includes:
+- **Agriculture Energy Dashboard**  
+  A dynamic, real-time dashboard that visualizes how renewable energy intersects with agriculture. Includes:
   - Forecasted energy outputs for agricultural regions
   - Interactive charts showing energy reliability
   - Zone-based performance metrics
