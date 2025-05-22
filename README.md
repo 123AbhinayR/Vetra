@@ -1,6 +1,6 @@
 # California Energy Map
 
-An interactive web application for visualizing and analyzing renewable energy plants across California with real-time weather data integration.
+An interactive web application for visualizing and analyzing renewable energy plants across California with real-time weather data integration. Submission for the Technology Student Association Nationals 2025 Competition
 
 ![California Energy Map](screenshot.png)
 
@@ -97,8 +97,6 @@ The application includes several visualizations that provide insights into Calif
 5. **Correlation Matrix**: Relationships between weather variables and energy output
 
 ## Future Enhancements
-
-- Historical data analysis and trends
 - Predictive modeling for energy output
 - User accounts for saving custom views
 - Additional energy source types
